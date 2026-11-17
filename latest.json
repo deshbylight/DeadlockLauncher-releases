@@ -1,11 +1,11 @@
 {
-  "version": "0.2.9",
-  "notes": "Автоклик в игре (опция в Настройках): лидер — создать и скопировать код, участник — вставить код и войти",
-  "pub_date": "2026-11-17T21:14:40.053Z",
+  "version": "0.3.0",
+  "notes": "Сервер больше не теряется: адрес обновляется сам после перезапуска. Своя группа: запустить свой сервер режима и подключиться по коду без поиска.",
+  "pub_date": "2026-11-17T21:42:26.780Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzIvMUZENVBybkJ6Z2x4Uys2aS80bS80SVhmU2dKMms3cmxUT1VML04rYmJXR2FQL3pjZ0dzRkhORk1hWGd4WVlodDdsZ3ZUaE5YUUpkNzYxSFRnNVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTUwMDU3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMi45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuOQo1Y0kwQWZTbXAvMTVSaGhMQjFXU3duSEloOU8rY3ZxZTJPV2E0OHgrbzlxUXBDVnJldUxiL1hJbnBJYmFwVUc4ZnNZOFR0MFhFZnJHQUsvNXljU1ZCdz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.2.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by80S0JSaTB3RjZMTEowa0NmK2diWGFLbTRDaEpBNmhVWkpIY2dwZ2VpbjRFdWRCTTVFTHU4eVlhN213bWZ2d29hK0xyZm43R0pPRk52V1dPVWFMeEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTUxNzM4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMApYWHZWZG9oZXYzcXl0QnQ1Ty83OU9CMmJyc0pvZkxJc0NUY20vcXdnbEVBQ1pRNjYvWVBERnJUOTl2RDZuTFVDZFlvNi9GNVV2MUc2OEIzTGxJWjZBZz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.0_x64-setup.exe"
     }
   }
 }

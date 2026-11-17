@@ -1,11 +1,11 @@
 {
-  "version": "0.2.4",
-  "notes": "Deadlock Group Finder 0.2.4",
-  "pub_date": "2026-11-17T19:28:30.503Z",
+  "version": "0.2.5",
+  "notes": "Deadlock Group Finder 0.2.5",
+  "pub_date": "2026-11-17T19:32:59.181Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lKZytLemFxWVlaam5aeko5blptMGNDV3lOOEVYcEhDZ3NPV2h3OU9ZWXJFeGl2eldWOHI3TnFhV3EyZ3daRnl5T1U5MDRySkQrTi93UU5hNGtKV2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQzNzEwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMi40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuNApsSmpJRDJaRUpyQUFOdUhZR1V2VlR0cDRITldIMEM3QW41cDJlOXJZblNQOWNYbXFkVEQ3VnBjcksrTFNLTGsrdDhUYXpleFBzNjF1TEg3cEM1ZmZCUT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.2.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3l4RVdab1ZNY1Z1OWpVZHdGdGtXd0M5SFc0ZlRaUzNlYUlJUGVuVytyWUdiYmhVMmo1cG1mbHlhZVB6TUFGRUV5MStTQVM4aWw1NjRFbXNGNTFDdmdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTQzOTc4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMi41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjIuNQpDNXlTcEZIN2p3NG9RTTd0OWRNVW10UVZGb2NUay9HTXE5OVpxcHVOTzF5NUk0dG1FQzFDNTNJMjBwUHJocUNsOFpVR3hwR1Z4WnpJKzNCNy9HcnZDZz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.2.5_x64-setup.exe"
     }
   }
 }

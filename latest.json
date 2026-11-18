@@ -1,11 +1,11 @@
 {
-  "version": "0.4.0",
-  "notes": "Список открытых серверов (регион, пинг, игроки, кнопка «Подключиться»); переключатель «Публичный / Группа» для своего сервера",
-  "pub_date": "2026-11-18T19:16:15.440Z",
+  "version": "0.4.1",
+  "notes": "Вход через Steam после перезапуска сервера: лаунчер берёт новый адрес сервера",
+  "pub_date": "2026-11-18T19:22:24.380Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlVTDFweDZGWDhBNmpIT1cyS2xQb2Z6VmVtdlM0Vy9RTi84RE5JWVREMGpvSFhHdGtRRERnUDlLRU91ZWdrMEIrVWJqSEt4Qmk4WnFkV0NkNytlVHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI5MzMyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuMApRakRock16ZFYxSVNYL0FsYWxOWi9HSnpudlNkSG80Nkl2aFlxeUhPejRtK08yNEFUZ0txWnJkeUxYekpTU0FjandUTUtIVnc4bXJiTlhhQWN2VWJEQT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFKblZ3RWJpSTI2NGFDcEJxSkV4SFVlUzdTNXdMUU4xODRxUnJncDhxTHF5UkUvRjRhNGh6OUR6TzY0VVZuVnI4VWRkRUJLVjl2VHMwLytGZGZxVlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI5NzM5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuMQp3NjRoVjljN0xDSWJxRGhGMll6ZlhaV3NpOWVrZzZaZ0RQZjBjNzdERjBmTWE3MThibVZHRmlUcXJVOGd0RVRGRXhFbTkrUDROVFJLYzFDMG9wanNEUT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.1_x64-setup.exe"
     }
   }
 }

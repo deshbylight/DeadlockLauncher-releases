@@ -1,11 +1,11 @@
 {
-  "version": "0.3.2",
-  "notes": "Перезапуск сервера режима больше не требует перезапуска игры (строка connect копируется для консоли); мод докачивает только изменения, карта не скачивается заново",
-  "pub_date": "2026-11-18T00:07:50.900Z",
+  "version": "0.3.3",
+  "notes": "Коды доступа двух видов: только поиск и поиск + моды; апгрейд-код открывает моды; админ-код открывает вкладку «Админ» (создание кодов, доступ, баны). Код вводится в Настройках → «Доступ». Кнопка остановки чужого сервера в «Своей группе».",
+  "pub_date": "2026-11-18T00:34:28.239Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91byttdTh2dnlzbnNRb2FEWU9OWC9LeHRvcGZyU1BraTdHVUswTVRPUnhtUFN2MFlSa0hIUGdZWnFJKzBFcVQ0S1lhT2VWT0hSSHhvdlVHWWtrZnpSNWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTYwNDU0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMgp3UWc2QjBVaDVWU0duTGpPdDA2WnJ2dU5UNXhaSTd0R0JVYUFpK1RuYU9FYWROMXR3V2lDVDNtOG85K21UV2FZU0d6RFEzU0dlckRlbml5a0g5NG9Bdz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzh0aWxkKzFoZlk3ZnVjM2tmR0tYSER0QVdESVJFS3A3ZGhHbUtXamtrYlBUdlF1OXNzZWtVdStQQ2FBVnVsZDBzdThhYzF5a2V1Qk5sZGhUWWtDM1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTYyMDU5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMwpuR1FEMDU5Mk1VeExQeHd3NW5XN2dGeFpSRlN1YkhqNzBhL2FQeWJnemkwNnNyKzJJR0l4VUJhK2luMm1SeGpwQ1REQXF5Y0NTY29jOHZkVzVFOWFDQT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.3_x64-setup.exe"
     }
   }
 }

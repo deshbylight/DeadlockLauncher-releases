@@ -1,11 +1,11 @@
 {
-  "version": "0.3.3",
-  "notes": "Коды доступа двух видов: только поиск и поиск + моды; апгрейд-код открывает моды; админ-код открывает вкладку «Админ» (создание кодов, доступ, баны). Код вводится в Настройках → «Доступ». Кнопка остановки чужого сервера в «Своей группе».",
-  "pub_date": "2026-11-18T00:34:28.239Z",
+  "version": "0.3.4",
+  "notes": "Исправлено: повторный запуск сервера режима больше не выкидывает игроков (лишний перезапуск Modlock во время игры)",
+  "pub_date": "2026-11-18T04:31:42.711Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzh0aWxkKzFoZlk3ZnVjM2tmR0tYSER0QVdESVJFS3A3ZGhHbUtXamtrYlBUdlF1OXNzZWtVdStQQ2FBVnVsZDBzdThhYzF5a2V1Qk5sZGhUWWtDM1FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTYyMDU5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMwpuR1FEMDU5Mk1VeExQeHd3NW5XN2dGeFpSRlN1YkhqNzBhL2FQeWJnemkwNnNyKzJJR0l4VUJhK2luMm1SeGpwQ1REQXF5Y0NTY29jOHZkVzVFOWFDQT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hRdlBYcjZYVjJkaEFGcGREZXN0ZmplTGFXandkUTE0NGduY3IzTDNXK0ZDelIxbDBsY2FJWjgwdUJjbU9Hc1ZzSW40ZDk0b2hKaHlBaTRyQWJCendjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTc2Mjk4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNApTdnB6UVFWeWxlZzFPY2ZSTzR1QUg0d0k2Wi8xY2svVXVydnJ5b3IxaXBPclZ6WDNSWTFrZmI5aUlrbEgxN2xIYUlDYWVUenhpQWdGbWF1MmJ6RHVEdz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.4_x64-setup.exe"
     }
   }
 }

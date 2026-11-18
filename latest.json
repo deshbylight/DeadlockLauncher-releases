@@ -1,11 +1,11 @@
 {
-  "version": "0.3.4",
-  "notes": "Исправлено: повторный запуск сервера режима больше не выкидывает игроков (лишний перезапуск Modlock во время игры)",
-  "pub_date": "2026-11-18T04:31:42.711Z",
+  "version": "0.3.5",
+  "notes": "Админка: таблицы «Коды» (какой код кому выдан, Steam ID, права, удалить код / забрать доступ), «Игроки» (права, последний вход, бан с причиной, админ) и «Жалобы» (бан прямо из жалобы)",
+  "pub_date": "2026-11-18T17:29:13.937Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hRdlBYcjZYVjJkaEFGcGREZXN0ZmplTGFXandkUTE0NGduY3IzTDNXK0ZDelIxbDBsY2FJWjgwdUJjbU9Hc1ZzSW40ZDk0b2hKaHlBaTRyQWJCendjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTc2Mjk4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNApTdnB6UVFWeWxlZzFPY2ZSTzR1QUg0d0k2Wi8xY2svVXVydnJ5b3IxaXBPclZ6WDNSWTFrZmI5aUlrbEgxN2xIYUlDYWVUenhpQWdGbWF1MmJ6RHVEdz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhqTFZOczdKcXlRMWdGV2t6SVdxU1NTVC9RdmlUSWhVMWJyQTFVVVZCc3pnclZPSlNIRHZ4UUZNUlRWT1owOXNSYld4ZXhWbGdnMVovalVSd3V3cEFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDIyOTQzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNQpoRFlVTEJiRWN1Z1Rod2o0eUU1azIrREdlc1hxL2pOMlVzcktjNnpoUHBZbHRXUjRCZ0hmMG01Y2NRK2Z0YlA0cW15clJCdVhMaVNoMGEyTHpYMklBUT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.5_x64-setup.exe"
     }
   }
 }

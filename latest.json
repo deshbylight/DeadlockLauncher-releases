@@ -1,11 +1,11 @@
 {
-  "version": "0.3.1",
-  "notes": "Если на ПК уже работает сервер Modlock, вместо «Запустить сервер» показывается «Остановить сервер».",
-  "pub_date": "2026-11-17T23:13:57.952Z",
+  "version": "0.3.2",
+  "notes": "Перезапуск сервера режима больше не требует перезапуска игры (строка connect копируется для консоли); мод докачивает только изменения, карта не скачивается заново",
+  "pub_date": "2026-11-18T00:07:50.900Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZteVVCcUpNRzNvOThyYVBBZkRYSmhhYTd6QlpiK2dncHB3Uk1odW9tZ2xYYzA2Q3BKMUNxRmtSNHFkeUoyYzRFRC9xaStJMk8xL0I5SEJMaHFTRXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTU3MjMwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMQpidi9RQlIwU1oyUkgzdnF0R3FHZ0hkYVBNRHZneklzZStMRkhNQklVU3Aya3E2dzJHMDdHMHNnQmNxRXVEK3Q3V1hWNXZsQWxGRjI5c1QyL050NjBBUT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91byttdTh2dnlzbnNRb2FEWU9OWC9LeHRvcGZyU1BraTdHVUswTVRPUnhtUFN2MFlSa0hIUGdZWnFJKzBFcVQ0S1lhT2VWT0hSSHhvdlVHWWtrZnpSNWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0OTYwNDU0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuMgp3UWc2QjBVaDVWU0duTGpPdDA2WnJ2dU5UNXhaSTd0R0JVYUFpK1RuYU9FYWROMXR3V2lDVDNtOG85K21UV2FZU0d6RFEzU0dlckRlbml5a0g5NG9Bdz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.2_x64-setup.exe"
     }
   }
 }

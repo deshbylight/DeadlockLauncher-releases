@@ -1,11 +1,11 @@
 {
-  "version": "0.4.2",
-  "notes": "Своя группа: сервер больше не завершается с ошибкой «Modlock завершился: connect 127.0.0.1:27067» сразу после запуска",
-  "pub_date": "2026-11-18T19:41:15.615Z",
+  "version": "0.4.3",
+  "notes": "Честный статус подключения к серверу (поиск, соединение, попытки, связь есть); если прямое соединение заблокировано — понятная ошибка вместо бесконечного ожидания; при ошибке Modlock лаунчер отправляет логи разработчику",
+  "pub_date": "2026-11-18T19:55:14.035Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lvS2J4UjF4SWR4cHJuQklMWVRXclFaZmMxWWxrcUVuRFV5ZEhoRC83Q25GaUhwR2lYRDJodDRicGMrNWhTTTJHQmdsOXNxdXgrdUozSStKWVBSQlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMwODYxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuMgoxZGxMUWh0c1UxaGppZWFQV3lyZmpYTGQrZjZseTJMYXFxM05JNlhtcFlVL3B6UGpaUEduTUlaZkFqd1IraE5kTjlBMGxPeUg1OXNydmxSbWZ5NEREZz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBRdklUM1dZYWEwM1NrYW5PVWU2RGRuY3FWKzdESVhRdGppa2tzc25uOVdtUmhHNjhlMDdsazZBSTNlNVJPV0VCb2M1czQ5YW1ZNzhRS1A1czhPTlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMxNzA3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuMwpScm10NlF5U1U2aThZamxTWlViN2tPdGlWVWZlWFB1bjZiQWVPWE1CUC9odnp5MzNYcVZMaWpNZERYVEdySFJsZDlyRXM2VFlCd2oxSExMZ2VLTU9BQT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.3_x64-setup.exe"
     }
   }
 }

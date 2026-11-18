@@ -1,11 +1,11 @@
 {
-  "version": "0.4.5",
-  "notes": "Кнопка «Подключиться» больше не висит без конца: если сервер друга не отдаёт режим 15 минут, показывается ошибка. Лаунчер завершает зависший сервер Modlock (modlock-host), который оставался после остановки и занимал порт игры.",
-  "pub_date": "2026-11-18T20:16:38.804Z",
+  "version": "0.4.6",
+  "notes": "Подключение к серверу друга через ретрансляторы Steam: работает за NAT, вход в Hyperline гостю не нужен. Лаунчер сам добавляет две строки P2P в gameinfo.gi на время сервера (с резервной копией) и убирает их после остановки.",
+  "pub_date": "2026-11-18T21:08:29.762Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzIyb2t2YUVXMDlHZEc1QTM1NzgveFdvVVhvb3B4L3hPWjBrQ3l1YWRrS01IY1cvM1Q2dm12dEcxK2p3Y3dwODZvbVFuOElLL213R05Ed2hwTmR6MHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMyOTk4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNQo0OG9tUWZwTzJCMnpiaU1YQ2paRndPeWJxUG5IZjRBcWF2VU1NZTJGcndWU21WL1QxZHBHRlNaK0JKVDl4cjNwaVJGQkJBSVBHZGREN2p3ZTBuSi9CZz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzIrd3dTRkkvbTR6QW1zVnVXT3Z1RjNMWFcwTmt6bFo4cVdCTmh0UVZuYUVhR1IzTmtpcHRxaFJLZk9oOEZ2bU9nNFd3djc1WDNLa3R2MVg1ak5Tc0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDM2MTAxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNgp2b1FXbEgzeFZWM2NZOUJkQVplTml6aUtDVDIxbDk4Y3h4MEhEKzgxWUdGUUh4VUVEMmdZWS82VkIxZzZMdkdaaEpiN1BXVDBYbm9GOS80bmg1aldCQT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.6_x64-setup.exe"
     }
   }
 }

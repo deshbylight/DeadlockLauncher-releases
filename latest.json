@@ -1,11 +1,11 @@
 {
-  "version": "0.3.6",
-  "notes": "Админка: после нажатия кнопки окно больше не прокручивается в самый верх (прокрутка сохраняется на всех вкладках)",
-  "pub_date": "2026-11-18T17:38:42.064Z",
+  "version": "0.3.7",
+  "notes": "Админ-панель: вкладки Ключи/Игроки/Жалобы, удаление и решение по жалобам, запрет жалоб, ссылка на профиль Steam, ники из профиля. Новая вкладка «Жалобы»: ваши жалобы, их статус и отзыв.",
+  "pub_date": "2026-11-18T17:57:08.355Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3l1RDdaSll0eFFSVXJOR0ZaOXIzU0FveCtERHQrOFJ3bDVJQjRpekZpditXcFRuTFVpaThtNW5XcUlTUHdNOG16UVhCWCtZS2NnWWhrbzV2R2QyTkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDIzNTE2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy42X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNgphZWtJMjgyajZvN2UwdW05TkVkeDZ5OEsxUHlSeUpKU0l3clFtdkt3SjNYOXZWQXhIN2M3SmkxNUdKMnE1Z2c2WmpVYXFJbW5FeVNPUWxPd2FvT3RBdz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVmOE4xQnhxNThqSFIxbnNNbm9zZWNDTHNpdDFYSVhrb1dwZ3RDMXNzcHNTdk9PamgxK3pKaXBVRExGRnFRZVJEOUh6YlJXeThpbkV6d08vRWtqUnc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI0NjE5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNwozelFKbUk1MEFvWENKREg5aG9tazd5dTJJZ0lZendhd0htbVkxdGxrVXdsOWc4OGN3Y0RRM203R25ielFQOGlDK1lpNm5FWCs4UW9lcTFMUXlIZlZDdz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.7_x64-setup.exe"
     }
   }
 }

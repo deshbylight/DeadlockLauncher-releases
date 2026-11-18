@@ -1,11 +1,11 @@
 {
-  "version": "0.3.7",
-  "notes": "Админ-панель: вкладки Ключи/Игроки/Жалобы, удаление и решение по жалобам, запрет жалоб, ссылка на профиль Steam, ники из профиля. Новая вкладка «Жалобы»: ваши жалобы, их статус и отзыв.",
-  "pub_date": "2026-11-18T17:57:08.355Z",
+  "version": "0.3.8",
+  "notes": "Участник группы больше не висит на «Подключаемся к лидеру»: если сервер лидера не ответил за 180 с, лаунчер показывает ошибку и кнопку «Повторить».",
+  "pub_date": "2026-11-18T18:23:07.761Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVmOE4xQnhxNThqSFIxbnNNbm9zZWNDTHNpdDFYSVhrb1dwZ3RDMXNzcHNTdk9PamgxK3pKaXBVRExGRnFRZVJEOUh6YlJXeThpbkV6d08vRWtqUnc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI0NjE5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuNwozelFKbUk1MEFvWENKREg5aG9tazd5dTJJZ0lZendhd0htbVkxdGxrVXdsOWc4OGN3Y0RRM203R25ielFQOGlDK1lpNm5FWCs4UW9lcTFMUXlIZlZDdz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lvaVp5U0xyT21iUEV0NmRzcGxIRWhYV1duOFNYS2ZLdmVjd1FVNWFmekV4QnJRY0tJa2duZkhCNlIvdWsxZ3drek5PZTJMdjlsT2dqaFc3SDNjTVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI2MTgxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy44X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuOApXdnRwbjlWSjBEaFVrQ0drRzRBSSs1dmZmZEp1Mm14WHhQblNhQk5wSUNyM3hvaW1KVXBWZ0lBTGVUdXo4TldJbHh2dFZ4akIvWFVkWm4ya0hrWlZEUT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.8_x64-setup.exe"
     }
   }
 }

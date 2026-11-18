@@ -1,11 +1,11 @@
 {
-  "version": "0.4.4",
-  "notes": "Исправлен запуск сервера у игроков, у которых в Steam несколько библиотек (exit status 1): лаунчер сам находит папку с игрой. Открытый Deadlock с модом больше не нужно закрывать: подключение строкой в консоли без перезапуска; закрытый Deadlock запускается с модом.",
-  "pub_date": "2026-11-18T20:05:46.719Z",
+  "version": "0.4.5",
+  "notes": "Кнопка «Подключиться» больше не висит без конца: если сервер друга не отдаёт режим 15 минут, показывается ошибка. Лаунчер завершает зависший сервер Modlock (modlock-host), который оставался после остановки и занимал порт игры.",
+  "pub_date": "2026-11-18T20:16:38.804Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzQrdWtxSnVGREEvOGlZWGZ5c20vdTVSK0hsMDUwNVQrdEVOYmxtem1SM3RQRUFWSnBEb2crekxKeU1nUitFR09tc1UyYnFHQmNYaU0xVGduWitzY2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMyMzQyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNApzUjg0WXlkaGRtajJtRHVNY2FpclhUalllM1RKVHRHbGlqYnlIZWRicUh5bzhnSXQ4VzZFYXVUdDV0VVlsTzFyL2VHRkc0a295QUsreEFsU1p2c3lBUT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzIyb2t2YUVXMDlHZEc1QTM1NzgveFdvVVhvb3B4L3hPWjBrQ3l1YWRrS01IY1cvM1Q2dm12dEcxK2p3Y3dwODZvbVFuOElLL213R05Ed2hwTmR6MHdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDMyOTk4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNQo0OG9tUWZwTzJCMnpiaU1YQ2paRndPeWJxUG5IZjRBcWF2VU1NZTJGcndWU21WL1QxZHBHRlNaK0JKVDl4cjNwaVJGQkJBSVBHZGREN2p3ZTBuSi9CZz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.5_x64-setup.exe"
     }
   }
 }

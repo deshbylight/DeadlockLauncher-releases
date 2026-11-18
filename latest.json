@@ -1,11 +1,11 @@
 {
-  "version": "0.3.8",
-  "notes": "Участник группы больше не висит на «Подключаемся к лидеру»: если сервер лидера не ответил за 180 с, лаунчер показывает ошибку и кнопку «Повторить».",
-  "pub_date": "2026-11-18T18:23:07.761Z",
+  "version": "0.3.9",
+  "notes": "Вход к другу больше не обрывается: ожидание загрузки режима до 15 минут, кнопка «Подключиться» скрыта во время загрузки. «Перезапустить сервер» скачивает новую версию режима.",
+  "pub_date": "2026-11-18T19:02:24.456Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lvaVp5U0xyT21iUEV0NmRzcGxIRWhYV1duOFNYS2ZLdmVjd1FVNWFmekV4QnJRY0tJa2duZkhCNlIvdWsxZ3drek5PZTJMdjlsT2dqaFc3SDNjTVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI2MTgxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy44X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuOApXdnRwbjlWSjBEaFVrQ0drRzRBSSs1dmZmZEp1Mm14WHhQblNhQk5wSUNyM3hvaW1KVXBWZ0lBTGVUdXo4TldJbHh2dFZ4akIvWFVkWm4ya0hrWlZEUT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFQelR2MVpzSEtQbGxyMEFnYmprZ2s3c05ZZjRMdHlBMXFtaTR0MVd2SXd6QlRuTUx3ZEtkQ1pKcDJEL3VDRERQMVpGWjlvdVIyMW5jb1NqeXVxdWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDI4NTM2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuMy45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjMuOQpHL2Q5eEFNNkFQbk84WHFlWXlBU3lUaVlUQWxvaS9TSHRMZDJ2ZU9meFlmS0VTM0plUjlaS09NejFEdjZXZHQ3R2dWaEdQc3lXMUlQcEdPaEpITWlDdz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.3.9_x64-setup.exe"
     }
   }
 }

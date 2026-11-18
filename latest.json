@@ -1,11 +1,11 @@
 {
-  "version": "0.4.6",
-  "notes": "Подключение к серверу друга через ретрансляторы Steam: работает за NAT, вход в Hyperline гостю не нужен. Лаунчер сам добавляет две строки P2P в gameinfo.gi на время сервера (с резервной копией) и убирает их после остановки.",
-  "pub_date": "2026-11-18T21:08:29.762Z",
+  "version": "0.4.7",
+  "notes": "Подключение к серверу друга снова через канал Modlock (как до 0.4.6); Steam P2P для гостей выключен до удачного теста; сервер не останавливается без Steam-адреса",
+  "pub_date": "2026-11-18T21:44:15.260Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzIrd3dTRkkvbTR6QW1zVnVXT3Z1RjNMWFcwTmt6bFo4cVdCTmh0UVZuYUVhR1IzTmtpcHRxaFJLZk9oOEZ2bU9nNFd3djc1WDNLa3R2MVg1ak5Tc0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDM2MTAxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNgp2b1FXbEgzeFZWM2NZOUJkQVplTml6aUtDVDIxbDk4Y3h4MEhEKzgxWUdGUUh4VUVEMmdZWS82VkIxZzZMdkdaaEpiN1BXVDBYbm9GOS80bmg1aldCQT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhYUnlRWWwyaGN2MUEvZnR4Y0t0RU90TnRzc3BlRVU4aHJQa2hROVErM2ZjSzY3YW5KZ0FHSWRrZmIzSHBUOTlKLzM1UHY5cGhhQnh5UHdEMXNlV2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDM4MjQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNwpsUktNeXRDTGJleTUwOCtsNkdVdU1kOUtndXdpb0RPdHVpOGxkMWpWakFmN0ZoVTZUblc4L0tVTE9TMHRNOEZvcSttZlZ0bk8zQkRkNURYSlUweC9BZz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.7_x64-setup.exe"
     }
   }
 }

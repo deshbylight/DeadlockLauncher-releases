@@ -1,11 +1,11 @@
 {
-  "version": "0.4.8",
-  "notes": "Новая вёрстка: работает при любом размере окна. Поиск — список режимов. Отдельная вкладка «Серверы» с сортировкой и фильтрами. Вкладка «Моды» — библиотека с версиями; моды обновляются при запуске (можно выключить) и перед поиском или запуском сервера. Уведомления скрываются сами. Ник и ранг подгружаются после входа. Строка состояния внизу.",
-  "pub_date": "2026-11-19T02:16:41.522Z",
+  "version": "0.4.9",
+  "notes": "Моды: после обновления мод больше не остаётся в статусе «Есть обновление»; версия сервера перечитывается после загрузки.",
+  "pub_date": "2026-11-19T02:56:49.122Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pqcHppSkxQemY3MVE3MnhIcVJiMHNVZGRleWw4V0FhbTd2cGhEMWUySmhJaHBRNXhhRGl2TnZkY3k2MjhDUzFWT3Z4blROclcyN25peitsU2I2UmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU0NTkxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuOAovNDBGQjNZSlRnSWtmLytwMC9XTDY3bzNINmhkeWwzVHRLR2RjeXVpQmhyQ09JYWszV0RyeDU1b0NJQUhSMElLWVJMQUh6anlOd0M5aHgwbXJzOEpDZz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzM0My9uMXA1WnRPWS8ySGRHOW81bEEvbW54V3JwR3FZeG9qdHR1TngzVkVuL2luMUNXNXB4ZlpINmgxcU1sQTF6WWxiaXg4MGw0UGxhdThWOGNQVUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU3MDA4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuOQpzeFI0cnYzSDJPQmYwQmlRcHMxL0lPcU5zN0wrTVFaMS8rdGk5bTBvUURKL3dmSUxmdG5ybHhBaEh6SllCNENYb3Z4T25FUGlqdFdhdlJRRnlBOHdEUT09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.9_x64-setup.exe"
     }
   }
 }

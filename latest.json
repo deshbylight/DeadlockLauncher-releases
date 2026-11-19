@@ -1,11 +1,11 @@
 {
-  "version": "0.4.7",
-  "notes": "Подключение к серверу друга снова через канал Modlock (как до 0.4.6); Steam P2P для гостей выключен до удачного теста; сервер не останавливается без Steam-адреса",
-  "pub_date": "2026-11-18T21:44:15.260Z",
+  "version": "0.4.8",
+  "notes": "Новая вёрстка: работает при любом размере окна. Поиск — список режимов. Отдельная вкладка «Серверы» с сортировкой и фильтрами. Вкладка «Моды» — библиотека с версиями; моды обновляются при запуске (можно выключить) и перед поиском или запуском сервера. Уведомления скрываются сами. Ник и ранг подгружаются после входа. Строка состояния внизу.",
+  "pub_date": "2026-11-19T02:16:41.522Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhYUnlRWWwyaGN2MUEvZnR4Y0t0RU90TnRzc3BlRVU4aHJQa2hROVErM2ZjSzY3YW5KZ0FHSWRrZmIzSHBUOTlKLzM1UHY5cGhhQnh5UHdEMXNlV2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDM4MjQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuNwpsUktNeXRDTGJleTUwOCtsNkdVdU1kOUtndXdpb0RPdHVpOGxkMWpWakFmN0ZoVTZUblc4L0tVTE9TMHRNOEZvcSttZlZ0bk8zQkRkNURYSlUweC9BZz09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pqcHppSkxQemY3MVE3MnhIcVJiMHNVZGRleWw4V0FhbTd2cGhEMWUySmhJaHBRNXhhRGl2TnZkY3k2MjhDUzFWT3Z4blROclcyN25peitsU2I2UmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU0NTkxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuOAovNDBGQjNZSlRnSWtmLytwMC9XTDY3bzNINmhkeWwzVHRLR2RjeXVpQmhyQ09JYWszV0RyeDU1b0NJQUhSMElLWVJMQUh6anlOd0M5aHgwbXJzOEpDZz09Cg==",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.8_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.9",
-  "notes": "Моды: после обновления мод больше не остаётся в статусе «Есть обновление»; версия сервера перечитывается после загрузки.",
-  "pub_date": "2026-11-19T02:56:49.122Z",
+  "version": "0.4.10",
+  "notes": "Интерфейс на двух языках (русский/английский), выбор в Настройках; тексты короче",
+  "pub_date": "2026-11-19T19:47:11.281Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzM0My9uMXA1WnRPWS8ySGRHOW81bEEvbW54V3JwR3FZeG9qdHR1TngzVkVuL2luMUNXNXB4ZlpINmgxcU1sQTF6WWxiaXg4MGw0UGxhdThWOGNQVUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDU3MDA4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjQuOQpzeFI0cnYzSDJPQmYwQmlRcHMxL0lPcU5zN0wrTVFaMS8rdGk5bTBvUURKL3dmSUxmdG5ybHhBaEh6SllCNENYb3Z4T25FUGlqdFdhdlJRRnlBOHdEUT09Cg==",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pYdXpvSEIxZVZIbUJndkFRbVgwdWhMUDRkV1VHcTArdFhHM3J2Ui92OE9FTS9rQm5TWERDVzFDZVEwb0ZNRGt2d05tN3J2Mjc4YUYzT2FPZkp4blE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTE3NjI3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjEwClZNek5jMFFCMXNvWFFRbkx4ZFBhUTVjZ2NzZTlEZFR2MnFybE1qenV1a1lxaEJuOWliU25nMFJZUnV1WU5QV1RLWE1QUS9MeWFWUFBmQjRIMld2VUFRPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.10_x64-setup.exe"
     }
   }
 }

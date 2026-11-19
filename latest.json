@@ -1,11 +1,11 @@
 {
-  "version": "0.4.11",
-  "notes": "Настройки → Подключение: проверка сети (NAT, VPN, Steam, игра, сервер, Hyperline) и кнопка «Отправить отчёт». При неудачном подключении к своему серверу отчёт уходит автоматически с обеих сторон, в том числе при отмене подключения.",
-  "pub_date": "2026-11-19T20:31:42.797Z",
+  "version": "0.4.12",
+  "notes": "Сервер режима: активные предметы остаются на своих клавишах после улучшения, продажи и казино (новый хост fork-0.1.85-2).",
+  "pub_date": "2026-11-19T21:05:33.220Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9odEhaL2MvUFBQZkdlQVZKQWluY2F1djZNeTc1cmljTFNOb2RRcTdhbFJpMmVwbUZXc0xaU3BIQk55Y21oRFRMOWpVZFNONXdndnNMdkMwaFVidndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTIwMjk2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjExCnE4a2ZyMFpyQ3hUZ3JGUStCM2Z6TkhMOUF3Y3VPYXVUUFZkUFJBZ1dyK2lmN3VoSFE0alRVNStqWm5ybC9FSUpXM1RUYS80RzBOQytxWEdYVVY2WERRPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.11_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhKbkZUem1MODk0ZE9VVmFDLy9NY20ydlkrODN1TmxsRFJZYUNETUJtdEN3RVJzb2wwWTlWRm16TldzRXJmK2xqMnRwVU9MZnJnWmFjRVNlakp4cnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTIyMzI0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjEyCm5vNWtVUTJHTmVWMXVmTTJydkt4SXdVdUUrdGVZQVlxWWZ5V1U2M3YyK1FOV1VVd3ExVmJQbVNoMFJ5VFdOUVJxbmRVKytydnVrZlFncENDa2hTc0FRPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.12_x64-setup.exe"
     }
   }
 }

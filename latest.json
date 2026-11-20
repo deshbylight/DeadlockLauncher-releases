@@ -1,11 +1,11 @@
 {
-  "version": "0.4.16",
-  "notes": "Ключи тестера: только вкладки «Серверы» и «Настройки», режим «Проверка соединения» на своей карте. Админы тоже могут создать тестовый сервер. Тестер не может скачать мод волн и подключиться к серверу с волнами.",
-  "pub_date": "2026-11-20T20:32:11.194Z",
+  "version": "0.4.17",
+  "notes": "Подключение к «Своему серверу» больше не показывает в Steam игру Spacewar и не пишет её в профиль",
+  "pub_date": "2026-11-20T21:59:43.483Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9COUFtNlN1RndMRndxMXBhM3Vma2dCOUZENllsYm5qSzF2cUd4VGk5MUFEeUhPRVBub1N1dUtnb044cTFjeUk5eXh4UUhzODYzOUNBTHVOZjZJMVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA2NzI1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE2Ck43Z3VOQUpCQW11QUl6ZTJWV0g1UEkxY0hoQ0tyZm5aZjNBVThoR1YxZVNnVEpHWm9FL1oxYWpCbVJHdmdmNDJiOW43WHdQWUlseDZsMFd1R3EyN0NBPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJCb3B4U3QzOEs1cVlhTnBpN2JSaXgydzNVQ0RFeVdVa253MzF3aWswS1VVOEtSVjZMYk5RN1Rwd21EUlFlSzR1NHg4bWpSbkZKLzVlSVl2ZnoyQXdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjExOTc3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xN194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE3CjNGczBxaVd2NHhNTTF5STBqODFxemFGdnY5NWJ3RlcrR09wcTZmZFBuQXFlSG9ydVRtMjRFUXNSRGtQMlVuMkU4VkxsR1F1WjROTGNxNFRuQTdjRERRPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.17_x64-setup.exe"
     }
   }
 }

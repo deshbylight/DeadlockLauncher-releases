@@ -1,11 +1,11 @@
 {
-  "version": "0.4.15",
-  "notes": "Подключение к «Своему серверу» через сеть Steam (туннель dl-tunnel): работает с включённым VPN, без настроек у игроков",
-  "pub_date": "2026-11-20T20:07:52.332Z",
+  "version": "0.4.16",
+  "notes": "Ключи тестера: только вкладки «Серверы» и «Настройки», режим «Проверка соединения» на своей карте. Админы тоже могут создать тестовый сервер. Тестер не может скачать мод волн и подключиться к серверу с волнами.",
+  "pub_date": "2026-11-20T20:32:11.194Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pIU2JaQWNtSDVWdW1QYkljcnNtRXd6OWhFMHNTVnRJdkpVRmtMYUpGaG0vQnRsYy9ZbG1JaStYamswUm5hNStUVkJYY3ZIT0VxVThpTjRyMHB3aWdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA1MjY1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE1Ck9WbnVjUWNpQndPR1NkaFRXdjV5N0h1a0ZJbFJCZC9US1pFc3BHSnYvUXFQTEllV3dYblhtMy83RGxiaGNlYlEwSWxXZnhYQTQySzg1VURLWUpHQUJBPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.15_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9COUFtNlN1RndMRndxMXBhM3Vma2dCOUZENllsYm5qSzF2cUd4VGk5MUFEeUhPRVBub1N1dUtnb044cTFjeUk5eXh4UUhzODYzOUNBTHVOZjZJMVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA2NzI1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE2Ck43Z3VOQUpCQW11QUl6ZTJWV0g1UEkxY0hoQ0tyZm5aZjNBVThoR1YxZVNnVEpHWm9FL1oxYWpCbVJHdmdmNDJiOW43WHdQWUlseDZsMFd1R3EyN0NBPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.16_x64-setup.exe"
     }
   }
 }

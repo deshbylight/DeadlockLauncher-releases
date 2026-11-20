@@ -1,11 +1,11 @@
 {
-  "version": "0.4.14",
-  "notes": "Сервер режима: хост fork-0.1.85-3 — души за убийства врагов отключены в движке, удары больше не убивают с одного попадания",
-  "pub_date": "2026-11-20T19:55:12.704Z",
+  "version": "0.4.15",
+  "notes": "Подключение к «Своему серверу» через сеть Steam (туннель dl-tunnel): работает с включённым VPN, без настроек у игроков",
+  "pub_date": "2026-11-20T20:07:52.332Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJkMWhMQmVINlFUK0ZPS1lpRFZpSG5Kb1FkWUlSZjdNN1d0Umw5WXp5Y2hTczVqU2JNekkyQXRGMDd0c1dwWGF6MU9ERllHMm1yNkdoYmVINDJoUGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA0NDIzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE0CmdZMnhrdXM4ZVhGRkRqWm5GYjEwRHdNeCtacWx0c0tRQTh6bHc0MG9nc29pTEZaUm9rOHlTR1RYVXJaWTRLNVpEcFBoQ1N3QVFuK014Skd3WmMrc0FRPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.14_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pIU2JaQWNtSDVWdW1QYkljcnNtRXd6OWhFMHNTVnRJdkpVRmtMYUpGaG0vQnRsYy9ZbG1JaStYamswUm5hNStUVkJYY3ZIT0VxVThpTjRyMHB3aWdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA1MjY1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE1Ck9WbnVjUWNpQndPR1NkaFRXdjV5N0h1a0ZJbFJCZC9US1pFc3BHSnYvUXFQTEllV3dYblhtMy83RGxiaGNlYlEwSWxXZnhYQTQySzg1VURLWUpHQUJBPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.15_x64-setup.exe"
     }
   }
 }

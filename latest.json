@@ -1,11 +1,11 @@
 {
-  "version": "0.4.13",
-  "notes": "Подключение к «Своему серверу» через VPN: связь идёт через посредника (TURN), если напрямую не проходит. Лаунчер теперь запускает нашу сборку Modlock для всех команд. В настройках «Подключение» — строка «Посредник».",
-  "pub_date": "2026-11-20T19:33:03.868Z",
+  "version": "0.4.14",
+  "notes": "Сервер режима: хост fork-0.1.85-3 — души за убийства врагов отключены в движке, удары больше не убивают с одного попадания",
+  "pub_date": "2026-11-20T19:55:12.704Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJ0ZFJpcGpHdTFvQXNKYjk4VGZITG5xRkxOV2JEOEQ3aFozVlBzV3ltN1R5aFB1MDN6M0g0akVxQzFVSFJSQi9jVFh2dTVhNjRBYVd1R2VWVEJNRHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjAzMTc5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjEzCnNselVhTGJ0R3pGdHE3bi9WTGdDM0pZNTZicC9rOEFOWXJPVUNsSGhQSmlILy84cis3a1Y0aW5KNXlUZjZ1OWxKVEtzQ3VneTlJMCt5aGoyS2ZiWUFBPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJkMWhMQmVINlFUK0ZPS1lpRFZpSG5Kb1FkWUlSZjdNN1d0Umw5WXp5Y2hTczVqU2JNekkyQXRGMDd0c1dwWGF6MU9ERllHMm1yNkdoYmVINDJoUGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjA0NDIzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xNF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE0CmdZMnhrdXM4ZVhGRkRqWm5GYjEwRHdNeCtacWx0c0tRQTh6bHc0MG9nc29pTEZaUm9rOHlTR1RYVXJaWTRLNVpEcFBoQ1N3QVFuK014Skd3WmMrc0FRPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.14_x64-setup.exe"
     }
   }
 }

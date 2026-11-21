@@ -1,11 +1,11 @@
 {
-  "version": "0.4.17",
-  "notes": "Подключение к «Своему серверу» больше не показывает в Steam игру Spacewar и не пишет её в профиль",
-  "pub_date": "2026-11-20T21:59:43.483Z",
+  "version": "0.4.18",
+  "notes": "Хост сервера fork-0.1.85-4: скилл Static Charge (Seven) видит прицеливание (режим confirm), исправлены выплаты душ",
+  "pub_date": "2026-11-21T00:02:26.998Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJCb3B4U3QzOEs1cVlhTnBpN2JSaXgydzNVQ0RFeVdVa253MzF3aWswS1VVOEtSVjZMYk5RN1Rwd21EUlFlSzR1NHg4bWpSbkZKLzVlSVl2ZnoyQXdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjExOTc3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xN194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE3CjNGczBxaVd2NHhNTTF5STBqODFxemFGdnY5NWJ3RlcrR09wcTZmZFBuQXFlSG9ydVRtMjRFUXNSRGtQMlVuMkU4VkxsR1F1WjROTGNxNFRuQTdjRERRPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.17_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlmL3k1bEpOUzJFRSs1b1ZMaXliZUlnZ0xLb1VoY01qT3dKNHArVGRtL2lScDJUNjY0OTRId1RPclFMKzlTS0haNVpVdHdzTkpYcDdTZHNwaFpvcWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjE5MzM3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE4Cno2RDROMVBVL0IzSkwwVER6Y0N4di96U1MwbE8rOHQvTDhGMERtVFRrUHdlR3JDOTk1d0l3SkdKT09YRTV1U0RnVFJ0di9nN0xDbkloNFRvekhVeEF3PT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.18_x64-setup.exe"
     }
   }
 }

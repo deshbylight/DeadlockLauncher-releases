@@ -1,11 +1,11 @@
 {
-  "version": "0.4.22",
-  "notes": "Если интерфейс режима не загрузился, лаунчер сообщает об этом и просит перезапустить Deadlock; в проверке подключения добавлена строка «Интерфейс режимов»",
-  "pub_date": "2026-11-21T00:39:34.025Z",
+  "version": "0.4.23",
+  "notes": "Локальный сервер без онлайна: режим «Локально» и панель на экране входа; при сбое Steam-туннеля свой сервер продолжает работать на этом ПК",
+  "pub_date": "2026-11-21T01:05:57.569Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3l3WHVKV2tjNzIzNk9XZWZQRWlXcVV4bWYyY3pxaHFpR1RzajBtbXdFRGFoUWZXVG55cGs2ZWZMSlFwSFJXQys5ZlpmTlhkWXZrdjR5R3RqTXFVNHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIxNTY3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjIyCm8vRU5PNHoxNlZnY24zNEVMZWtKOVFYRk5Qc3RDWU5wcW9ybkFtbUFxdjVGbzh4Qzd6ZkJ6SWlXcnNrQVlRNkVKeDVrbDVwYVlETkRacGFkYU5OQ0FBPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFscGVrNmRPWXVvVEgycjQzY1ZjOWs5OFpnMWhybU53cVZUUUt4ZkxwcnMxWUpwcFN5SzB5d2luY3RMd2czeFRaQmphVTJaWFQ0UzFtNld2NTZ5QndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIzMTQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjIzCktDMmk2Vm5LRWdBZFZvVWdWSDZxdkYvZ0E0S2xIUXhpc21HWnp4TzA2NUdrMHMwTEtjazRBMzlYUGgrZWtZc0x0d2RWaGRYQzhseVBKYzhqZ2NaWENBPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.23_x64-setup.exe"
     }
   }
 }

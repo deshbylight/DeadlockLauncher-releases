@@ -1,11 +1,11 @@
 {
-  "version": "0.4.18",
-  "notes": "Хост сервера fork-0.1.85-4: скилл Static Charge (Seven) видит прицеливание (режим confirm), исправлены выплаты душ",
-  "pub_date": "2026-11-21T00:02:26.998Z",
+  "version": "0.4.19",
+  "notes": "Вход в Hyperline больше не нужен: группа и «Свой сервер» подключаются через Steam-туннель лаунчера; код сервера вида dl-…",
+  "pub_date": "2026-11-21T00:10:53.707Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlmL3k1bEpOUzJFRSs1b1ZMaXliZUlnZ0xLb1VoY01qT3dKNHArVGRtL2lScDJUNjY0OTRId1RPclFMKzlTS0haNVpVdHdzTkpYcDdTZHNwaFpvcWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjE5MzM3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE4Cno2RDROMVBVL0IzSkwwVER6Y0N4di96U1MwbE8rOHQvTDhGMERtVFRrUHdlR3JDOTk1d0l3SkdKT09YRTV1U0RnVFJ0di9nN0xDbkloNFRvekhVeEF3PT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.18_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVkc1RTNysxRnVVclF0Q2NJOGJpVEE2NUhoS2NOK3hUTGwyTm54U0VwRm1SdnREMlhBUmNqMW5Wa1QvTi9Ea1VZRUg1a0JkR2djNDUvZ0prT2xocWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjE5ODQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4xOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjE5CnZpSnpBNWdCSDFjdHRPblpvKy82NHpaQUZsemJGOXMybzFrTmhMT1UyRGhseVdrV1pwZEFVcWN5UmN2QksrRVBPTEFRSk91eFNKcEFWQThPMllFeURnPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.19_x64-setup.exe"
     }
   }
 }

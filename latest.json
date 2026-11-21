@@ -1,11 +1,11 @@
 {
-  "version": "0.4.23",
-  "notes": "Локальный сервер без онлайна: режим «Локально» и панель на экране входа; при сбое Steam-туннеля свой сервер продолжает работать на этом ПК",
-  "pub_date": "2026-11-21T01:05:57.569Z",
+  "version": "0.4.24",
+  "notes": "Запасной канал связи: если у игрока заблокирован UDP (некоторые VPN, например Outline) и Steam-ретрансляторы недоступны, сервер и подключение к нему идут через сервер лаунчера по TCP.",
+  "pub_date": "2026-11-21T01:14:07.046Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFscGVrNmRPWXVvVEgycjQzY1ZjOWs5OFpnMWhybU53cVZUUUt4ZkxwcnMxWUpwcFN5SzB5d2luY3RMd2czeFRaQmphVTJaWFQ0UzFtNld2NTZ5QndzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIzMTQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjIzCktDMmk2Vm5LRWdBZFZvVWdWSDZxdkYvZ0E0S2xIUXhpc21HWnp4TzA2NUdrMHMwTEtjazRBMzlYUGgrZWtZc0x0d2RWaGRYQzhseVBKYzhqZ2NaWENBPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.23_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJsc1VseUx0RVRZZDVOK2FoZHFwditvS3VsRjZmbUxoSjVFc0hhc0dIRVNiUStwZFZhUEJKbHNIRUZBMndKaFBuSEVRK0pzOU91SU1HODI4NG16U0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIzNjQyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yNF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjI0CjJDcEdzYm9UNWJjdFhjOFc2RWh3NGY4MTdmNExnejlvRWtsME12bUptM1Y2eG1UYW1jcStodmlQd3pTR1ltbEJTbjdKbW9WUnc0djMxL09GOXVJT0NnPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.24_x64-setup.exe"
     }
   }
 }

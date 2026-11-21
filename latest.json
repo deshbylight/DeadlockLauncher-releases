@@ -1,11 +1,11 @@
 {
-  "version": "0.4.21",
-  "notes": "Исправлен CLI форка Modlock 0.1.89 (библиотека модов 0.1.89)",
-  "pub_date": "2026-11-21T00:36:05.516Z",
+  "version": "0.4.22",
+  "notes": "Если интерфейс режима не загрузился, лаунчер сообщает об этом и просит перезапустить Deadlock; в проверке подключения добавлена строка «Интерфейс режимов»",
+  "pub_date": "2026-11-21T00:39:34.025Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRQcWwrdnRNOStwemd1eU5sNVdBMDlXVEUybDZVWk1EUnpCaS9BZFAxdVRQcy9OaGtQSTA2OUhWbW5LWmRZOWN4YjNLQkFxQ3djZXNSVXk4Ni9HUmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIxMzU4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjIxCmN2WGRLZDhNdHhNN2Y3SUNGK0lMd0t5bS9uNDZwZlJyOHBpUWpzRk0rd0lMOG5GMldHbFVZSG04S3hUcUVNZUozNzdWb25nNnpZV2J1NlJhV3Zjb0RnPT0K",
-      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.21_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3l3WHVKV2tjNzIzNk9XZWZQRWlXcVV4bWYyY3pxaHFpR1RzajBtbXdFRGFoUWZXVG55cGs2ZWZMSlFwSFJXQys5ZlpmTlhkWXZrdjR5R3RqTXFVNHdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MjIxNTY3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC4yMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjIyCm8vRU5PNHoxNlZnY24zNEVMZWtKOVFYRk5Qc3RDWU5wcW9ybkFtbUFxdjVGbzh4Qzd6ZkJ6SWlXcnNrQVlRNkVKeDVrbDVwYVlETkRacGFkYU5OQ0FBPT0K",
+      "url": "https://deshbylight.github.io/DeadlockLauncher-releases/Deadlock%20Group%20Finder_0.4.22_x64-setup.exe"
     }
   }
 }

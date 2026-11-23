@@ -1,11 +1,11 @@
 {
-  "version": "0.4.65",
-  "notes": "Modlock CLI fork-0.1.89-dl14: leave a mode when an official match is found (no sound crash)",
-  "pub_date": "2026-11-23T05:37:03.003Z",
+  "version": "0.4.66",
+  "notes": "Modlock 0.1.105: host fork-0.1.105-1, CLI fork-0.1.105-dl15 (upstream pings, away seats, pawn cache, spectator camera, HUD parts)",
+  "pub_date": "2026-11-23T06:57:05.057Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhQbW5abTJuRTlZUG95d1hDNzAxdEhNZ3RhUVRvOHFhU3lueXhTTXdSOHpqNHpjVGdDTGFVNU1RQWxueDJNZUcwMElxSkM3NG1tRkVZWC9namFub0FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDEyMjE2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY1Ck5STkwrcEJ1OG9ERmtWRlp6RmhYS0RxZDcybE1jb1RiYmxCM3F4eE8xWHZrbUlBWHpEYWowQTNlNHEzNGIvMjZjZldvcmlDcjc4NmpKRHYxTStyb0RBPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.65_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3gyVExjK2EwS2psYlZGUExQWkNhUHJqaHNycTFBVm1DVSt5SFV3TndrUTBSNVhnZG16OSs4T05STXJMeDd2UHVhK3JaeXpxMjdpOWV5Q1lSZkxocGdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDE3MDE3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42Nl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY2CnIyVktFWHlaSkpwc2tYbkQwdXFHVkdCVlpiRFNoMVUrb094Tk1DcFh5VTA3VHNINFBsYTNnTTVCanFaanRsMDlrMXRiRkZSTHlZWUdvMUlMK3VrM0NBPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.66_x64-setup.exe"
     }
   }
 }

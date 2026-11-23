@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>modlock:relay-ready</title>
+<meta http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src http://127.0.0.1:*">
+<style>html, body { margin: 0; background: transparent; }</style>
+</head>
+<body>
+<script>
+'use strict';
+// DeadlockLauncher UI relay. Deadlock's HTML panels load only https pages, so the mod renderer (Modlock panorama
+// bridge.ts) opens this page, which reads the player's screen from the local Modlock relay
+// (http://127.0.0.1:<port>/panorama/stream, session/relay.go) and hands it over through document.title, one part
+// at a time. The renderer acknowledges each part by switching the URL fragment between #0 and #1.
+// Title formats the renderer reads:
+//   modlock:frame:<id>:<offset>:<total>:<sequence>:<chunk>   a part of a packed screen line "~<sequence>:<packed>"
+//   modlock:snapshot:<json {id, offset, total, chunk}>       a part of any other line (the keepalive "alive")
+//   ""                                                       the stream ended: the renderer clears the screen
+//   any other title (the initial one)                        status: the page loaded, nothing to draw yet
+var match = /[?&]port=(\d{1,5})(?:&|$)/.exec(location.search);
+var base = 'http://127.0.0.1:' + (match ? match[1] : '4320');
+var TITLE_BYTES = 3999;   // UTF-8 bytes of packed text per frame part (title limit)
+var SNAPSHOT_CHARS = 3072; // URI-encoded characters per snapshot part
+var ACK_TIMEOUT_MS = 6000;
+var RETRY_MS = 500;
+
+var nextId = 0;
+var pending = null;
+
+window.addEventListener('hashchange', function () {
+  if (!pending) return;
+  var done = pending;
+  pending = null;
+  clearTimeout(done.timer);
+  done.resolve();
+});
+
+// post shows one title and resolves when the renderer acknowledges it.
+function post(title) {
+  return new Promise(function (resolve, reject) {
+    pending = {
+      resolve: resolve,
+      timer: setTimeout(function () { pending = null; reject(new Error('no acknowledgment')); }, ACK_TIMEOUT_MS),
+    };
+    document.title = title;
+  });
+}
+
+// sendPacked splits a packed line's text into parts under the title byte limit; a packed character above
+// 0x7F takes two UTF-8 bytes.
+async function sendPacked(id, sequence, text) {
+  var start = 0;
+  while (start < text.length) {
+    var end = start;
+    var bytes = 0;
+    while (end < text.length && bytes < TITLE_BYTES) {
+      bytes += text.charCodeAt(end) < 0x80 ? 1 : 2;
+      end++;
+    }
+    await post('modlock:frame:' + id + ':' + start + ':' + text.length + ':' + sequence + ':' + text.slice(start, end));
+    start = end;
+  }
+}
+
+async function sendLine(line) {
+  var id = ++nextId;
+  var colon = line.indexOf(':');
+  if (line.charAt(0) === '~' && colon > 1) {
+    await sendPacked(id, line.slice(1, colon), line.slice(colon + 1));
+    return;
+  }
+  var encoded = encodeURIComponent(line);
+  for (var offset = 0; offset < encoded.length; offset += SNAPSHOT_CHARS) {
+    await post('modlock:snapshot:' + JSON.stringify({
+      id: id, offset: offset, total: encoded.length, chunk: encoded.slice(offset, offset + SNAPSHOT_CHARS),
+    }));
+  }
+}
+
+// pump reads the stream line by line; each line is fully acknowledged before the next is read.
+async function pump() {
+  var response = await fetch(base + '/panorama/stream', { cache: 'no-store' });
+  if (!response.ok || !response.body) throw new Error('stream status ' + response.status);
+  var reader = response.body.getReader();
+  var decoder = new TextDecoder();
+  var buffered = '';
+  try {
+    for (;;) {
+      var read = await reader.read();
+      if (read.done) return;
+      buffered += decoder.decode(read.value, { stream: true });
+      var newline;
+      while ((newline = buffered.indexOf('\n')) >= 0) {
+        var line = buffered.slice(0, newline).trim();
+        buffered = buffered.slice(newline + 1);
+        if (line) await sendLine(line);
+      }
+    }
+  } finally {
+    try { await reader.cancel(); } catch (e) { /* stream already closed */ }
+  }
+}
+
+(async function main() {
+  for (;;) {
+    try { await pump(); } catch (e) { /* relay down or part not acknowledged: reconnect below */ }
+    document.title = '';
+    await new Promise(function (resolve) { setTimeout(resolve, RETRY_MS); });
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.63",
-  "notes": "Joining an older host: the launcher now runs the host's Modlock CLI build (fetched from the launcher server, pinned SHA) when the host's build differs from its own; unknown builds show a note.",
-  "pub_date": "2026-11-23T04:44:29.968Z",
+  "version": "0.4.64",
+  "notes": "Modlock host fork-0.1.89-4: modlock_set_model accepts {addon} paths (skins shipped in a mode's content addon)",
+  "pub_date": "2026-11-23T04:59:42.123Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3dob0VpY1JhcnlMd2hmRGFOMFZETzgwK3JwemEvUmxrU0xBYTkzMU9pZXE2L2NNM1N6YzZwMmxQM01BejVhcVROMUJCeHJ6WnpwWjVEakJEaENwTmdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA5MDY1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42M194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjYzCjJsUW1QRWFOemorOE1Kcmxrek11RUlJQ2N1by9wUWQzSkVTemMyNEdTaWtQa0Q2cXJScnk4Vm81aEtMeHJ3VG9OZE9aMnVObmN5Q1lDVWJNVWRsRkJBPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.63_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlrbk15VmthMS8rQTgvRmRLYlZqNmpuQjduNHYrVmNPb2hMVDQweEQwbU9JNkhFRmpFWEF0aFNUL2JwWU5tVWdtdHJ0UVRSSkJpaUg2dys4L2E3U2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA5OTY0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY0CnhVUHkwMHRJajNyNjVDemtiQWxiSTRPRTFPeHk5RnpxQWt5SSs4YzlRS2syRFF5WUxlbTIvVDV6L3krandqSGNrK2hocGlzSi8vcng5bEJVdmFIaEJBPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.64_x64-setup.exe"
     }
   }
 }

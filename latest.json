@@ -1,11 +1,11 @@
 {
-  "version": "0.4.60",
-  "notes": "Downloads from the launcher server need sign-in (invite code for the first install)",
-  "pub_date": "2026-11-23T04:12:18.161Z",
+  "version": "0.4.61",
+  "notes": "Join from an open game no longer falls back to the console after a launcher update; Modlock host fork-0.1.89-3 (modlock_set_model, unknown fork commands fail)",
+  "pub_date": "2026-11-23T04:19:18.878Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzMwK09nUWlGakZ6Vmorb3h1S3VteDFlNURJdFpNQnl6VFlTMW5PU1FxSHdiRTgxYlJ0WXhiOGdiZnN6YWZWQmtjTmFvdWpSNjFyTnhnekUrUGhzT0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA3MTMzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjYwCm13ZnRVVjVlb2h5L2tXSlQwRW16WHE3dGtrU09NUzRRazdEcXdBUUxUNHVYV20xZ1h2aGlpMFVPb3Z1VVhBTjdNMWViWVBjeDNZdHVpVGJQbXZrakR3PT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.60_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p6T1ZHRnJna0wvM1Y1RzNWcDgxYktLWlFWVGZHdGZaQ21QUTExejlMVGw5ZjRHSmlwMDc1QVdQS1UxZFdXbDZRcVRZekZkS05zMmtNbTAvRXBQSHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA3NTUxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjYxClJPbUhKeTl6bHlIMTdMZEZuV3BWQVlHYllMeDAzNFBwNGczTnI4OGZsWWVoVUpOWC9uWW84VUQzZUM2b29ld2RXME1jL2pxZWpGNlliQzBEOXRVQ0NRPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.61_x64-setup.exe"
     }
   }
 }

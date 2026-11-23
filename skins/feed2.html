@@ -57,7 +57,7 @@ const T = {
 let L = T.ru
 
 // ---- channel to the renderer ----
-const queue = []      // JSON strings waiting
+const queue = []      // { key, seq, json } waiting; queue[0] is `current` while it is sent
 let current = null    // { id, parts, at, timer }
 let ids = 0
 let ack = ''
@@ -69,13 +69,24 @@ let lastRequest = 0
 // owner 2026-11-23). Renderers from fork dl18 drop a seq they saw; older ones ignore both fields.
 const boot = Date.now().toString(36)
 let seq = 0
+// A download posts its card at every percent; each message waits for the renderer's ack, so the cards queued up and
+// the answers to the player's clicks (other hero, tab, page) came seconds late: the window looked frozen while a
+// progress bar ran (owner 2026-11-23). A card still waiting is replaced by the newer one of the same skin; it keeps
+// its seq, so the order the renderer checks stays.
 function post(message) {
-  queue.push(JSON.stringify({ ...message, boot, seq: ++seq }))
+  const key = message.kind === 'card' ? message.skin.mod + ':' + message.skin.cat : ''
+  const waiting = key ? queue.findIndex((q, i) => q.key === key && !(i === 0 && current)) : -1
+  if (waiting >= 0) {
+    const old = queue[waiting]
+    old.json = JSON.stringify({ ...message, boot, seq: old.seq })
+    return
+  }
+  queue.push({ key, seq: ++seq, json: JSON.stringify({ ...message, boot, seq }) })
   if (!current) next()
 }
 function next() {
   if (!queue.length) { current = null; return }
-  const json = queue[0]
+  const json = queue[0].json
   const parts = []
   for (let i = 0; i < json.length; i += CHUNK) parts.push(json.slice(i, i + CHUNK))
   if (!parts.length) parts.push('')

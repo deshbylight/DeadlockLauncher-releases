@@ -1,11 +1,11 @@
 {
-  "version": "0.4.59",
-  "notes": "Fork CLI dl13: starting a server while Deadlock runs keeps the mounted renderer instead of failing on a locked gameinfo.gi",
-  "pub_date": "2026-11-23T04:02:15.030Z",
+  "version": "0.4.60",
+  "notes": "Downloads from the launcher server need sign-in (invite code for the first install)",
+  "pub_date": "2026-11-23T04:12:18.161Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3c5TEhOVjUwQnhXa25KTHNjdjJNWTVubmVoME05MGNhbW96djArTjNxSEE4aWVXMjF3dkRLck11Y1dWS2s1UkEzbXY4bHFWRXhMY2s2Y3RNL1dVRndvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA2NTI4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC41OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjU5Cks4NzR5Q2lJRXR4blFrOU1nelRWcFZMUjJURmJVWHBNUXp1UWR1Y0syYWw0RmZlWm5hVGlMZFB1NldhOXRaR1pjUUxVL05NbmxYU3VzeDl3QnZUOUNRPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.59_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzMwK09nUWlGakZ6Vmorb3h1S3VteDFlNURJdFpNQnl6VFlTMW5PU1FxSHdiRTgxYlJ0WXhiOGdiZnN6YWZWQmtjTmFvdWpSNjFyTnhnekUrUGhzT0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA3MTMzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjYwCm13ZnRVVjVlb2h5L2tXSlQwRW16WHE3dGtrU09NUzRRazdEcXdBUUxUNHVYV20xZ1h2aGlpMFVPb3Z1VVhBTjdNMWViWVBjeDNZdHVpVGJQbXZrakR3PT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.60_x64-setup.exe"
     }
   }
 }

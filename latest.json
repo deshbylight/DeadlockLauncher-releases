@@ -1,11 +1,11 @@
 {
-  "version": "0.4.68",
-  "notes": "Modlock CLI fork-0.1.105-dl16 (mods ship own stat modifiers); server list shows slide and melee reach as +%",
-  "pub_date": "2026-11-23T08:31:14.615Z",
+  "version": "0.4.69",
+  "notes": "Mod UI relay page moved off hyperline.gg to our GitHub Pages (Modlock CLI fork-0.1.105-dl17); network check probes it",
+  "pub_date": "2026-11-23T08:43:47.164Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3g4aG83eE85QVAyN1VkVkpxSjgzaExqYkxvN055SVEyUEpBRjczdjMwSjhqRzhrcFRmQWYxZjA5YTlnWjBUeHdjSlBaVzhJR3ZjVHFMNGpxZ2R0UVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIyNjcwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY4ClljUFRKWGVqWFJLR2ErNkRYbCtFSnBNcDlHcUlnSXlHOFdqN0Z3d1ZFdk5OeTUyaFUxd2VJb0daZU5TaVZUNmdETHdvdTdCSytMV3EwakwwbkNBUkJ3PT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.68_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p1bStCMlUzYUdwc1ZNRzlSdE9ZcTJMV3FCUlBLd3pWQ3FlZGVqQVZYUHdwa2hiUUk1Rm84Mk05a3ZHRmVxMEZ0eXdiTHo4ZGlIT2ttN1M5ZlQ1cUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIzNDE3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY5CmlPWHluQTRYMk1GVFp5SllveHlHdjVFRFp3S2hteUM3QThtOVVoY3NvdUs3b0w0SlFZYlEyZXRsc1BTS3V3Ym4wMko3a0VaMFVmR2VCV1FqQk1sZkFnPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.69_x64-setup.exe"
     }
   }
 }

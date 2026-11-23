@@ -1,11 +1,11 @@
 {
-  "version": "0.4.64",
-  "notes": "Modlock host fork-0.1.89-4: modlock_set_model accepts {addon} paths (skins shipped in a mode's content addon)",
-  "pub_date": "2026-11-23T04:59:42.123Z",
+  "version": "0.4.65",
+  "notes": "Modlock CLI fork-0.1.89-dl14: leave a mode when an official match is found (no sound crash)",
+  "pub_date": "2026-11-23T05:37:03.003Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlrbk15VmthMS8rQTgvRmRLYlZqNmpuQjduNHYrVmNPb2hMVDQweEQwbU9JNkhFRmpFWEF0aFNUL2JwWU5tVWdtdHJ0UVRSSkJpaUg2dys4L2E3U2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA5OTY0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY0CnhVUHkwMHRJajNyNjVDemtiQWxiSTRPRTFPeHk5RnpxQWt5SSs4YzlRS2syRFF5WUxlbTIvVDV6L3krandqSGNrK2hocGlzSi8vcng5bEJVdmFIaEJBPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.64_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhQbW5abTJuRTlZUG95d1hDNzAxdEhNZ3RhUVRvOHFhU3lueXhTTXdSOHpqNHpjVGdDTGFVNU1RQWxueDJNZUcwMElxSkM3NG1tRkVZWC9namFub0FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDEyMjE2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY1Ck5STkwrcEJ1OG9ERmtWRlp6RmhYS0RxZDcybE1jb1RiYmxCM3F4eE8xWHZrbUlBWHpEYWowQTNlNHEzNGIvMjZjZldvcmlDcjc4NmpKRHYxTStyb0RBPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.65_x64-setup.exe"
     }
   }
 }

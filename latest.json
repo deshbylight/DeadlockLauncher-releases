@@ -1,11 +1,11 @@
 {
-  "version": "0.4.76",
-  "notes": "Skins: fast apply (native VPK merge in the background), apply several skins at once, skin groups, select-and-apply mode; card click opens the GameBanana page, favorite star on the image; compact catalog toggles; import in the library toolbar, mods folder moved to Settings; link earlier downloaded mods to GameBanana; cached cards. In-game Skins, Servers and Graphics windows restyled like the app.",
-  "pub_date": "2026-11-23T17:55:07.501Z",
+  "version": "0.4.77",
+  "notes": "In-game servers: while a join connects, its row shows the stage instead of Disconnect (a second press no longer cancels the join). Same in the Servers tab. Modlock fork dl24.",
+  "pub_date": "2026-11-23T18:11:28.511Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hmcUEvU0kxd0RKRW1objZ1OEM0L2M5WFQ1M25zaWhmYkFpckJoYmFCb3ZITWtoWXBrRE4vNE96SjBoMW5heWFFS1VtM3BsaTE2NTh4dDZJVFI1bnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU2NTAyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43Nl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc2CmhzOTdkNUtLRHgwUmt2cU0zN1pKSm9FT25iL29vU0UrL01nNXNtZ0hZT1dyMkJTelJ1cWFGQ1o1Mmk5ak81NU40NmFEcEszK2tSZWtNTTE3dGlNb0FRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.76_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzh5OWVnaThOUkNib2FMZ3BuZjNzRGV5WDVpcmFRRzFSUVp1Nmp1NXN6M3B3aEVDMWhVSlUwdEEvdk45bytNbko4TG5WRVN6VGhMQkNiUGhTSzB4dmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3NDgxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43N194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc3CnVpaEZkMlZSWlFOazhoS2tmVS9YNTcvZEo0QUJER1VrVVhQTWlNZDI1bTFFOTYrMFMxUVFYZHNWWWNERURUcU9iczhHemRVVEFvZVRyU29Yd3hBMUF3PT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.77_x64-setup.exe"
     }
   }
 }

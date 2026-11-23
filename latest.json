@@ -1,11 +1,11 @@
 {
-  "version": "0.4.74",
-  "notes": "Left sidebar navigation (every page one click); home page is a news feed; Modes and Skins are separate pages; new app icon and brass theme; in-game Skins, Servers and Graphics windows restyled; Modlock CLI fork-0.1.105-dl22",
-  "pub_date": "2026-11-23T11:45:33.897Z",
+  "version": "0.4.75",
+  "notes": "Skins catalog: model/HUD subcategories and subcategory tags on cards, search covers cosmetic mods; new app icon (brass LS monogram); installer uses the app icon",
+  "pub_date": "2026-11-23T12:30:14.422Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZUR1pyR1pCQXdKY1VpNmhlc0pNYXhSUFRVcURmNlhZdzRGV2hES1h5cmd0eHM3RkF2MDliNjRnTitXZk1SdFZQV2xpdEVqb0ZudzY4M21SYkZqOFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDM0MzI1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc0ClBMd2NGY0pvS09lUHJzYnlLZTk0NmYvV2NZQ1c2cmFnNmlzdW16d2REb2Q0MzFZbjRQdHVaYk44dndzd1ZMMG5jaElJT3BXKzRhZG05ZXZKTjAwWEJnPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.74_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p5cnc0M0pWY3pzZjYzTGUzc3Q2RkUxL1lHMXpEQVROVlRNYkdZZkdnZkJnY0c0aHdqTWxrV25vd3JabEY4Vy9qRk1ybFpadFFlQTZqQlBHREhqVmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDM3MDAzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc1Ci9TblpST00vSmRKSHlhSjBMUG5yOWxzcUo0UmlnT09yeWI1U0hJSkQzcXpEVTZ0eFRCTEtJNGd4aERLaUV0Sk5aUlBJWWFxUjF0NGZGRThWU3BHd0JBPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.75_x64-setup.exe"
     }
   }
 }

@@ -1,0 +1,116 @@
+<!doctype html>
+<!-- Data channel of the in-game graphics window (Docs/RuleBook/Launcher/Graphics.md), renderer fork-0.1.89-dl12+.
+     The window is native in the game's Esc menu (panorama/src/gfx_window.ts). This page sits in a hidden HTML panel
+     for the whole game, asks the launcher on 127.0.0.1:<port>/gfx/* and talks to the renderer like feed2.html:
+       page -> renderer: document.title = "dlgfx:<id>:<part>:<parts>:<chunk>" (one JSON message, acked)
+       renderer -> page: URL fragment "#<request>~<ack>~<party>~<command>~<arg>..." (no reload)
+     Commands: state | set~<group>~<level> | preset~<id> | copy | paste (share code via the clipboard) | restart (launcher
+     restarts the game once it closes; the state's relaunch tells the renderer to quit it).
+     Messages: state {state} (the launcher's /gfx/state as is), status {text}, offline {text} (panorama/src/gfx.ts). -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>gfx</title>
+</head>
+<body>
+<script>
+'use strict'
+const q = new URLSearchParams(location.search)
+const PORT = Number(q.get('port')) || 27183
+const LOCAL = 'http://127.0.0.1:' + PORT
+const CHUNK = 900
+const ACK_TIMEOUT = 2000
+const OFFLINE = 'Лаунчер не запущен / The launcher is not running'
+const ID = /^[a-z0-9_]{1,32}$/
+
+// ---- channel to the renderer (as feed2.html) ----
+const queue = []
+let current = null
+let ids = 0
+let ack = ''
+let lastRequest = 0
+
+function post(message) {
+  queue.push(JSON.stringify(message))
+  if (!current) next()
+}
+function next() {
+  if (!queue.length) { current = null; return }
+  const json = queue[0]
+  const parts = []
+  for (let i = 0; i < json.length; i += CHUNK) parts.push(json.slice(i, i + CHUNK))
+  if (!parts.length) parts.push('')
+  current = { id: Date.now().toString(36) + (ids++), parts, at: 0, timer: 0 }
+  part()
+}
+function part() {
+  const c = current
+  clearTimeout(c.timer)
+  document.title = 'dlgfx:' + c.id + ':' + c.at + ':' + c.parts.length + ':' + c.parts[c.at]
+  c.timer = setTimeout(() => { if (current === c) next() }, ACK_TIMEOUT)
+}
+function acked(key) {
+  const c = current
+  if (!c || key !== c.id + '.' + c.at) return
+  clearTimeout(c.timer)
+  if (++c.at < c.parts.length) return part()
+  queue.shift()
+  next()
+}
+function readFragment() {
+  const f = location.hash.slice(1)
+  if (!f) return
+  const [req, key, , cmd, ...args] = f.split('~')
+  if (key && key !== ack) { ack = key; acked(key) }
+  const n = Number(req)
+  if (n > lastRequest && cmd) {
+    lastRequest = n
+    run(cmd, args.map(decodeURIComponent)).catch((e) => post({ kind: 'status', text: String(e.message || e) }))
+  }
+}
+window.addEventListener('hashchange', readFragment)
+setInterval(readFragment, 100)
+
+// ---- launcher ----
+async function local(path) {
+  const r = await fetch(LOCAL + path, { cache: 'no-store' })
+  const body = await r.json()
+  if (!r.ok) throw new Error(body.error || r.status)
+  return body
+}
+
+let online = false
+async function send(path) {
+  let state
+  try {
+    state = await local(path)
+  } catch (e) {
+    if (e instanceof TypeError) { online = false; return post({ kind: 'offline', text: OFFLINE }) }
+    throw e
+  }
+  online = true
+  post({ kind: 'state', state })
+}
+
+async function run(cmd, args) {
+  if (cmd === 'state') return send('/gfx/state')
+  if (cmd === 'set' && ID.test(args[0] || '') && ID.test(args[1] || '')) {
+    return send('/gfx/set?group=' + args[0] + '&level=' + args[1])
+  }
+  if (cmd === 'preset' && ID.test(args[0] || '')) return send('/gfx/preset?id=' + args[0])
+  if (cmd === 'copy') return send('/gfx/copy')
+  if (cmd === 'paste') return send('/gfx/paste')
+  if (cmd === 'restart') return send('/gfx/restart')
+}
+
+// The state at game start (the renderer applies the modded lines), then again whenever the launcher comes up later.
+async function start() {
+  for (;;) {
+    if (!online) await send('/gfx/state').catch((e) => post({ kind: 'status', text: String(e.message || e) }))
+    await new Promise((done) => setTimeout(done, 5000))
+  }
+}
+start()
+</script>
+</body>
+</html>

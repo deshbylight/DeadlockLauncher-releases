@@ -1,0 +1,246 @@
+<!doctype html>
+<!-- Data feed of the in-game skin picker (Docs/RuleBook/Launcher/Skins.md), renderer fork-0.1.89-dl7+.
+     The window is native in the game's Esc menu (panorama/src/skins_window.ts); this page sits in a
+     hidden HTML panel, reads GameBanana and the launcher on 127.0.0.1:<port>, and talks to the renderer:
+       page -> renderer: document.title = "dlfeed:<id>:<part>:<parts>:<chunk>" (one JSON message, acked)
+       renderer -> page: URL fragment "#<request>~<ack>~<party>~<command>~<arg>..." (no reload)
+     Commands: heroes | hero~<cat>~<page> | wear~<mod> | answer~<value> | stock~<cat>.
+     Messages: ready, heroes, skins, ask, status, offline, apply, reset (panorama/src/skins_feed.ts).
+     ?have=<mounted addon>: polls /current and reports a choice that differs from it.
+     picker.html stays for renderers dl4..dl6. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>feed</title>
+</head>
+<body>
+<script>
+'use strict'
+const q = new URLSearchParams(location.search)
+const PORT = Number(q.get('port')) || 27183
+const LOCAL = 'http://127.0.0.1:' + PORT
+const GB = 'https://gamebanana.com/apiv11'
+const SKINS_CATEGORY = 33295
+const CHUNK = 900
+const ACK_TIMEOUT = 2000
+const T = {
+  ru: { title: 'Скины', more: 'Ещё', cancel: 'Отмена', loading: 'Загрузка…', close: 'Закрыть',
+    stock: 'Стандартный', installed: 'Установлен', worn: 'Надет', get: 'Скачать и надеть',
+    installing: 'Скачиваю и устанавливаю…', applying: 'Надеваю…', offline: 'Лаунчер не запущен',
+    pickFile: 'Выберите файл', pickVariant: 'Выберите вариант', failed: 'Ошибка: ', noFiles: 'нет файлов',
+    party: 'Вы в пати: выбор сохранён. Наденется, когда останетесь в хайдауте одни; в матчах — после перезапуска игры.' },
+  en: { title: 'Skins', more: 'More', cancel: 'Cancel', loading: 'Loading…', close: 'Close',
+    stock: 'Default', installed: 'Installed', worn: 'Worn', get: 'Download and wear',
+    installing: 'Downloading and installing…', applying: 'Applying…', offline: 'The launcher is not running',
+    pickFile: 'Choose a file', pickVariant: 'Choose a variant', failed: 'Error: ', noFiles: 'no files',
+    party: 'You are in a party: choice saved. It goes on when you are alone in the hideout; in matches after a game restart.' },
+}
+let L = T.ru
+
+// ---- channel to the renderer ----
+const queue = []      // JSON strings waiting
+let current = null    // { id, parts, at, timer }
+let ids = 0
+let ack = ''
+let party = false
+let lastRequest = 0
+
+function post(message) {
+  queue.push(JSON.stringify(message))
+  if (!current) next()
+}
+function next() {
+  if (!queue.length) { current = null; return }
+  const json = queue[0]
+  const parts = []
+  for (let i = 0; i < json.length; i += CHUNK) parts.push(json.slice(i, i + CHUNK))
+  if (!parts.length) parts.push('')
+  current = { id: Date.now().toString(36) + (ids++), parts, at: 0, timer: 0 }
+  part()
+}
+function part() {
+  const c = current
+  clearTimeout(c.timer)
+  document.title = 'dlfeed:' + c.id + ':' + c.at + ':' + c.parts.length + ':' + c.parts[c.at]
+  // No ack in time: the whole message again under a new id (a new title).
+  c.timer = setTimeout(() => { if (current === c) next() }, ACK_TIMEOUT)
+}
+function acked(key) {
+  const c = current
+  if (!c || key !== c.id + '.' + c.at) return
+  clearTimeout(c.timer)
+  if (++c.at < c.parts.length) return part()
+  queue.shift()
+  next()
+}
+function readFragment() {
+  const f = location.hash.slice(1)
+  if (!f) return
+  const [req, key, p, cmd, ...args] = f.split('~')
+  party = p === '1'
+  if (key && key !== ack) { ack = key; acked(key) }
+  const n = Number(req)
+  if (n > lastRequest && cmd) {
+    lastRequest = n
+    run(cmd, args.map(decodeURIComponent)).catch((e) => status(L.failed + e.message))
+  }
+}
+window.addEventListener('hashchange', readFragment)
+setInterval(readFragment, 100)
+
+const status = (text) => post({ kind: 'status', text })
+
+// ---- launcher and GameBanana ----
+async function local(path) {
+  const r = await fetch(LOCAL + path)
+  const body = await r.json()
+  if (!r.ok) throw new Error(body.error || r.status)
+  return body
+}
+async function gb(path) {
+  const r = await fetch(GB + path)
+  if (!r.ok) throw new Error('GameBanana ' + r.status)
+  return r.json()
+}
+const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
+function thumb(rec) {
+  const im = rec._aPreviewMedia && rec._aPreviewMedia._aImages && rec._aPreviewMedia._aImages[0]
+  return im ? im._sBaseUrl + '/' + (im._sFile220 || im._sFile) : ''
+}
+
+let state = null   // launcher /state
+let heroes = null  // [{cat, code, name}]
+let asking = null  // resolver of the open ask
+
+async function loadState() {
+  state = await local('/state')
+  L = state.en ? T.en : T.ru
+}
+async function loadHeroes() {
+  if (!state) await loadState()
+  if (heroes) return
+  const byEn = {}
+  for (const [code, name] of Object.entries(state.namesEn)) byEn[norm(name)] = code
+  const cats = await gb('/Mod/Categories?_idCategoryRow=' + SKINS_CATEGORY + '&_sSort=a_to_z&_bShowEmpty=true')
+  heroes = cats.filter((c) => !c._bIsObsolete).map((c) => {
+    const code = byEn[norm(c._sName)] || null
+    return { cat: c._idRow, code, name: (code && state.names[code]) || c._sName }
+  }).sort((a, b) => a.name.localeCompare(b.name))
+}
+function sendHeroes() {
+  post({ kind: 'heroes', heroes: heroes.map((h) => ({ cat: h.cat, name: h.name, chosen: !!(h.code && state.selected[h.code]) })) })
+}
+
+function ask(title, options) {
+  if (asking) asking(null)
+  return new Promise((done) => {
+    asking = (value) => { asking = null; done(value) }
+    post({ kind: 'ask', title, options: options.map((label, i) => ({ label, value: String(i) })) })
+  })
+}
+
+async function run(cmd, args) {
+  if (cmd === 'answer') {
+    if (asking) asking(args[0] === '' ? null : Number(args[0]))
+    return
+  }
+  if (cmd === 'heroes') {
+    try {
+      await loadState()
+    } catch (e) {
+      return post({ kind: 'offline', text: T.ru.offline + ' / ' + T.en.offline })
+    }
+    await loadHeroes()
+    return sendHeroes()
+  }
+  if (!state || !heroes) await loadHeroes()
+  if (cmd === 'hero') {
+    const cat = Number(args[0])
+    const page = Math.max(1, Number(args[1]) || 1)
+    const hero = heroes.find((h) => h.cat === cat)
+    if (!hero) return
+    const res = await gb('/Mod/Index?_nPerpage=24&_nPage=' + page + '&_aFilters%5BGeneric_Category%5D=' + cat + '&_sSort=Generic_MostDownloaded')
+    const skins = []
+    const chosen = hero.code ? state.selected[hero.code] : null
+    if (page === 1 && hero.code) skins.push({ mod: 0, name: L.stock, image: '', state: chosen ? '' : L.worn, worn: !chosen, mine: false })
+    for (const rec of res._aRecords || []) {
+      const mine = state.installed.filter((s) => s.gbMod === rec._idRow)
+      const worn = mine.some((s) => state.selected[s.hero] === s.id)
+      skins.push({ mod: rec._idRow, name: rec._sName, image: thumb(rec), state: worn ? L.worn : mine.length ? L.installed : L.get, worn, mine: mine.length > 0 })
+    }
+    return post({ kind: 'skins', cat, page, complete: !!(res._aMetadata && res._aMetadata._bIsComplete), skins })
+  }
+  if (cmd === 'stock') {
+    const hero = heroes.find((h) => h.cat === Number(args[0]))
+    if (hero && hero.code) await choose(hero.code, '')
+    return
+  }
+  if (cmd === 'wear') return wear(Number(args[0]))
+}
+
+async function wear(modId) {
+  let skins = state.installed.filter((s) => s.gbMod === modId)
+  if (!skins.length) {
+    const prof = await gb('/Mod/' + modId + '/ProfilePage')
+    const files = (prof._aFiles || []).filter((f) => /\.(zip|rar|7z|vpk)$/i.test(f._sFile) && f._sAvResult === 'clean')
+    if (!files.length) throw new Error(L.noFiles)
+    let file = files[0]
+    if (files.length > 1) {
+      const i = await ask(L.pickFile, files.map((f) => f._sFile + (f._sDescription ? ' — ' + f._sDescription : '') + ' (' + Math.round(f._nFilesize / 1048576) + ' MB)'))
+      if (i === null) return status('')
+      file = files[i]
+    }
+    status(L.installing)
+    skins = (await local('/install?mod=' + modId + '&file=' + file._idRow)).skins
+    await loadState()
+  }
+  let skin = skins[0]
+  if (skins.length > 1) {
+    const i = await ask(L.pickVariant, skins.map((s) => s.name))
+    if (i === null) return status('')
+    skin = skins[i]
+  }
+  await choose(skin.hero, skin.id)
+}
+
+async function choose(code, id) {
+  status(L.applying)
+  await local('/select?hero=' + encodeURIComponent(code) + '&id=' + encodeURIComponent(id))
+  await loadState()
+  // In a party the renderer loads nothing (shared Party Hideout); the marks show the saved choice.
+  if (party) {
+    status(L.party)
+    sendHeroes()
+  }
+  await check()
+}
+
+// ---- the choice the launcher holds versus the mounted addon ----
+let have = q.get('have') || ''
+let offline = false
+async function check() {
+  try {
+    const now = (await local('/current')).addon || ''
+    offline = false
+    if (now !== have) {
+      post(now ? { kind: 'apply', addon: now } : { kind: 'reset' })
+      have = now
+    }
+  } catch (e) {
+    if (!offline) post({ kind: 'offline', text: L.offline })
+    offline = true
+  }
+}
+
+async function start() {
+  try { await loadState() } catch (e) { /* offline: Russian text, check() reports it */ }
+  post({ kind: 'ready', text: { title: L.title, more: L.more, cancel: L.cancel, loading: L.loading, close: L.close } })
+  for (;;) {
+    await check()
+    await new Promise((done) => setTimeout(done, 3000))
+  }
+}
+start()
+</script>
+</body>
+</html>

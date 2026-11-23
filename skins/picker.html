@@ -1,0 +1,271 @@
+<!doctype html>
+<!-- In-game hero skin picker (Docs/RuleBook/Launcher/Skins.md). Loaded by the fork renderer
+     (panorama/src/skins.ts) in an HTML panel; reads the GameBanana catalog, asks the launcher on
+     127.0.0.1:<port> to install and choose, and reports to the renderer through document.title:
+     dlskins:<seq>:apply:<addon> | reset | close | none | offline. ?auto=1: no window, only
+     report the addon of the current choice. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>skins</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:#14110e;color:#f0e2c0;font:14px/1.35 'Segoe UI',Arial,sans-serif;overflow:hidden}
+#app{display:flex;height:100%;border:1px solid #c9a45c55}
+#heroes{width:190px;overflow-y:auto;border-right:1px solid #c9a45c33;background:#0f0d0b}
+#heroes div{padding:7px 12px;cursor:pointer;display:flex;justify-content:space-between}
+#heroes div:hover{background:#2a241c}
+#heroes div.on{background:#c9a45c;color:#14110e}
+#heroes i{font-style:normal;color:#69e799}
+#main{flex:1;display:flex;flex-direction:column;min-width:0}
+#top{display:flex;align-items:center;gap:12px;padding:10px 14px;border-bottom:1px solid #c9a45c33}
+#title{flex:1;font-size:18px;text-transform:uppercase;letter-spacing:1px}
+#status{color:#e6b866;font-size:13px}
+button{background:#2a241c;color:#f0e2c0;border:1px solid #c9a45c88;padding:5px 12px;cursor:pointer;font:inherit}
+button:hover{background:#c9a45c;color:#14110e}
+#grid{flex:1;overflow-y:auto;padding:12px;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;align-content:start}
+.card{background:#1d1a16;border:1px solid #c9a45c33;cursor:pointer;display:flex;flex-direction:column}
+.card:hover{border-color:#c9a45c}
+.card.on{border-color:#69e799;box-shadow:0 0 0 1px #69e799}
+.card img,.card .ph{width:100%;height:96px;object-fit:cover;background:#0f0d0b;display:block}
+.card .n{padding:6px 8px 2px;font-size:13px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card .s{padding:0 8px 7px;font-size:12px;color:#c9b38a}
+.card .s.in{color:#69e799}
+#more{grid-column:1/-1;justify-self:center}
+#files{position:absolute;inset:0;background:#000b;display:none;align-items:center;justify-content:center}
+#files>div{background:#1d1a16;border:1px solid #c9a45c;padding:16px;min-width:420px;max-height:80%;overflow-y:auto}
+#files button{display:block;width:100%;text-align:left;margin-top:6px}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="heroes"></div>
+  <div id="main">
+    <div id="top"><div id="title"></div><div id="status"></div><button id="close">✕</button></div>
+    <div id="grid"></div>
+  </div>
+</div>
+<div id="files"><div id="filesBox"></div></div>
+<script>
+'use strict'
+const q = new URLSearchParams(location.search)
+const PORT = Number(q.get('port')) || 27183
+const LOCAL = 'http://127.0.0.1:' + PORT
+const GB = 'https://gamebanana.com/apiv11'
+const SKINS_CATEGORY = 33295
+const T = {
+  ru: { stock: 'Стандартный', installed: 'Установлен', worn: 'Надет', get: 'Скачать и надеть', more: 'Ещё',
+    loading: 'Загрузка…', installing: 'Скачиваю и устанавливаю…', applying: 'Надеваю…', offline: 'Лаунчер не запущен',
+    pickFile: 'Выберите файл', pickVariant: 'Выберите вариант', cancel: 'Отмена', failed: 'Ошибка: ',
+    party: 'Вы в пати: выбор сохранён. Наденется, когда останетесь в хайдауте одни; в матчах — после перезапуска игры.' },
+  en: { stock: 'Default', installed: 'Installed', worn: 'Worn', get: 'Download and wear', more: 'More',
+    loading: 'Loading…', installing: 'Downloading and installing…', applying: 'Applying…', offline: 'The launcher is not running',
+    pickFile: 'Choose a file', pickVariant: 'Choose a variant', cancel: 'Cancel', failed: 'Error: ',
+    party: 'You are in a party: choice saved. It goes on when you are alone in the hideout; in matches after a game restart.' },
+}
+let L = T.ru
+let seq = 0
+const say = (msg) => { document.title = 'dlskins:' + Date.now().toString(36) + (seq++) + ':' + msg }
+const $ = (id) => document.getElementById(id)
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e }
+const status = (t) => { $('status').textContent = t || '' }
+
+async function local(path) {
+  const r = await fetch(LOCAL + path)
+  const body = await r.json()
+  if (!r.ok) throw new Error(body.error || r.status)
+  return body
+}
+async function gb(path) {
+  const r = await fetch(GB + path)
+  if (!r.ok) throw new Error('GameBanana ' + r.status)
+  return r.json()
+}
+const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
+
+let state = null      // launcher /state
+let heroes = []       // [{cat, gbName, code, name}]
+let hero = null
+let page = 1
+
+// auto=1 alone (renderer fork-0.1.89-dl4): report the current choice once. With have=<mounted addon>
+// (dl5+): poll the launcher and report only a choice that differs from what is mounted, once each.
+async function auto() {
+  if (!q.has('have')) {
+    try {
+      const { addon } = await local('/current')
+      say(addon ? 'apply:' + addon : 'none')
+    } catch (e) {
+      say('offline')
+    }
+    return
+  }
+  let have = q.get('have') || ''
+  let offline = false
+  for (;;) {
+    try {
+      const now = (await local('/current')).addon || ''
+      offline = false
+      if (now !== have) {
+        say(now ? 'apply:' + now : 'reset')
+        have = now
+      }
+    } catch (e) {
+      if (!offline) say('offline')
+      offline = true
+    }
+    await new Promise((done) => setTimeout(done, 3000))
+  }
+}
+
+async function start() {
+  $('close').onclick = () => say('close')
+  try {
+    state = await local('/state')
+  } catch (e) {
+    status(T.ru.offline + ' / ' + T.en.offline)
+    say('offline')
+    return
+  }
+  L = state.en ? T.en : T.ru
+  status(L.loading)
+  const byEn = {}
+  for (const [code, name] of Object.entries(state.namesEn)) byEn[norm(name)] = code
+  const cats = await gb('/Mod/Categories?_idCategoryRow=' + SKINS_CATEGORY + '&_sSort=a_to_z&_bShowEmpty=true')
+  heroes = cats.filter((c) => !c._bIsObsolete).map((c) => {
+    const code = byEn[norm(c._sName)] || null
+    return { cat: c._idRow, gbName: c._sName, code, name: (code && state.names[code]) || c._sName }
+  }).sort((a, b) => a.name.localeCompare(b.name))
+  status('')
+  drawHeroes()
+  if (heroes.length) pickHero(heroes[0])
+}
+
+function drawHeroes() {
+  const box = $('heroes')
+  box.textContent = ''
+  for (const h of heroes) {
+    const row = el('div', h === hero ? 'on' : '', h.name)
+    if (h.code && state.selected[h.code]) row.appendChild(el('i', '', '●'))
+    row.onclick = () => pickHero(h)
+    box.appendChild(row)
+  }
+}
+
+function card(img, name, sub, subIn, on, click) {
+  const c = el('div', 'card' + (on ? ' on' : ''))
+  if (img) { const i = el('img'); i.src = img; i.loading = 'lazy'; c.appendChild(i) } else c.appendChild(el('div', 'ph'))
+  c.appendChild(el('div', 'n', name))
+  c.appendChild(el('div', 's' + (subIn ? ' in' : ''), sub))
+  c.title = name
+  c.onclick = click
+  return c
+}
+
+function thumb(rec) {
+  const im = rec._aPreviewMedia && rec._aPreviewMedia._aImages && rec._aPreviewMedia._aImages[0]
+  return im ? im._sBaseUrl + '/' + (im._sFile220 || im._sFile) : ''
+}
+
+async function pickHero(h) {
+  hero = h
+  page = 1
+  drawHeroes()
+  $('title').textContent = h.name
+  const grid = $('grid')
+  grid.textContent = ''
+  const chosen = h.code ? state.selected[h.code] : null
+  grid.appendChild(card('', L.stock, chosen ? '' : L.worn, !chosen, !chosen, () => h.code && choose(h.code, '')))
+  await loadPage()
+}
+
+async function loadPage() {
+  const h = hero
+  status(L.loading)
+  let res
+  try {
+    res = await gb('/Mod/Index?_nPerpage=24&_nPage=' + page + '&_aFilters%5BGeneric_Category%5D=' + h.cat + '&_sSort=Generic_MostDownloaded')
+  } catch (e) {
+    status(L.failed + e.message)
+    return
+  }
+  if (h !== hero) return
+  status('')
+  const grid = $('grid')
+  const old = $('more')
+  if (old) old.remove()
+  for (const rec of res._aRecords || []) {
+    const mine = state.installed.filter((s) => s.gbMod === rec._idRow)
+    const worn = mine.find((s) => state.selected[s.hero] === s.id)
+    const sub = worn ? L.worn : mine.length ? L.installed : L.get
+    grid.appendChild(card(thumb(rec), rec._sName, sub, mine.length > 0, !!worn, () => wear(rec, mine)))
+  }
+  if (!(res._aMetadata && res._aMetadata._bIsComplete)) {
+    const more = el('button', '', L.more)
+    more.id = 'more'
+    more.onclick = () => { page++; loadPage() }
+    grid.appendChild(more)
+  }
+}
+
+function ask(title, items) {
+  return new Promise((done) => {
+    const box = $('filesBox')
+    box.textContent = ''
+    box.appendChild(el('div', '', title))
+    for (const [label, value] of items) {
+      const b = el('button', '', label)
+      b.onclick = () => { $('files').style.display = 'none'; done(value) }
+      box.appendChild(b)
+    }
+    const c = el('button', '', L.cancel)
+    c.onclick = () => { $('files').style.display = 'none'; done(null) }
+    box.appendChild(c)
+    $('files').style.display = 'flex'
+  })
+}
+
+async function wear(rec, mine) {
+  try {
+    let skins = mine
+    if (!skins.length) {
+      const prof = await gb('/Mod/' + rec._idRow + '/ProfilePage')
+      const files = (prof._aFiles || []).filter((f) => /\.(zip|rar|7z|vpk)$/i.test(f._sFile) && f._sAvResult === 'clean')
+      if (!files.length) throw new Error('no files')
+      let file = files[0]
+      if (files.length > 1) {
+        file = await ask(L.pickFile, files.map((f) => [f._sFile + (f._sDescription ? ' — ' + f._sDescription : '') + ' (' + Math.round(f._nFilesize / 1048576) + ' MB)', f]))
+        if (!file) return
+      }
+      status(L.installing)
+      skins = (await local('/install?mod=' + rec._idRow + '&file=' + file._idRow)).skins
+      state = await local('/state')
+    }
+    let skin = skins[0]
+    if (skins.length > 1) {
+      skin = await ask(L.pickVariant, skins.map((s) => [s.name, s]))
+      if (!skin) return
+    }
+    await choose(skin.hero, skin.id)
+  } catch (e) {
+    status(L.failed + e.message)
+  }
+}
+
+async function choose(code, id) {
+  status(L.applying)
+  try {
+    const { addon } = await local('/select?hero=' + encodeURIComponent(code) + '&id=' + encodeURIComponent(id))
+    // party=1 (renderer dl6+): the shared Party Hideout is a Valve server; the renderer loads nothing there.
+    if (q.get('party') === '1') return status(L.party)
+    say(addon ? 'apply:' + addon : 'reset')
+  } catch (e) {
+    status(L.failed + e.message)
+  }
+}
+
+if (q.get('auto') === '1') auto()
+else start()
+</script>
+</body>
+</html>

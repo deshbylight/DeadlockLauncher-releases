@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- Join channel of the fork renderer (fork-0.1.89-dl9+, panorama/src/join.ts; Docs/RuleBook/Launcher/JoinInGame.md).
+     Sits in a hidden HTML panel for the whole game, polls the launcher on 127.0.0.1:<port>/join every second and
+     names each offer in its title: "dljoin:<id>:connect 127.0.0.1:<port>". The renderer runs the line once per id;
+     the page then tells the launcher it was taken (/join/took?id=), so the launcher does not type it itself. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>join</title>
+</head>
+<body>
+<script>
+'use strict'
+const q = new URLSearchParams(location.search)
+const PORT = Number(q.get('port')) || 27183
+const LOCAL = 'http://127.0.0.1:' + PORT
+const LINE = /^connect 127\.0\.0\.1:[0-9]{1,5}$/
+let last = ''
+
+async function poll() {
+  try {
+    const r = await fetch(LOCAL + '/join', { cache: 'no-store' })
+    const offer = r.ok ? await r.json() : {}
+    const id = String(offer.id ?? '')
+    if (/^[0-9]{1,12}$/.test(id) && id !== last && LINE.test(offer.line ?? '')) {
+      last = id
+      document.title = 'dljoin:' + id + ':' + offer.line
+      await fetch(LOCAL + '/join/took?id=' + id, { cache: 'no-store' })
+    }
+  } catch (e) {
+    // Launcher not running: nothing to offer.
+  }
+  setTimeout(poll, 1000)
+}
+poll()
+</script>
+</body>
+</html>

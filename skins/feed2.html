@@ -1,0 +1,392 @@
+<!doctype html>
+<!-- Data feed of the in-game skin picker (Docs/RuleBook/Launcher/Skins.md), renderer fork-0.1.89-dl8+.
+     The window is native in the game's Esc menu (panorama/src/skins_window.ts): catalog and library tabs,
+     cards with their own buttons. This page sits in a hidden HTML panel, reads GameBanana and the launcher
+     on 127.0.0.1:<port>, and talks to the renderer:
+       page -> renderer: document.title = "dlfeed:<id>:<part>:<parts>:<chunk>" (one JSON message, acked)
+       renderer -> page: URL fragment "#<request>~<ack>~<party>~<command>~<arg>..." (no reload)
+     Commands: heroes | shop~<cat>~<page>~<sort> | library | get~<mod> | wear~<mod> | off~<mod> |
+               remove~<mod> | stock~<cat> | answer~<value>.
+     Messages: ready, heroes, count, skins, card, ask, status, offline, apply, reset (panorama/src/skins_feed.ts).
+     ?have=<mounted addon>: polls /current and reports a choice that differs from it.
+     feed.html stays for renderer dl7, picker.html for dl4..dl6. -->
+<html>
+<head>
+<meta charset="utf-8">
+<title>feed</title>
+</head>
+<body>
+<script>
+'use strict'
+const q = new URLSearchParams(location.search)
+const PORT = Number(q.get('port')) || 27183
+const LOCAL = 'http://127.0.0.1:' + PORT
+const GB = 'https://gamebanana.com/apiv11'
+const SKINS_CATEGORY = 33295
+const CHUNK = 900
+const ACK_TIMEOUT = 2000
+const SORTS = { downloads: 'Generic_MostDownloaded', new: 'Generic_Newest', liked: 'Generic_MostLiked', views: 'Generic_MostViewed' }
+const T = {
+  ru: {
+    window: { title: 'Скины', shop: 'Каталог', library: 'Установленные', close: 'Закрыть', cancel: 'Отмена',
+      loading: 'Загрузка…', more: 'Ещё', empty: 'Пусто', get: 'Скачать', wear: 'Надеть', off: 'Снять',
+      remove: 'Удалить', worn: 'Надет', sort: 'Сортировка:', sortDownloads: 'Скачивания', sortNew: 'Новые',
+      sortLiked: 'Лайки', sortViews: 'Просмотры' },
+    stock: 'Стандартный', offline: 'Лаунчер не запущен', pickFile: 'Выберите файл', pickVariant: 'Выберите вариант',
+    failed: 'Ошибка: ', noFiles: 'нет файлов', removeAsk: 'Удалить «%s»?', downloading: 'Скачивание', unpacking: 'Распаковка…',
+    checking: 'Проверка…', applying: 'Надеваю…', removing: 'Удаляю…', starting: 'Запуск…',
+    party: 'Вы в пати: выбор сохранён. Наденется, когда останетесь в хайдауте одни; в матчах — после перезапуска игры.',
+  },
+  en: {
+    window: { title: 'Skins', shop: 'Catalog', library: 'Installed', close: 'Close', cancel: 'Cancel',
+      loading: 'Loading…', more: 'More', empty: 'Empty', get: 'Download', wear: 'Wear', off: 'Take off',
+      remove: 'Delete', worn: 'Worn', sort: 'Sort:', sortDownloads: 'Downloads', sortNew: 'Newest',
+      sortLiked: 'Likes', sortViews: 'Views' },
+    stock: 'Default', offline: 'The launcher is not running', pickFile: 'Choose a file', pickVariant: 'Choose a variant',
+    failed: 'Error: ', noFiles: 'no files', removeAsk: 'Delete "%s"?', downloading: 'Downloading', unpacking: 'Unpacking…',
+    checking: 'Checking…', applying: 'Applying…', removing: 'Deleting…', starting: 'Starting…',
+    party: 'You are in a party: choice saved. It goes on when you are alone in the hideout; in matches after a game restart.',
+  },
+}
+let L = T.ru
+
+// ---- channel to the renderer ----
+const queue = []      // JSON strings waiting
+let current = null    // { id, parts, at, timer }
+let ids = 0
+let ack = ''
+let party = false
+let lastRequest = 0
+
+function post(message) {
+  queue.push(JSON.stringify(message))
+  if (!current) next()
+}
+function next() {
+  if (!queue.length) { current = null; return }
+  const json = queue[0]
+  const parts = []
+  for (let i = 0; i < json.length; i += CHUNK) parts.push(json.slice(i, i + CHUNK))
+  if (!parts.length) parts.push('')
+  current = { id: Date.now().toString(36) + (ids++), parts, at: 0, timer: 0 }
+  part()
+}
+function part() {
+  const c = current
+  clearTimeout(c.timer)
+  document.title = 'dlfeed:' + c.id + ':' + c.at + ':' + c.parts.length + ':' + c.parts[c.at]
+  // No ack in time: the whole message again under a new id (a new title).
+  c.timer = setTimeout(() => { if (current === c) next() }, ACK_TIMEOUT)
+}
+function acked(key) {
+  const c = current
+  if (!c || key !== c.id + '.' + c.at) return
+  clearTimeout(c.timer)
+  if (++c.at < c.parts.length) return part()
+  queue.shift()
+  next()
+}
+function readFragment() {
+  const f = location.hash.slice(1)
+  if (!f) return
+  const [req, key, p, cmd, ...args] = f.split('~')
+  party = p === '1'
+  if (key && key !== ack) { ack = key; acked(key) }
+  const n = Number(req)
+  if (n > lastRequest && cmd) {
+    lastRequest = n
+    run(cmd, args.map(decodeURIComponent)).catch((e) => status(L.failed + e.message))
+  }
+}
+window.addEventListener('hashchange', readFragment)
+setInterval(readFragment, 100)
+
+const status = (text) => post({ kind: 'status', text })
+
+// ---- launcher and GameBanana ----
+async function local(path) {
+  const r = await fetch(LOCAL + path)
+  const body = await r.json()
+  if (!r.ok) throw new Error(body.error || r.status)
+  return body
+}
+async function gb(path) {
+  const r = await fetch(GB + path)
+  if (!r.ok) throw new Error('GameBanana ' + r.status)
+  return r.json()
+}
+const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
+function thumb(rec) {
+  const im = rec._aPreviewMedia && rec._aPreviewMedia._aImages && rec._aPreviewMedia._aImages[0]
+  return im ? im._sBaseUrl + '/' + (im._sFile220 || im._sFile) : ''
+}
+
+let state = null   // launcher /state
+let heroes = null  // [{cat, code, name}]
+let asking = null  // resolver of the open ask
+const info = {}    // mod -> { name, image, cat } seen in the catalog or read for the library
+const busy = {}    // mod -> line of the running action
+let view = 'shop'  // last list the window asked for
+
+async function loadState() {
+  state = await local('/state')
+  L = state.en ? T.en : T.ru
+}
+async function loadHeroes() {
+  if (!state) await loadState()
+  if (heroes) return
+  const byEn = {}
+  for (const [code, name] of Object.entries(state.namesEn)) byEn[norm(name)] = code
+  const cats = await gb('/Mod/Categories?_idCategoryRow=' + SKINS_CATEGORY + '&_sSort=a_to_z&_bShowEmpty=true')
+  heroes = cats.filter((c) => !c._bIsObsolete).map((c) => {
+    const code = byEn[norm(c._sName)] || null
+    return { cat: c._idRow, code, name: (code && state.names[code]) || c._sName }
+  }).sort((a, b) => a.name.localeCompare(b.name))
+}
+function sendHeroes() {
+  post({ kind: 'heroes', heroes: heroes.map((h) => ({ cat: h.cat, name: h.name, chosen: !!(h.code && state.selected[h.code]) })) })
+}
+const installedMods = () => [...new Set(state.installed.map((s) => s.gbMod).filter((m) => m))]
+const sendCount = () => post({ kind: 'count', count: installedMods().length })
+
+function ask(title, options) {
+  if (asking) asking(null)
+  return new Promise((done) => {
+    asking = (value) => { asking = null; done(value) }
+    post({ kind: 'ask', title, options: options.map((label, i) => ({ label, value: String(i) })) })
+  })
+}
+
+// ---- cards ----
+// NSFW guard (launcher setting nsfwGuard, default on, owner 2026-11-22): 18+ mods are left out of the catalog here;
+// the launcher leaves 18+ skins out of /state and refuses to install or wear them.
+const guarded = () => !state || state.nsfwGuard !== false
+// GameBanana content-rating keys that make a mod 18+ (skins_nsfw.rs NSFW_RATINGS; `cp` crude language does not).
+const NSFW_RATINGS = ['st', 'sc', 'sa', 'lp', 'pn', 'nu']
+/** ProfilePage ratings -> 18+; an Index record with only _bHasContentRatings -> undefined (read its ProfilePage). */
+function adultOf(rec) {
+  const r = rec._aContentRatings
+  if (r !== undefined) return !Array.isArray(r) && Object.keys(r).some((k) => NSFW_RATINGS.includes(k))
+  return rec._bHasContentRatings === true ? undefined : false
+}
+/** Index records without the 18+ ones (an unreadable rating counts as 18+). */
+async function shownOf(recs) {
+  if (!guarded()) return recs
+  const adult = await Promise.all(recs.map(async (rec) => {
+    const a = adultOf(rec)
+    if (a !== undefined) return a
+    try { return adultOf(await gb('/Mod/' + rec._idRow + '/ProfilePage')) !== false } catch (e) { return true }
+  }))
+  return recs.filter((_, i) => !adult[i])
+}
+function cardOf(mod) {
+  const mine = state.installed.filter((s) => s.gbMod === mod)
+  const worn = mine.some((s) => state.selected[s.hero] === s.id)
+  const i = info[mod] || {}
+  const code = mine[0] && mine[0].hero
+  const hero = code ? (state.names[code] || code) : ((heroes || []).find((h) => h.cat === i.cat) || {}).name || ''
+  const name = i.name || (mine[0] && mine[0].name) || String(mod)
+  return { mod, cat: 0, name, image: i.image || '', hero,
+    worn, mine: mine.length > 0, busy: busy[mod] || '' }
+}
+function stockOf(hero) {
+  return { mod: 0, cat: hero.cat, name: L.stock, image: '', hero: hero.name, worn: !state.selected[hero.code],
+    mine: false, busy: '' }
+}
+const sendCard = (mod) => post({ kind: 'card', skin: cardOf(mod) })
+function setBusy(mod, text) {
+  if (text) busy[mod] = text
+  else delete busy[mod]
+  sendCard(mod)
+}
+/** After a choice: the cards of the heroes whose skin changed, the heroes' marks. */
+function sendChoice(before) {
+  const changed = new Set()
+  for (const code of new Set([...Object.keys(before), ...Object.keys(state.selected)])) {
+    if (before[code] === state.selected[code]) continue
+    for (const id of [before[code], state.selected[code]]) {
+      const s = id && state.installed.find((x) => x.id === id)
+      if (s) changed.add(s.gbMod)
+    }
+    const hero = heroes.find((h) => h.code === code)
+    if (hero) post({ kind: 'card', skin: stockOf(hero) })
+  }
+  for (const mod of changed) sendCard(mod)
+  sendHeroes()
+}
+
+async function library() {
+  const mods = installedMods()
+  await Promise.all(mods.filter((m) => !info[m] || !info[m].image).map(async (m) => {
+    try {
+      const p = await gb('/Mod/' + m + '/ProfilePage')
+      info[m] = { name: p._sName, image: thumb(p), cat: p._aCategory && p._aCategory._idRow }
+    } catch (e) { /* the card keeps the stored name, no preview */ }
+  }))
+  const skins = mods.map(cardOf).sort((a, b) => a.hero.localeCompare(b.hero) || (b.worn - a.worn) || a.name.localeCompare(b.name))
+  post({ kind: 'skins', view: 'library', cat: 0, sort: '', page: 1, complete: true, skins })
+}
+
+async function run(cmd, args) {
+  if (cmd === 'answer') {
+    if (asking) asking(args[0] === '' ? null : Number(args[0]))
+    return
+  }
+  if (cmd === 'heroes') {
+    try {
+      await loadState()
+    } catch (e) {
+      return post({ kind: 'offline', text: T.ru.offline + ' / ' + T.en.offline })
+    }
+    await loadHeroes()
+    sendCount()
+    return sendHeroes()
+  }
+  if (!state || !heroes) await loadHeroes()
+  if (cmd === 'library') {
+    view = 'library'
+    await loadState()
+    return library()
+  }
+  if (cmd === 'shop') {
+    view = 'shop'
+    const cat = Number(args[0])
+    const page = Math.max(1, Number(args[1]) || 1)
+    const sort = SORTS[args[2]] ? args[2] : 'downloads'
+    const hero = heroes.find((h) => h.cat === cat)
+    if (!hero) return
+    const res = await gb('/Mod/Index?_nPerpage=24&_nPage=' + page + '&_aFilters%5BGeneric_Category%5D=' + cat + '&_sSort=' + SORTS[sort])
+    const skins = []
+    if (page === 1 && hero.code) skins.push(stockOf(hero))
+    for (const rec of await shownOf(res._aRecords || [])) {
+      info[rec._idRow] = { name: rec._sName, image: thumb(rec), cat }
+      skins.push(cardOf(rec._idRow))
+    }
+    return post({ kind: 'skins', view: 'shop', cat, sort: args[2] || 'downloads', page, complete: !!(res._aMetadata && res._aMetadata._bIsComplete), skins })
+  }
+  if (cmd === 'stock') {
+    const hero = heroes.find((h) => h.cat === Number(args[0]))
+    if (!hero || !hero.code) return
+    try {
+      await choose([[hero.code, '']])
+    } finally {
+      post({ kind: 'card', skin: stockOf(hero) })
+    }
+    return
+  }
+  const mod = Number(args[0])
+  if (!mod) return
+  try {
+    if (cmd === 'get') await get(mod)
+    else if (cmd === 'wear') await wear(mod)
+    else if (cmd === 'off') await choose(state.installed.filter((s) => s.gbMod === mod && state.selected[s.hero] === s.id).map((s) => [s.hero, '']))
+    else if (cmd === 'remove') await remove(mod)
+  } finally {
+    // Every end (done, cancelled, failed) gives the card its buttons back.
+    if (busy[mod] !== undefined) delete busy[mod]
+    sendCard(mod)
+  }
+}
+
+async function get(mod) {
+  if (state.installed.some((s) => s.gbMod === mod)) return
+  const prof = await gb('/Mod/' + mod + '/ProfilePage')
+  if (!info[mod]) info[mod] = { name: prof._sName, image: thumb(prof), cat: prof._aCategory && prof._aCategory._idRow }
+  const files = (prof._aFiles || []).filter((f) => /\.(zip|rar|7z|vpk)$/i.test(f._sFile) && f._sAvResult === 'clean')
+  if (!files.length) throw new Error(L.noFiles)
+  let file = files[0]
+  if (files.length > 1) {
+    const i = await ask(L.pickFile, files.map((f) => f._sFile + (f._sDescription ? ' — ' + f._sDescription : '') + ' (' + Math.round(f._nFilesize / 1048576) + ' MB)'))
+    if (i === null) return
+    file = files[i]
+  }
+  setBusy(mod, L.starting)
+  let shown = ''
+  const poll = setInterval(async () => {
+    try {
+      const p = await local('/progress?mod=' + mod)
+      const line = p.stage === 'download' ? L.downloading + (p.total ? ' ' + Math.min(100, Math.floor(p.done * 100 / p.total)) + '%' : '…')
+        : p.stage === 'unpack' ? L.unpacking : p.stage === 'check' ? L.checking : ''
+      if (line && line !== shown && busy[mod]) { shown = line; setBusy(mod, line) }
+    } catch (e) { /* the install answer reports a dead launcher */ }
+  }, 400)
+  try {
+    await local('/install?mod=' + mod + '&file=' + file._idRow)
+  } finally {
+    clearInterval(poll)
+  }
+  await loadState()
+  sendCount()
+}
+
+async function wear(mod) {
+  const skins = state.installed.filter((s) => s.gbMod === mod)
+  if (!skins.length) return
+  let skin = skins[0]
+  if (skins.length > 1) {
+    const i = await ask(L.pickVariant, skins.map((s) => s.name))
+    if (i === null) return
+    skin = skins[i]
+  }
+  setBusy(mod, L.applying)
+  await choose([[skin.hero, skin.id]])
+}
+
+async function remove(mod) {
+  const i = await ask(L.removeAsk.replace('%s', cardOf(mod).name), [L.window.remove])
+  if (i === null) return
+  setBusy(mod, L.removing)
+  const before = { ...state.selected }
+  await local('/remove?mod=' + mod)
+  delete busy[mod]
+  await loadState()
+  sendCount()
+  if (view === 'library') await library()
+  sendChoice(before)
+  await check()
+}
+
+/** choose sets each [hero, id] (empty id = stock), then reports the new addon. */
+async function choose(list) {
+  if (!list.length) return
+  const before = { ...state.selected }
+  for (const [code, id] of list) {
+    await local('/select?hero=' + encodeURIComponent(code) + '&id=' + encodeURIComponent(id))
+  }
+  await loadState()
+  sendChoice(before)
+  // In a party the renderer loads nothing (shared Party Hideout); the marks show the saved choice.
+  if (party) status(L.party)
+  await check()
+}
+
+// ---- the choice the launcher holds versus the mounted addon ----
+let have = q.get('have') || ''
+let offline = false
+async function check() {
+  try {
+    const now = (await local('/current')).addon || ''
+    offline = false
+    if (now !== have) {
+      post(now ? { kind: 'apply', addon: now } : { kind: 'reset' })
+      have = now
+    }
+  } catch (e) {
+    if (!offline) post({ kind: 'offline', text: L.offline })
+    offline = true
+  }
+}
+
+async function start() {
+  try { await loadState() } catch (e) { /* offline: Russian text, check() reports it */ }
+  post({ kind: 'ready', text: L.window })
+  if (state) sendCount()
+  for (;;) {
+    await check()
+    await new Promise((done) => setTimeout(done, 3000))
+  }
+}
+start()
+</script>
+</body>
+</html>

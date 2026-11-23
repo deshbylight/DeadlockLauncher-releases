@@ -1,0 +1,11 @@
+{
+  "version": "0.4.58",
+  "notes": "Updates and Modlock downloads now come from the launcher server instead of GitHub",
+  "pub_date": "2026-11-23T03:55:44.195Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBnUEpmOUhVdDVjTzBTMTE3aHkydkRneVFJM1FaZnc5THorSDh1VkE3UWJMKy9Kd29IWS82cmVpZGhKR1Q5M3pSbnozbmhqb1NUeUtTMEVVQzZmandZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDA2MTM2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC41OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjU4Cm5yMFZiM0dEMENDRU5XcThEZ3ZsTkZVZXhqUVlac1ZvUFN0Q0FrcHRxU1ZJMmVZTWo5VjZNYnJpd1dEUEd0OFRrRTErdmd1VXBoVVhVMC9xRUZNNURnPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.58_x64-setup.exe"
+    }
+  }
+}

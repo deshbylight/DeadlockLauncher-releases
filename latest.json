@@ -1,11 +1,11 @@
 {
-  "version": "0.4.70",
-  "notes": "Removed a stray test entry from the Modlock build list",
-  "pub_date": "2026-11-23T08:46:57.595Z",
+  "version": "0.4.71",
+  "notes": "Skins tab: GameBanana search, sort and favorites; update checks for installed skins; add skins and mods from disk; HUD, model and animation mods with on/off and a shared-file warning; skin profiles. In-game server list tab. Modlock CLI fork-0.1.105-dl18.",
+  "pub_date": "2026-11-23T10:44:32.407Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3h6T2VIOFBYREFOYjBKZmNicy94V2VqTWkvZHBOaGZzQUtYc0xqRklDTzhpVGlPQjZZVUw1T2hPZ0Y3VzEySitIQXRzbzM2Nlowc3lRR0d6SlZ2Q3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIzNjExCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjcwClg2eVVONXZISUJ2bGhNNTYxbTk2NS8vOTBDRVY2c1ZiQjZsaXZoRXBpQzhsaEE0dmpZOE5XYnhSMkhybGttcE5QUGdGRC85bFVzSDNrUGN4TThqYURnPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.70_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFWOGJHODRzbkR5R05nNDJHQmZ4RVhBQ0dZZ29sRUI4Qm50elk0SytXTnlieXlXckpEZXllNWhVL054NTlmWHd5dm91RStDcStKS2Z5QVpXM2p6cWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMwNjYzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjcxCjJwakh3T2JmWTFqbjZpNXVaNGQyOTN4b25vRHByRFpkSUVLSHRHWWIyekttWndDWHdJVS93Ly9PelhlRnNqLzV6SzJuN1doZ2QvNldtQitTYXVoWUNRPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.71_x64-setup.exe"
     }
   }
 }

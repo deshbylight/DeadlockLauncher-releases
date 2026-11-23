@@ -31,20 +31,24 @@ const T = {
     window: { title: 'Скины', shop: 'Каталог', library: 'Установленные', close: 'Закрыть', cancel: 'Отмена',
       loading: 'Загрузка…', more: 'Ещё', empty: 'Пусто', get: 'Скачать', wear: 'Надеть', off: 'Снять',
       remove: 'Удалить', worn: 'Надет', sort: 'Сортировка:', sortDownloads: 'Скачивания', sortNew: 'Новые',
-      sortLiked: 'Лайки', sortViews: 'Просмотры' },
+      sortLiked: 'Лайки', sortViews: 'Просмотры', nsfwHidden: '18+: скрыто', nsfwShown: '18+: показано',
+      servers: 'Серверы', play: 'Играть', refresh: 'Обновить', full: 'Мест нет', onServer: 'Вы здесь', noServers: 'Открытых серверов нет' },
+    launcher: 'Лаунчер', emptyAnswer: 'пустой ответ', badAnswer: 'неверный ответ',
     stock: 'Стандартный', offline: 'Лаунчер не запущен', pickFile: 'Выберите файл', pickVariant: 'Выберите вариант',
     failed: 'Ошибка: ', noFiles: 'нет файлов', removeAsk: 'Удалить «%s»?', downloading: 'Скачивание', unpacking: 'Распаковка…',
-    checking: 'Проверка…', applying: 'Надеваю…', removing: 'Удаляю…', starting: 'Запуск…',
+    connecting: 'Подключение: дальше в лаунчере', checking: 'Проверка…', applying: 'Надеваю…', removing: 'Удаляю…', starting: 'Запуск…',
     party: 'Вы в пати: выбор сохранён. Наденется, когда останетесь в хайдауте одни; в матчах — после перезапуска игры.',
   },
   en: {
     window: { title: 'Skins', shop: 'Catalog', library: 'Installed', close: 'Close', cancel: 'Cancel',
       loading: 'Loading…', more: 'More', empty: 'Empty', get: 'Download', wear: 'Wear', off: 'Take off',
       remove: 'Delete', worn: 'Worn', sort: 'Sort:', sortDownloads: 'Downloads', sortNew: 'Newest',
-      sortLiked: 'Likes', sortViews: 'Views' },
+      sortLiked: 'Likes', sortViews: 'Views', nsfwHidden: '18+: hidden', nsfwShown: '18+: shown',
+      servers: 'Servers', play: 'Play', refresh: 'Refresh', full: 'Full', onServer: 'You are here', noServers: 'No open servers' },
+    launcher: 'Launcher', emptyAnswer: 'empty answer', badAnswer: 'bad answer',
     stock: 'Default', offline: 'The launcher is not running', pickFile: 'Choose a file', pickVariant: 'Choose a variant',
     failed: 'Error: ', noFiles: 'no files', removeAsk: 'Delete "%s"?', downloading: 'Downloading', unpacking: 'Unpacking…',
-    checking: 'Checking…', applying: 'Applying…', removing: 'Deleting…', starting: 'Starting…',
+    connecting: 'Connecting: continued in the launcher', checking: 'Checking…', applying: 'Applying…', removing: 'Deleting…', starting: 'Starting…',
     party: 'You are in a party: choice saved. It goes on when you are alone in the hideout; in matches after a game restart.',
   },
 }
@@ -58,8 +62,13 @@ let ack = ''
 let party = false
 let lastRequest = 0
 
+// boot + seq name each message once: a resend after ACK_TIMEOUT goes out under a new title id, and a renderer
+// that read the first copy but acked late would show it twice (a second "ask" reopened the dialog after the answer,
+// owner 2026-11-23). Renderers from fork dl18 drop a seq they saw; older ones ignore both fields.
+const boot = Date.now().toString(36)
+let seq = 0
 function post(message) {
-  queue.push(JSON.stringify(message))
+  queue.push(JSON.stringify({ ...message, boot, seq: ++seq }))
   if (!current) next()
 }
 function next() {
@@ -104,16 +113,22 @@ setInterval(readFragment, 100)
 const status = (text) => post({ kind: 'status', text })
 
 // ---- launcher and GameBanana ----
-async function local(path) {
-  const r = await fetch(LOCAL + path)
-  const body = await r.json()
-  if (!r.ok) throw new Error(body.error || r.status)
+// Answers are read as text first: an empty or cut body used to surface as the bare "Unexpected end of JSON input"
+// (owner 2026-11-23) with no hint of which request failed.
+async function readJson(r, what) {
+  const text = await r.text()
+  let body
+  try { body = JSON.parse(text) } catch (e) {
+    throw new Error(what + ': ' + (text ? L.badAnswer : L.emptyAnswer) + ' (HTTP ' + r.status + ')')
+  }
+  if (!r.ok) throw new Error(what + ': ' + ((body && body.error) || 'HTTP ' + r.status))
   return body
 }
+async function local(path) {
+  return readJson(await fetch(LOCAL + path), L.launcher + ' ' + path.split('?')[0])
+}
 async function gb(path) {
-  const r = await fetch(GB + path)
-  if (!r.ok) throw new Error('GameBanana ' + r.status)
-  return r.json()
+  return readJson(await fetch(GB + path), 'GameBanana ' + path.split('?')[0])
 }
 const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
 function thumb(rec) {
@@ -240,7 +255,26 @@ async function run(cmd, args) {
     }
     await loadHeroes()
     sendCount()
+    post({ kind: 'nsfw', on: guarded() })
     return sendHeroes()
+  }
+  if (cmd === 'nsfw') {
+    // The window's 18+ toggle; it asks for its list again on the answer.
+    await local('/nsfw?on=' + (args[0] === '1' ? '1' : '0'))
+    await loadState()
+    sendCount()
+    post({ kind: 'nsfw', on: guarded() })
+    sendHeroes()
+    return check()
+  }
+  if (cmd === 'servers') {
+    // In-game Серверы view (owner 2026-11-23): the launcher's Серверы rows (servers_ingame.rs).
+    const l = await local('/servers')
+    return post({ kind: 'servers', servers: l.servers || [], blocked: l.blocked || '' })
+  }
+  if (cmd === 'srvjoin') {
+    await local('/servers/join?code=' + encodeURIComponent(args[0] || ''))
+    return status(L.connecting)
   }
   if (!state || !heroes) await loadHeroes()
   if (cmd === 'library') {

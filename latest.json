@@ -1,11 +1,11 @@
 {
-  "version": "0.4.75",
-  "notes": "Skins catalog: model/HUD subcategories and subcategory tags on cards, search covers cosmetic mods; new app icon (brass LS monogram); installer uses the app icon",
-  "pub_date": "2026-11-23T12:30:14.422Z",
+  "version": "0.4.76",
+  "notes": "Skins: fast apply (native VPK merge in the background), apply several skins at once, skin groups, select-and-apply mode; card click opens the GameBanana page, favorite star on the image; compact catalog toggles; import in the library toolbar, mods folder moved to Settings; link earlier downloaded mods to GameBanana; cached cards. In-game Skins, Servers and Graphics windows restyled like the app.",
+  "pub_date": "2026-11-23T17:55:07.501Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p5cnc0M0pWY3pzZjYzTGUzc3Q2RkUxL1lHMXpEQVROVlRNYkdZZkdnZkJnY0c0aHdqTWxrV25vd3JabEY4Vy9qRk1ybFpadFFlQTZqQlBHREhqVmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDM3MDAzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc1Ci9TblpST00vSmRKSHlhSjBMUG5yOWxzcUo0UmlnT09yeWI1U0hJSkQzcXpEVTZ0eFRCTEtJNGd4aERLaUV0Sk5aUlBJWWFxUjF0NGZGRThWU3BHd0JBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.75_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hmcUEvU0kxd0RKRW1objZ1OEM0L2M5WFQ1M25zaWhmYkFpckJoYmFCb3ZITWtoWXBrRE4vNE96SjBoMW5heWFFS1VtM3BsaTE2NTh4dDZJVFI1bnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU2NTAyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43Nl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc2CmhzOTdkNUtLRHgwUmt2cU0zN1pKSm9FT25iL29vU0UrL01nNXNtZ0hZT1dyMkJTelJ1cWFGQ1o1Mmk5ak81NU40NmFEcEszK2tSZWtNTTE3dGlNb0FRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.76_x64-setup.exe"
     }
   }
 }

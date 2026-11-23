@@ -1,11 +1,11 @@
 {
-  "version": "0.4.66",
-  "notes": "Modlock 0.1.105: host fork-0.1.105-1, CLI fork-0.1.105-dl15 (upstream pings, away seats, pawn cache, spectator camera, HUD parts)",
-  "pub_date": "2026-11-23T06:57:05.057Z",
+  "version": "0.4.67",
+  "notes": "Server list: Ice Rink settings (kills, time, ice friction, run speed, slide, abilities, weapons)",
+  "pub_date": "2026-11-23T07:22:19.439Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3gyVExjK2EwS2psYlZGUExQWkNhUHJqaHNycTFBVm1DVSt5SFV3TndrUTBSNVhnZG16OSs4T05STXJMeDd2UHVhK3JaeXpxMjdpOWV5Q1lSZkxocGdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDE3MDE3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42Nl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY2CnIyVktFWHlaSkpwc2tYbkQwdXFHVkdCVlpiRFNoMVUrb094Tk1DcFh5VTA3VHNINFBsYTNnTTVCanFaanRsMDlrMXRiRkZSTHlZWUdvMUlMK3VrM0NBPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.66_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lzYUc0YkdnNGx5OWs1MlhqaVFsMDBGTTNRK1FQOFk4NUd6TkZDNGJoaWVCNVQ3am9Hb2p1c1VpM0RWZDlFNzRuV2FGcTdGTkxNc0lwRnRZeE5LOGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDE4NTM1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42N194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY3CmVrZ1RVSlhwL05TK1BzcnhXMEc4NzJwZGVMSUUwMU00emk4cFRNV1VjelhyWS9obkNDNW1ULy84NlEyQzZYMkdjTTJYTytpWmp4TnhBLzNhdnBEZEN3PT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.67_x64-setup.exe"
     }
   }
 }

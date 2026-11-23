@@ -1,11 +1,11 @@
 {
-  "version": "0.4.71",
-  "notes": "Skins tab: GameBanana search, sort and favorites; update checks for installed skins; add skins and mods from disk; HUD, model and animation mods with on/off and a shared-file warning; skin profiles. In-game server list tab. Modlock CLI fork-0.1.105-dl18.",
-  "pub_date": "2026-11-23T10:44:32.407Z",
+  "version": "0.4.72",
+  "notes": "Lobby: create or join the Deadlock party in game with no auto-click (Modlock CLI fork-0.1.105-dl20 renderer presses the game's party window; auto-click is only a fallback); in-game Servers window; Modlock CLI fork-0.1.105-dl20",
+  "pub_date": "2026-11-23T11:18:02.380Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFWOGJHODRzbkR5R05nNDJHQmZ4RVhBQ0dZZ29sRUI4Qm50elk0SytXTnlieXlXckpEZXllNWhVL054NTlmWHd5dm91RStDcStKS2Z5QVpXM2p6cWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMwNjYzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjcxCjJwakh3T2JmWTFqbjZpNXVaNGQyOTN4b25vRHByRFpkSUVLSHRHWWIyekttWndDWHdJVS93Ly9PelhlRnNqLzV6SzJuN1doZ2QvNldtQitTYXVoWUNRPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.71_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzloUVc2eG96ci9GcDV2U0RkbzBZNEI4eWNFRDVOOG5naG9pK3FyVlBiMUJNSnJFVEZta3Zsa3M2Vy9aR2RBVXVhbEVNWUlVMk9QYWZIRFhRSWFvWEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMyNjc2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43Ml94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjcyClNoR2xyM2R6ZVUyUk00ZmZoLzhZbkdIeWEydWV5YlhLK21jcXZNYk14cEtHbkdTeFB3bUQrN1FVdDZMZDV3ZXYvV3Jyd3QyZlZvak96am5TSFVidkFnPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.72_x64-setup.exe"
     }
   }
 }

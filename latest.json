@@ -1,11 +1,11 @@
 {
-  "version": "0.4.69",
-  "notes": "Mod UI relay page moved off hyperline.gg to our GitHub Pages (Modlock CLI fork-0.1.105-dl17); network check probes it",
-  "pub_date": "2026-11-23T08:43:47.164Z",
+  "version": "0.4.70",
+  "notes": "Removed a stray test entry from the Modlock build list",
+  "pub_date": "2026-11-23T08:46:57.595Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p1bStCMlUzYUdwc1ZNRzlSdE9ZcTJMV3FCUlBLd3pWQ3FlZGVqQVZYUHdwa2hiUUk1Rm84Mk05a3ZHRmVxMEZ0eXdiTHo4ZGlIT2ttN1M5ZlQ1cUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIzNDE3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC42OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjY5CmlPWHluQTRYMk1GVFp5SllveHlHdjVFRFp3S2hteUM3QThtOVVoY3NvdUs3b0w0SlFZYlEyZXRsc1BTS3V3Ym4wMko3a0VaMFVmR2VCV1FqQk1sZkFnPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.69_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3h6T2VIOFBYREFOYjBKZmNicy94V2VqTWkvZHBOaGZzQUtYc0xqRklDTzhpVGlPQjZZVUw1T2hPZ0Y3VzEySitIQXRzbzM2Nlowc3lRR0d6SlZ2Q3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDIzNjExCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjcwClg2eVVONXZISUJ2bGhNNTYxbTk2NS8vOTBDRVY2c1ZiQjZsaXZoRXBpQzhsaEE0dmpZOE5XYnhSMkhybGttcE5QUGdGRC85bFVzSDNrUGN4TThqYURnPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.70_x64-setup.exe"
     }
   }
 }

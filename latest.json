@@ -1,11 +1,11 @@
 {
-  "version": "0.4.73",
-  "notes": "In-game skins window: hero and skin filters; catalog loads on scroll (no More button); library lists mods already in game/citadel/addons and imports a copy; Modlock CLI fork-0.1.105-dl21",
-  "pub_date": "2026-11-23T11:22:46.072Z",
+  "version": "0.4.74",
+  "notes": "Left sidebar navigation (every page one click); home page is a news feed; Modes and Skins are separate pages; new app icon and brass theme; in-game Skins, Servers and Graphics windows restyled; Modlock CLI fork-0.1.105-dl22",
+  "pub_date": "2026-11-23T11:45:33.897Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZSam5wU1I2cFpreUZQUS9USEJlT1MvVHhmNzdLTUR4aGdrdy80a2llYWU5ejRmMEV5Kyt6OGczQTUrU2g5Y29uQ0IxWVZjVW0ySys1c2ZsMGJSendRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDMyOTU3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43M194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjczCkxHcU1VZE9LOTNUVGYrSzJZdzJSNEJKeGVUVG50N29JSXowSUlHQ2QrWGZuaWhJRnlLb3RIK0U3WGZiMi9Xdy9jRjh0VXNTMzU5TmVjZHRMTE5DR0NRPT0K",
-      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.73_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZUR1pyR1pCQXdKY1VpNmhlc0pNYXhSUFRVcURmNlhZdzRGV2hES1h5cmd0eHM3RkF2MDliNjRnTitXZk1SdFZQV2xpdEVqb0ZudzY4M21SYkZqOFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDM0MzI1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc0ClBMd2NGY0pvS09lUHJzYnlLZTk0NmYvV2NZQ1c2cmFnNmlzdW16d2REb2Q0MzFZbjRQdHVaYk44dndzd1ZMMG5jaElJT3BXKzRhZG05ZXZKTjAwWEJnPT0K",
+      "url": "https://enough-packed-heater-continues.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.74_x64-setup.exe"
     }
   }
 }

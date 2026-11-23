@@ -32,6 +32,7 @@ const T = {
       loading: 'Загрузка…', more: 'Ещё', empty: 'Пусто', get: 'Скачать', wear: 'Надеть', off: 'Снять',
       remove: 'Удалить', worn: 'Надет', sort: 'Сортировка:', sortDownloads: 'Скачивания', sortNew: 'Новые',
       sortLiked: 'Лайки', sortViews: 'Просмотры', nsfwHidden: '18+: скрыто', nsfwShown: '18+: показано',
+      filterHeroes: 'Фильтр героев', filterSkins: 'Фильтр скинов (Enter: герой)',
       servers: 'Серверы', play: 'Играть', refresh: 'Обновить', full: 'Мест нет', onServer: 'Вы здесь', noServers: 'Открытых серверов нет' },
     launcher: 'Лаунчер', emptyAnswer: 'пустой ответ', badAnswer: 'неверный ответ',
     stock: 'Стандартный', offline: 'Лаунчер не запущен', pickFile: 'Выберите файл', pickVariant: 'Выберите вариант',
@@ -44,6 +45,7 @@ const T = {
       loading: 'Loading…', more: 'More', empty: 'Empty', get: 'Download', wear: 'Wear', off: 'Take off',
       remove: 'Delete', worn: 'Worn', sort: 'Sort:', sortDownloads: 'Downloads', sortNew: 'Newest',
       sortLiked: 'Likes', sortViews: 'Views', nsfwHidden: '18+: hidden', nsfwShown: '18+: shown',
+      filterHeroes: 'Filter heroes', filterSkins: 'Filter skins (Enter: hero)',
       servers: 'Servers', play: 'Play', refresh: 'Refresh', full: 'Full', onServer: 'You are here', noServers: 'No open servers' },
     launcher: 'Launcher', emptyAnswer: 'empty answer', badAnswer: 'bad answer',
     stock: 'Default', offline: 'The launcher is not running', pickFile: 'Choose a file', pickVariant: 'Choose a variant',
@@ -271,6 +273,17 @@ async function run(cmd, args) {
     // In-game Серверы view (owner 2026-11-23): the launcher's Серверы rows (servers_ingame.rs).
     const l = await local('/servers')
     return post({ kind: 'servers', servers: l.servers || [], blocked: l.blocked || '' })
+  }
+  if (cmd === 'srvlist') {
+    // Fork dl19+ Серверы window: the whole window the launcher built (ingame_servers.ts: rows, filters, own run, texts).
+    return post({ kind: 'srvlist', list: await local('/servers') })
+  }
+  if (cmd === 'srvdo') {
+    // Fork dl19+: a window command (join / leave / host / pref) for the launcher UI (servers_ingame.rs command).
+    await local('/servers/do?cmd=' + encodeURIComponent(args[0] || '') + '&arg=' + encodeURIComponent(args.slice(1).join(' ')))
+    // The launcher UI runs the command and pushes its new list after the call returns.
+    await new Promise((r) => setTimeout(r, 400))
+    return post({ kind: 'srvlist', list: await local('/servers') })
   }
   if (cmd === 'srvjoin') {
     await local('/servers/join?code=' + encodeURIComponent(args[0] || ''))

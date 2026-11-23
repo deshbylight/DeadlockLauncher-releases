@@ -2,7 +2,8 @@
 <!-- Join channel of the fork renderer (fork-0.1.89-dl9+, panorama/src/join.ts; Docs/RuleBook/Launcher/JoinInGame.md).
      Sits in a hidden HTML panel for the whole game, polls the launcher on 127.0.0.1:<port>/join every second and
      names each offer in its title: "dljoin:<id>:connect 127.0.0.1:<port>". The renderer runs the line once per id;
-     the page then tells the launcher it was taken (/join/took?id=), so the launcher does not type it itself. -->
+     the page then tells the launcher it was taken (/join/took?id=), so the launcher does not type it itself.
+     Since launcher 0.4.72 it also carries party steps (/party, see the script). -->
 <html>
 <head>
 <meta charset="utf-8">
@@ -16,8 +17,42 @@ const PORT = Number(q.get('port')) || 27183
 const LOCAL = 'http://127.0.0.1:' + PORT
 const LINE = /^connect 127\.0\.0\.1:[0-9]{1,5}$/
 let last = ''
+// Party channel (fork renderer party.ts, Docs/RuleBook/Launcher/PartyInGame.md): a step from /party is named in the
+// title "dlparty:<id>:create" or "dlparty:<id>:join:<CODE>"; the renderer answers in this page's fragment
+// "party~<id>~<state>[~<arg>]" and each answer goes to /party/ack. A renderer without the channel never answers,
+// so the launcher's step expires and it falls back to its own way.
+const CODE = /^(?=[A-Z0-9]*[A-Z])[A-Z0-9]{4,12}$/
+let lastParty = ''
+let lastAnswer = ''
+
+async function pollParty() {
+  const r = await fetch(LOCAL + '/party', { cache: 'no-store' })
+  const step = r.ok ? await r.json() : {}
+  const id = String(step.id ?? '')
+  if (!/^[0-9]{1,12}$/.test(id) || id === lastParty) return
+  if (step.op === 'create') document.title = 'dlparty:' + id + ':create'
+  else if (step.op === 'join' && CODE.test(step.code ?? '')) document.title = 'dlparty:' + id + ':join:' + step.code
+  else return
+  lastParty = id
+}
+
+function readAnswer() {
+  const f = location.hash.slice(1)
+  if (!f || f === lastAnswer) return
+  lastAnswer = f
+  const [kind, id, state, arg] = f.split('~')
+  if (kind !== 'party' || !/^[0-9]{1,12}$/.test(id ?? '') || !/^[a-z]{1,8}$/.test(state ?? '')) return
+  fetch(LOCAL + '/party/ack?id=' + id + '&state=' + state + '&arg=' + encodeURIComponent(arg ?? ''), { cache: 'no-store' }).catch(() => {})
+}
+window.addEventListener('hashchange', readAnswer)
+setInterval(readAnswer, 100)
 
 async function poll() {
+  try {
+    await pollParty()
+  } catch (e) {
+    // Launcher not running or older than the party channel.
+  }
   try {
     const r = await fetch(LOCAL + '/join', { cache: 'no-store' })
     const offer = r.ok ? await r.json() : {}

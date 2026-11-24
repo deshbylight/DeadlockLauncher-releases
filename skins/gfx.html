@@ -115,6 +115,8 @@ async function run(cmd, args) {
   if (cmd === 'labmany' && LAB_LIST.test(args[0] || '') && args[0].split(',').length <= 200) {
     return send('/gfx/labmany?list=' + args[0])
   }
+  // The HUD editor's layout (graphics_hud.rs, panorama/src/hud_edit.ts encodeEdits); "" = the stock HUD.
+  if (cmd === 'hud' && HUD_CODE.test(args[0] || '')) return send('/gfx/hud?code=' + (args[0] || ''))
 }
 
 // The state at game start (the renderer applies the modded lines), then again whenever the launcher comes up later.

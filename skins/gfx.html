@@ -6,7 +6,7 @@
        renderer -> page: URL fragment "#<request>~<ack>~<party>~<command>~<arg>..." (no reload)
      Commands: state | set~<group>~<level> | preset~<id> | copy | paste (share code via the clipboard) | restart (launcher
      restarts the game once it closes; the state's relaunch tells the renderer to quit it) | lab~<cvar>~<value> ("Все"
-     tab, value "" = the game's own).
+     tab, value "" = the game's own) | hud~<code> (HUD editor layout, "" = stock HUD).
      Messages: state {state} (the launcher's /gfx/state as is), status {text}, offline {text} (panorama/src/gfx.ts). -->
 <html>
 <head>
@@ -28,6 +28,7 @@ const CVAR = /^[a-z0-9_]{1,64}$/
 const LAB_VALUE = /^(-?\d{1,10}(\.\d{1,6})?)?$/
 const LAB_PAIR = '[a-z0-9_]{1,64}:(-?\\d{1,10}(\\.\\d{1,6})?)?'
 const LAB_LIST = new RegExp('^' + LAB_PAIR + '(,' + LAB_PAIR + ')*$')
+const HUD_CODE = /^[a-z0-9_:;,.-]{0,600}$/
 
 // ---- channel to the renderer (as feed2.html) ----
 const queue = []

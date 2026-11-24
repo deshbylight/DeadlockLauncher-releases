@@ -1,11 +1,11 @@
 {
-  "version": "0.5.12",
-  "notes": "Mod page HUD preview: 'As in game' view draws the game's own interface with the mod's files (minimap marks with the mod's hero icons)",
-  "pub_date": "2026-11-24T11:55:37.610Z",
+  "version": "0.5.13",
+  "notes": "HUD editor: a moved or enlarged HUD part is no longer cut off by its container or covered by other HUD panels; Modlock CLI fork-0.1.108-dl40",
+  "pub_date": "2026-11-24T11:56:56.643Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzNPVFF4SERqb29YSW9PRC9SSkNRWFJka3pNbERRSld6akpFL0dqdU1jcno5OEJCdnU5dmI1ZldJZm5vMFYwSnpPWU5ndloweVhoQWtHSVRFMXI3TndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIxMzM3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjEyCmxHMXZCQ1NjZmlsNDlCcjV1Vy9XaEVQTmloZkp6aXlRbmZnUExvdlE4WFF1YVQrZ3V4NFVoL0VXaS85TE54aFNRcmxDcXptSmNtWmtCNTlMdWZzWENRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.12_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lRRG9JS2Q4dFptTmkveFdaclpKZ2J6bk5XRXg1MGh1N0l3aEpGUzIvYjJvZXlkVVZLd2l3a05WRVd4cXdOYjdJYnJhZ3huMTRBQk1qMS9rZ2dqamdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIxNDE2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjEzCjJhWWhGN3ltSWRWeGlVcllKazNHaWxOSGh6bi8xM0ViV3IvK2JCSFJHbVNHdDRVc3p6NkRMOEYzY0tUTHhFS2pCMUFEMzYwTDkvZFVUN3JHb1REK0JnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.13_x64-setup.exe"
     }
   }
 }

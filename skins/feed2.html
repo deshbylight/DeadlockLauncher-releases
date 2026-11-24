@@ -145,8 +145,90 @@ async function readJson(r, what) {
 async function local(path) {
   return readJson(await fetch(LOCAL + path), L.launcher + ' ' + path.split('?')[0])
 }
-async function gb(path) {
-  return readJson(await fetch(GB + path), 'GameBanana ' + path.split('?')[0])
+// GameBanana cache (owner 2026-11-24: in game each list loaded only when opened). Answers are kept in memory and in
+// localStorage (persistence across game starts in the game's CEF: unverified); warm() fills it right after the page
+// loads, long before the Esc window opens. Same ages as the launcher (skins_gb.ts AGE): lists 30 min, categories
+// 1 day, ProfilePage (ratings) 7 days; library() passes 0 for its fresh update check.
+const DAY = 86400000
+const CACHE = 'dlgb:'
+const mem = new Map()      // path -> { t, d }
+const inflight = new Map() // path -> Promise, shared by warm() and a click on the same list
+function ageOf(path) {
+  if (path.includes('/ProfilePage')) return 7 * DAY
+  if (path.includes('Categor')) return DAY
+  return DAY / 48
+}
+// Only the fields this page reads (a ProfilePage is tens of KB); same list as the launcher's skins_cache.ts.
+const REC_KEYS = ['_idRow', '_sName', '_sProfileUrl', '_nLikeCount', '_bHasContentRatings', '_aContentRatings',
+  '_aRootCategory', '_aSubCategory', '_aCategory', '_tsDateUpdated', '_tsDateModified', '_sVersion']
+const FILE_KEYS = ['_idRow', '_sFile', '_nFilesize', '_sDescription', '_sAvResult', '_sAnalysisResult', '_tsDateAdded', '_sMd5Checksum']
+function pick(o, keys) {
+  const out = {}
+  for (const k of keys) if (o[k] !== undefined) out[k] = o[k]
+  return out
+}
+function slimRec(r) {
+  const out = pick(r, REC_KEYS)
+  const im = r._aPreviewMedia && r._aPreviewMedia._aImages
+  if (im && im.length) out._aPreviewMedia = { _aImages: im.slice(0, 1) }
+  if (Array.isArray(r._aFiles)) out._aFiles = r._aFiles.map((f) => pick(f, FILE_KEYS))
+  return out
+}
+function slim(d) {
+  if (Array.isArray(d) || !d || typeof d !== 'object') return d
+  if (Array.isArray(d._aRecords)) return { _aRecords: d._aRecords.map(slimRec), _aMetadata: d._aMetadata }
+  return '_idRow' in d ? slimRec(d) : d
+}
+function cacheGet(path) {
+  let e = mem.get(path)
+  if (!e) {
+    try { e = JSON.parse(localStorage.getItem(CACHE + path) || 'null') } catch (err) { e = null }
+    if (e) mem.set(path, e)
+  }
+  return e
+}
+function cachePut(path, d) {
+  const e = { t: Date.now(), d }
+  mem.set(path, e)
+  try { localStorage.setItem(CACHE + path, JSON.stringify(e)) } catch (err) {
+    // Full store: drop this page's entries and keep the memory copy (no retry loop).
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i)
+      if (k && k.startsWith(CACHE)) localStorage.removeItem(k)
+    }
+  }
+}
+async function gb(path, maxAge) {
+  const age = maxAge === undefined ? ageOf(path) : maxAge
+  const e = age > 0 ? cacheGet(path) : null
+  if (e && Date.now() - e.t <= age) return e.d
+  if (inflight.has(path)) return inflight.get(path)
+  const p = (async () => {
+    try {
+      const d = slim(await readJson(await fetch(GB + path), 'GameBanana ' + path.split('?')[0]))
+      cachePut(path, d)
+      return d
+    } finally { inflight.delete(path) }
+  })()
+  inflight.set(path, p)
+  return p
+}
+/** After load: heroes, mod categories and the first page (most downloaded) of every hero with its 18+ lookups. */
+async function warm() {
+  await loadHeroes()
+  if (HAS_MORE) await loadModCats()
+  const cats = heroes.filter((h) => h.code).map((h) => h.cat)
+  let next = 0
+  const worker = async () => {
+    while (next < cats.length) {
+      const cat = cats[next++]
+      try {
+        const res = await gb('/Mod/Index?_nPerpage=24&_nPage=1&_aFilters%5BGeneric_Category%5D=' + cat + '&_sSort=' + SORTS.downloads)
+        await shownOf(res._aRecords || [])
+      } catch (e) { /* this list loads (and reports its error) when the window asks for it */ }
+    }
+  }
+  await Promise.all([worker(), worker(), worker()])
 }
 const norm = (s) => String(s).toLowerCase().replace(/[^a-z0-9]/g, '')
 function thumb(rec) {
@@ -256,7 +338,7 @@ async function library() {
   // dl27: each open reads every ProfilePage fresh, for the update mark (the app's skins_update.ts).
   await Promise.all(mods.filter((m) => HAS_MORE || !info[m] || !info[m].image).map(async (m) => {
     try {
-      const p = await gb('/Mod/' + m + '/ProfilePage')
+      const p = await gb('/Mod/' + m + '/ProfilePage', 0)
       const skin = state.installed.some((s) => s.gbMod === m)
       info[m] = HAS_MORE ? recInfo(p, skin ? (p._aCategory && p._aCategory._idRow) : 0, skin ? 'skin' : 'mod')
         : { name: p._sName, image: thumb(p), cat: p._aCategory && p._aCategory._idRow }
@@ -459,6 +541,8 @@ async function start() {
   try { await loadState() } catch (e) { /* offline: Russian text, check() reports it */ }
   post({ kind: 'ready', text: L.window })
   if (state) sendCount()
+  // A failed warm-up is not reported: each list reads (and reports) itself when the window asks for it.
+  if (state) warm().catch(() => {})
   for (;;) {
     await check()
     await new Promise((done) => setTimeout(done, 3000))

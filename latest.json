@@ -1,11 +1,11 @@
 {
-  "version": "0.5.1",
-  "notes": "Graphics live probe 4: shadows ultra, textures high, render scale 50%",
-  "pub_date": "2026-11-24T09:37:38.445Z",
+  "version": "0.5.2",
+  "notes": "Graphics live probe 5: stock menu classes on live panels, restore works without readback",
+  "pub_date": "2026-11-24T09:49:31.313Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRSMkxYN1RheFVzVUV4TFB6a3llSnpmMTYzQnVmUHFNMkxoRzMzV0wyWXpvM0JYRGtzcHRYRmhhTU9BSzdIWFdQWm1TeEJEUXhidHJXRmdUWnQ2TmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEzMDU4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMQppbVJSV3NNQWE2UGViN1NKYUtwR2x6Z3Ezbkh6OHl2RFYvenVqQmlYcEZkMXJUeTAwbWhPTGswdDVGaUlqN0Q5TXg4Y2Z5cExyRHEySFYyTDVZTHJCdz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzQ2bHpNMEQ4YzNyNXVKeW5xanpUcU1DM2ExeCtHZ0pWbG1rK3k0b3BWRVFZODRmSlFrTVNhemZpSThzc2NlaDlaVUZtRXlPakxjY1ZZWGRaQ2d6MndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEzNzcwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMgpCaDkxQm5qbGFvRzA5c3AwejFwNnlNNG1vTnZndXdaU1hQblNONld0cnpFbkVIeiswRk9ZUFFlRE5HOGZUcXlqR2VFMnZZVGhLTTczZlBLcy9qR2hDdz09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.2_x64-setup.exe"
     }
   }
 }

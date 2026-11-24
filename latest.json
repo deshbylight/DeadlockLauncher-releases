@@ -1,11 +1,11 @@
 {
-  "version": "0.5.15",
-  "notes": "Graphics 'Все' tab: fog depth capped at 128, fog height at 160; Modlock CLI fork-0.1.108-dl41",
-  "pub_date": "2026-11-24T12:11:02.225Z",
+  "version": "0.5.16",
+  "notes": "HUD preview 'Как в игре' now shows game images in the app; HP bar mods get a scene; cached previews rebuild",
+  "pub_date": "2026-11-24T12:15:34.203Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pOTXNXYlhBMnRRNjlKMFlKZ1JpWEtQL0dvd1RHblViS0Z6cTZON1FCMjRXaU1Sc3FjVUxqaExNTFJnNTBTbjhZc3BISkpvVk1nWTN1Zm80NU81eHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIyMDk4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xNV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE1CnlGdk1Sd3Rjbk1UeG53NHRIK1RPKzlpbldBRlBxTGNyL2NKY1Fxb3ExNnl4cWFxWmRYZVNkaXRtNnlaeXByczRzWjVOOHJURHcxS1dvcmkwdzVBR0JnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.15_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzNjcGMwa1lzNExXSThmYnhyN01RTDJ1RG0xVUVDQy93WHpsd3JqK0dsYmhNNmZRSkpLZWE4KzdnaUZqZ2tIc3F2TmVhaXN6STVsdTltTnlzcTExK3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIyNTMzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xNl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE2CmR3cW14amgrTTArcWlxdFRGc2dBVnRONFAxQnRGdlNiNGhSNFE0bEZkNnNaNkpHMlN3cFV6L3JPNmdmZXo5S2FScThueHp6N1pIcnVmeDQxSkhuVkJ3PT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.16_x64-setup.exe"
     }
   }
 }

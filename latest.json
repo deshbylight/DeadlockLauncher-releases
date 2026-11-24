@@ -1,11 +1,11 @@
 {
-  "version": "0.5.4",
-  "notes": "Graphics: new Live tab - the game's video menu settings (render scale, upscaling, FSR sharpness, anti-aliasing, textures, shadows, AO, fog, bloom, area lights, depth of field, soft particles, FPS cap) change at once without a restart; Game restores the saved value. Modlock CLI fork-0.1.108-dl35.",
-  "pub_date": "2026-11-24T10:24:04.994Z",
+  "version": "0.5.5",
+  "notes": "Graphics: new All tab with console settings missing from the game's menu (cheat ones only on mod servers); the Live tab with the menu's own settings removed. Modlock CLI fork-0.1.108-dl36.",
+  "pub_date": "2026-11-24T10:55:51.605Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pnTVdzVXZ3VWZlZHU4bU9sdXl0MEc5amhlRW1LL00vcUQ0cHl0Rk1GOWpIRlhhRjdKd3VSY0gzY1Bka2RXcWZlelI3SGttOU1hajYrcGlGUzFJclE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE1ODQ0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS40X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNApXcDVuVlJOYS8wWDdCK0xKR0ttSFZaYjdUeE5HZFgvcTR1ZUNMcXV2N012Tjkyd09qRzE5STNwMm9EUTZETS9kUnlCRmM0Zmt2Z2U3enlOWEdja1VCQT09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZaek44cjZHbUZDVHorQ2NpaEVYcm50eFZpemdWU3hDVDNKU1YvOGczeVh5S3h5OFFyUVBlbDdNNzB4cVNxVkZDRlUzSFVWMTFRWnd2TWVudUNiUGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE3NzUxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNQo4aWw1a2lORFlsTEVjU1FISWlxbzFrNS81WXJnTzArNzRFQktoL1lhcXkwOFYrNVRpM1RIZnhyVG1vaU1hS0xaOExCZHovQzlRWGlCNVNabGowcWxCZz09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.5_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.90",
-  "notes": "Owner can give itself publisher and other roles on its own row in Players.",
-  "pub_date": "2026-11-24T07:51:09.080Z",
+  "version": "0.4.91",
+  "notes": "Owner is shown as owner (profile badge, access line); the Patches tab is always open for the owner.",
+  "pub_date": "2026-11-24T08:02:33.434Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVkSzdBeFhlU2Z6dXBhdC8wQmZsUEJJUkxXZDRmbEZ1WjZmTWs3clZiTEhtYTZra0g1MUlXdGZ4d2IxaHdyUUIrL0w5Z3hSdkRWUHM1ZE1CaHQ3amdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA2NjY4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjkwCmJsdlRGdG01SU1TKzdwalFxczBaQjlsMnc1b1JVRVdFcFp6Wm5taVlGMUdxcjZwOVoza21DcVV3ajkvZlYwNDZ3NnFlU0NYTy8xeGFwZ2F6bkkxbkRRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.90_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pFamRoQzNEcVp2TnZKWExNSGlYZVJYV0NpVXQwWFpuZnFTVG14WUlqOFdHUzhMY2dSRUF1ZUxwbFBpaUo2UXhzVmhDNkx0REpCU3g4Z2tYS1ZCN1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA3MzUzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjkxCnRBZzhCWC8zTU42SHdNSHJFazU0aVhXZHdJYVlDcnhTRXpCY1p6djVOUlBXaDU5aHg5YS84MXZpb25MdkNMUWl0MXN0K0FPeGRuQ1VqU2oxdkhuSUNBPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.91_x64-setup.exe"
     }
   }
 }

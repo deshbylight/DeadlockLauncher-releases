@@ -1,11 +1,11 @@
 {
-  "version": "0.5.0",
-  "notes": "Recolor mods that install as a hero skin now get the mod they recolor packed under them, so the whole recolor shows in game",
-  "pub_date": "2026-11-24T09:24:07.698Z",
+  "version": "0.5.1",
+  "notes": "Graphics live probe 4: shadows ultra, textures high, render scale 50%",
+  "pub_date": "2026-11-24T09:37:38.445Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9RZmtMbkxnR29iUFRHcVhWRVlTckdOMEJqK2VQRnV5SVpjQ1NxVEVNWDRNRGd4RzJpV2UrY0NXYUVmcjVKZ1NwbldTYkR0WDNVdTh1Ukg0NXRBWGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEyMjQ3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4wX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMApqMS9NUXZGWmJIajJOcGZUcEcwNkJBdDlMYkdHSldzMURUV1lsd2RpUDNUZnpTdWJncVQrMVU5Mm5JOURHUXlDM0VtMTdlbXBLQ3JOQmFQdmdOaG1DZz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRSMkxYN1RheFVzVUV4TFB6a3llSnpmMTYzQnVmUHFNMkxoRzMzV0wyWXpvM0JYRGtzcHRYRmhhTU9BSzdIWFdQWm1TeEJEUXhidHJXRmdUWnQ2TmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEzMDU4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMQppbVJSV3NNQWE2UGViN1NKYUtwR2x6Z3Ezbkh6OHl2RFYvenVqQmlYcEZkMXJUeTAwbWhPTGswdDVGaUlqN0Q5TXg4Y2Z5cExyRHEySFYyTDVZTHJCdz09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.1_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.87",
-  "notes": "Skins tab: each hero has Skins / Animations / Sounds / HUD sections; the general Mods column shows only non-hero content",
-  "pub_date": "2026-11-24T07:12:56.612Z",
+  "version": "0.4.88",
+  "notes": "Patches tab for publisher accounts: the patch kit page (patch list, models, sounds) inside the launcher. Fixed: the admin tab was labelled Patches in 0.4.87.",
+  "pub_date": "2026-11-24T07:20:52.769Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzEyM3UrOWhkWWVSMEJqVkJEVnFtQjdBUXR5dG5GRmJ3TXdmVkthempuUTQ0THRDUmNUcmZHVFUrbW03Vy9VQzdHRm95VTVTTEJ3ZGdENEZFWU9HY0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA0Mzc2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44N194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg3CjdSY0ZiOTlhc0o0YzlNbWRWaG9zNk1OeU9FYkJxb0F6dHk0eG9HS2l0OE94VjZwOWlVN1BkMHF1OHBrNDBlakZ2WCtHWkNvSUxNRzhpK2JDMHJhWUNnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.87_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRMQU5xRjFZQjBhRWFBSEl2SmF1STAzQWJidnZCcnF3TmJkVmV2cFdsQ3dJWFlad1h6eUNocFdpQzhmR2xmYUhhYTZCaEVLUFlpMUhiTjV4dEhYVWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA0ODUyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg4CmpRWS9pdzhKR0l4eHBueThSQXZYaEdlUVlNZER6UmI3VjlqdEZNTlRTTVlHN2xETU5rQ1VVY3FXUGNrL0U5WnhhN0ppblp6c1RuaE9HMkJQNVNLdUNRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.88_x64-setup.exe"
     }
   }
 }

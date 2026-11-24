@@ -1,11 +1,11 @@
 {
-  "version": "0.5.17",
-  "notes": "Graphics: official levels no longer use values the game clamps (textures, decals, shadows, light samples); interface level drops a cvar the stock menu owns",
-  "pub_date": "2026-11-24T12:45:36.373Z",
+  "version": "0.5.18",
+  "notes": "Graphics: textures levels no longer cap the texture pool (it made texture streaming thrash and cost FPS)",
+  "pub_date": "2026-11-24T13:59:08.286Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzR1TURFSjNiUkpZTDF0aEZpZDFmQUw1Z2s3K2liVm5zazhuTVlnV1l5RVBHNHRzenkxWU93TjZrejE4Y0g0czdEOERhUElEejhlNzRXSzhBejI0VUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI0MzM2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xN194NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE3CnJ1UDhvNllLR0loWWlJSzdZTWw1ZDl6WTk3ZVBXR3RIUUFGQ3p3WlBnQ1ljNG1FeHBQZ2xLd1JYNWRRdWwrUFBQN0ZDcXQzOXhleWpSdUZVVExVV0NRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.17_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lNYm1sNHNzVHkrUXJVNmZkL1hCK0s2cFdTZHQzRzJkMWJXbWZLSktLWm1ESkt4djM4cVVDdE5Cd0w1eGQycWc0eWhwbU8zeXpNR3ZJRTRKTUZTZmcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI4NzQ3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE4CnNRRXo0OUR1RUp4dXBaMVpZNGcxc1lESG9JbmNYNXo3TUE2YmFQV1drWDNPOVBIOXpENENqV2krWjZZWmYrVS9pTXd0b1RWRkFSK2s5WVBUV0JlV0R3PT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.18_x64-setup.exe"
     }
   }
 }

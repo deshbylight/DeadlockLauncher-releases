@@ -1,11 +1,11 @@
 {
-  "version": "0.5.9",
-  "notes": "HUD editor in the in-game app: HUD tab in the Esc menu strip, layout saved by the launcher and restored every game; Modlock CLI fork-0.1.108-dl38",
-  "pub_date": "2026-11-24T11:35:35.499Z",
+  "version": "0.5.10",
+  "notes": "Graphics All tab: crash guard (a value that crashed the game is taken back and marked), presets light at one press, readback check of pressed values; sc_layer_batch_threshold_fullsort 0 and r_dx11_software_cmd_lists removed; Modlock CLI fork-0.1.108-dl39",
+  "pub_date": "2026-11-24T11:37:53.021Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFaWS8yTWZLNkJteXV4cGFNUk9hSWI0NEh1RmpDWjBUYmxRWVR4L05qWWxSZ2kzOXFndTZmVEpOQlJzb0FJQjF4NUc5T09QYXpiRlR3MzNjb3EzdFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIwMTM0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS45X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOQpFeUJUUi9mV08rQUsxZHNkWFUvc0xSenU5YVg3NWRucXgzRWFjSHlqOEZFeHpmMWZZa0tIMXFHenR1eGtRWWk4TElHVmNBcmFTejVEMXZZSmRDNE1EUT09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzByS1dDK1pTVC8xRWVKYWZOMEhXd2lCaE1lYXg0eUw0UXpLY3JuNVVTZWVKY1g3V3hmbzFyV2tUakNHaGliWEVHWE5YVkV0ZnhkQWdUUytHV0NpTGdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIwMjcyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjEwClUxNmxCcW5WT0NpWUtlblYyM010Ymg3TkN1KyszREJtU3RBcTE1K2ptcFZ3WkltMCtsb0RRZkNKSWxFbXRBRFpMMUNkR2ZZcVdQcVhCUXdZNSs4Q0RBPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.10_x64-setup.exe"
     }
   }
 }

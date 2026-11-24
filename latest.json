@@ -1,11 +1,11 @@
 {
-  "version": "0.4.91",
-  "notes": "Owner is shown as owner (profile badge, access line); the Patches tab is always open for the owner.",
-  "pub_date": "2026-11-24T08:02:33.434Z",
+  "version": "0.4.92",
+  "notes": "Skins: lists and previews load in the background at start and open instantly from the cache; redesigned Skins tab (hero portraits, one toolbar with sort buttons, larger cards with author, likes, views and a single action row); in-game skins window caches and preloads its lists.",
+  "pub_date": "2026-11-24T08:30:32.265Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pFamRoQzNEcVp2TnZKWExNSGlYZVJYV0NpVXQwWFpuZnFTVG14WUlqOFdHUzhMY2dSRUF1ZUxwbFBpaUo2UXhzVmhDNkx0REpCU3g4Z2tYS1ZCN1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA3MzUzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45MV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjkxCnRBZzhCWC8zTU42SHdNSHJFazU0aVhXZHdJYVlDcnhTRXpCY1p6djVOUlBXaDU5aHg5YS84MXZpb25MdkNMUWl0MXN0K0FPeGRuQ1VqU2oxdkhuSUNBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.91_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBYS3U2Y20xUW5tTnhwVllaejZFSDN4QUovTi84RkJseXhYT0R4OFRFQWxOSjJqWGI5UzJsK2dKMEdoTDJMWFZoZnBLNHBFRDlsajJDaWdQMFhiM3dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA5MDMxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45Ml94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjkyCnl1VDl0WktsUkVDSkw1anRYck45VkRDejVzcW5JMFZHS3BKODJ2MXNsYkdRVnV0WWRaWGphWHY5WHkwSWx4c21jeERQQUo2RVR3Z2VxUzJXTlZSTEJnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.92_x64-setup.exe"
     }
   }
 }

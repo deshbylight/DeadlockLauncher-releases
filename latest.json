@@ -1,11 +1,11 @@
 {
-  "version": "0.4.97",
-  "notes": "Recolor mods: the mod they recolor is installed with them, and the recolor now shows over that skin in game",
-  "pub_date": "2026-11-24T09:08:31.495Z",
+  "version": "0.4.98",
+  "notes": "Graphics live-change probe 2: Modlock CLI fork-0.1.108-dl30 loads stock settings panels from a layout",
+  "pub_date": "2026-11-24T09:09:39.908Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZjV3ZrZ2VxQndTRkpIVlYrNllsc3o5UWVySllWZkNYRVU0UEhqMnBsY2Jjb2tWdVd0TTdpSmpYcHlPbzJqZTY5dFE4K2dVTnJLUjNQUEo2RnVjR2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTExMzExCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45N194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk3ClBqZSt4c2NTaDVncGlGamx2VDFBY2JDZnlrd3BzVXZ3bFkzQ1NORGpETklBR01zZ1pyM3hkRFpuRllHb1d1eHEzN0JLTVZWYU81K0pzY2QxUUt1WkRBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.97_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91byt6dnVmRVFML1JQaVo4VVBSV3lHVk8reU9tR2VZeEo2RHk1d1BxTU9VTW5sRkdTRHdFQ0JGSE9VdWNVZ01OckJBTFVwbE1yL3c2VkxjSG1aUmEreXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTExMzc5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk4CnJiWm5PQklIaGxncit2UTE2NzY5YktQN1V1RWRhcnl1QkI1aXJ1QmFTYjQ4VXk0eEJlMjM5cnp5eXRDcXNWL3BhNWNRNGFqTU9SSDFjTWtxejdaS0JRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.98_x64-setup.exe"
     }
   }
 }

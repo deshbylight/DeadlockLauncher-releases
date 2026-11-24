@@ -1,11 +1,11 @@
 {
-  "version": "0.5.2",
-  "notes": "Graphics live probe 5: stock menu classes on live panels, restore works without readback",
-  "pub_date": "2026-11-24T09:49:31.313Z",
+  "version": "0.5.3",
+  "notes": "Skins no longer reload the hideout when a match starts (the match load was discarded)",
+  "pub_date": "2026-11-24T10:03:32.378Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzQ2bHpNMEQ4YzNyNXVKeW5xanpUcU1DM2ExeCtHZ0pWbG1rK3k0b3BWRVFZODRmSlFrTVNhemZpSThzc2NlaDlaVUZtRXlPakxjY1ZZWGRaQ2d6MndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEzNzcwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMgpCaDkxQm5qbGFvRzA5c3AwejFwNnlNNG1vTnZndXdaU1hQblNONld0cnpFbkVIeiswRk9ZUFFlRE5HOGZUcXlqR2VFMnZZVGhLTTczZlBLcy9qR2hDdz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzkwdDBTMk5JTUdoRE9HTHRiQmxuREZSUXpuSzhRSjk2M1Y3UW5aNFEzd0Q5YWwwbjBVYmtETmx2YTVFRzRqOFIxYXhFeTJiVFloMmtUQzZuSjBHTlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE0NjEyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4zX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMwo4ZkJRdW5PNTRvaGZRNmJqbldlV2VwaGJxdmZPM3lhREpSVTBuY09zd0o2TDVLeSs2RmtYSXBuempSSGFRc2wxVUYyYjVwMlBVayt2ejhLMDBtMUtCQT09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.3_x64-setup.exe"
     }
   }
 }

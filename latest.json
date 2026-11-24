@@ -1,11 +1,11 @@
 {
-  "version": "0.5.5",
-  "notes": "Graphics: new All tab with console settings missing from the game's menu (cheat ones only on mod servers); the Live tab with the menu's own settings removed. Modlock CLI fork-0.1.108-dl36.",
-  "pub_date": "2026-11-24T10:55:51.605Z",
+  "version": "0.5.6",
+  "notes": "Mod page: HUD preview for interface mods - every image the mod changes next to the game's own, plus its layout, style and script files; the in-game 3D button explains HUD-only mods.",
+  "pub_date": "2026-11-24T10:57:46.597Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZaek44cjZHbUZDVHorQ2NpaEVYcm50eFZpemdWU3hDVDNKU1YvOGczeVh5S3h5OFFyUVBlbDdNNzB4cVNxVkZDRlUzSFVWMTFRWnd2TWVudUNiUGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE3NzUxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS41X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNQo4aWw1a2lORFlsTEVjU1FISWlxbzFrNS81WXJnTzArNzRFQktoL1lhcXkwOFYrNVRpM1RIZnhyVG1vaU1hS0xaOExCZHovQzlRWGlCNVNabGowcWxCZz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzc5TjdyaWN4YVlHdGlVR0Q3STZHbWt3VEM3N1dqMXBmZ2RPUDJvQTRDQ2NwK3pIVW9vb21OWk5TbmYwd2hPbUdvY2VpZVdCZkN3KzJCZzBxSGdNVkF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE3ODY2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS42X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNgp4RlUvV2dKWERGTDlDZ3ZoSHN5WEhWelU3ekkzK1l6cUMzY0RmYU9nN3VFRHF0NkJTUVJHRTBNRXlpRFc3K0o3REZObm5ma1BvTnNSN2xFSUo4SlZDZz09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.6_x64-setup.exe"
     }
   }
 }

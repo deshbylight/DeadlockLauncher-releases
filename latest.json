@@ -1,11 +1,11 @@
 {
-  "version": "0.5.19",
-  "notes": "Graphics 'All' tab: Min/Max presets no longer switch off engine optimizations (culling, batching, threads, light binning, particle fast paths)",
-  "pub_date": "2026-11-24T14:19:56.638Z",
+  "version": "0.5.20",
+  "notes": "Graphics: Detail Minimum no longer stops hero cloth physics; All tab presets keep engine optimizations (culling, binning, shadow caching) and cloth at defaults",
+  "pub_date": "2026-11-24T14:44:10.461Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlMNmhXVy9ESDZyQzJMcFZqeGxYdUhSZUh4dEJtRmhWT3d6Y3Z3THZMMlE3YWR2VWdEUCtjVmNZaGVtMXJoSHBxTmlQQ2hVS1F3eWhQVklEdTgyL0F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI5OTk2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE5ClBwN29vR3RFazhGM2hBS2FPaFRHQ3FUc2tlQThxbmR2dHE2WU0vRE9MYlhSaEgrVUR3NFFKVmYxUkxvYU9JbjlYeE53a0ZBQU9wclhOc0RLdjkyZEJBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hBOXc2QzIvTkVLcVNid3NUQjB6YjZCN2pWVjhsNll4R3VrNVovN0twMnlJSDRXdjRGcjlsZUtQSjhiRzlMczVLOC95eTBBbisrOWtEaGE3T25hMVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTMxNDQ5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjIwCjFHaWIyRDJ4dEdVRFVYZCtGSEtrelVvUHJ5dTIvUENpZE1Qdi9tb0J2R1RnT2Jhc2hBdTdFY1doWUdaQTZzMVFLbVNrNmdPMmxGSkhEY1ArYWRtRUJRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.20_x64-setup.exe"
     }
   }
 }

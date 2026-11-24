@@ -1,11 +1,11 @@
 {
-  "version": "0.5.6",
-  "notes": "Mod page: HUD preview for interface mods - every image the mod changes next to the game's own, plus its layout, style and script files; the in-game 3D button explains HUD-only mods.",
-  "pub_date": "2026-11-24T10:57:46.597Z",
+  "version": "0.5.7",
+  "notes": "HUD preview no longer fails when a few mod images cannot be decoded: they are marked unreadable and counted.",
+  "pub_date": "2026-11-24T11:10:35.906Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzc5TjdyaWN4YVlHdGlVR0Q3STZHbWt3VEM3N1dqMXBmZ2RPUDJvQTRDQ2NwK3pIVW9vb21OWk5TbmYwd2hPbUdvY2VpZVdCZkN3KzJCZzBxSGdNVkF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE3ODY2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS42X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNgp4RlUvV2dKWERGTDlDZ3ZoSHN5WEhWelU3ekkzK1l6cUMzY0RmYU9nN3VFRHF0NkJTUVJHRTBNRXlpRFc3K0o3REZObm5ma1BvTnNSN2xFSUo4SlZDZz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytMVGFNMGxZcXYxQVZpSG9aVWhmQk1DdExzZ05oSlA5bjBmZzZ2eEczdXVyelg1bGpxaVUzcTNDN3NBWGs1aVRTZCswMXFGZy8zNy8weXRqcjh3bmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE4NjM1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNwpMVDg4T08wQTdxaUlOWFJJNkFUbEJXTUtwWDd5YTFJMUhQeWNJU0JQcnJ3S1VjQWlFc09XQ0NnSWNhdEhRVmlTT3laUTdQL0lRWGNnUnExOHpMNldDdz09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.7_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.95",
-  "notes": "3D preview: recolor mods are shown on the model of the mod they recolor (base found from the GameBanana description links)",
-  "pub_date": "2026-11-24T08:55:58.060Z",
+  "version": "0.4.96",
+  "notes": "Patch kit 1.2.0: Steam login once with the QR code inside the Patches tab; the data folder is chosen by the user (no default)",
+  "pub_date": "2026-11-24T09:00:19.623Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzYxeEtBekhnckhJUFJjblpIcWtKMWRiNzFXdzJOMlg5M0NOQ3pRRTJtZU9DWW9hQWZKKzlxeWpFWDJ2ZlBTT05yaWNoWG9ZbllVVms0VjR3SXBWTUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEwNTU3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk1CjR5aEdPcGIyNkJFdjA3eWplRG04RU9aWGZLMUV3c1pSbWUxcy8yTHhCZFBiTk1zcVk1aWdFbWNreTFMZHhsMmlmenNiWW1PcjRlcXl1NjErZlN2bkNRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.95_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlkdTJYMGM0Tm1aTDU1SjRQdFhDZ0szZU5JVHRCOEhFejF3Q3hvZW5WVkZ2eDVUVVhRS3pUdVhsVnh4VkRLeTlqUnQ1dTMxUzlqU3JjM0QrcDJaL0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEwODE5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45Nl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk2CnlvTDV0T2MxdndxWlVUVkQzNUsxc3p1aER3T2V4aU56WVJRQmhRUGxvckxnSmVMa2U0UWU4MG1OZ3pFcVY2b0FhY0RCTTlqUHB4dHF5cm9JRGFHdUFnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.96_x64-setup.exe"
     }
   }
 }

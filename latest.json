@@ -1,11 +1,11 @@
 {
-  "version": "0.5.16",
-  "notes": "HUD preview 'Как в игре' now shows game images in the app; HP bar mods get a scene; cached previews rebuild",
-  "pub_date": "2026-11-24T12:15:34.203Z",
+  "version": "0.5.17",
+  "notes": "Graphics: official levels no longer use values the game clamps (textures, decals, shadows, light samples); interface level drops a cvar the stock menu owns",
+  "pub_date": "2026-11-24T12:45:36.373Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzNjcGMwa1lzNExXSThmYnhyN01RTDJ1RG0xVUVDQy93WHpsd3JqK0dsYmhNNmZRSkpLZWE4KzdnaUZqZ2tIc3F2TmVhaXN6STVsdTltTnlzcTExK3d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIyNTMzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xNl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE2CmR3cW14amgrTTArcWlxdFRGc2dBVnRONFAxQnRGdlNiNGhSNFE0bEZkNnNaNkpHMlN3cFV6L3JPNmdmZXo5S2FScThueHp6N1pIcnVmeDQxSkhuVkJ3PT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.16_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzR1TURFSjNiUkpZTDF0aEZpZDFmQUw1Z2s3K2liVm5zazhuTVlnV1l5RVBHNHRzenkxWU93TjZrejE4Y0g0czdEOERhUElEejhlNzRXSzhBejI0VUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI0MzM2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xN194NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE3CnJ1UDhvNllLR0loWWlJSzdZTWw1ZDl6WTk3ZVBXR3RIUUFGQ3p3WlBnQ1ljNG1FeHBQZ2xLd1JYNWRRdWwrUFBQN0ZDcXQzOXhleWpSdUZVVExVV0NRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.17_x64-setup.exe"
     }
   }
 }

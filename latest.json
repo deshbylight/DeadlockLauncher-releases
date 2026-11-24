@@ -1,11 +1,11 @@
 {
-  "version": "0.5.13",
-  "notes": "HUD editor: a moved or enlarged HUD part is no longer cut off by its container or covered by other HUD panels; Modlock CLI fork-0.1.108-dl40",
-  "pub_date": "2026-11-24T11:56:56.643Z",
+  "version": "0.5.14",
+  "notes": "HUD editor: moved HUD parts are no longer cut off or covered; fixes 0.5.13's Modlock CLI download (pinned zip replaced on the server)",
+  "pub_date": "2026-11-24T12:04:06.342Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lRRG9JS2Q4dFptTmkveFdaclpKZ2J6bk5XRXg1MGh1N0l3aEpGUzIvYjJvZXlkVVZLd2l3a05WRVd4cXdOYjdJYnJhZ3huMTRBQk1qMS9rZ2dqamdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIxNDE2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xM194NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjEzCjJhWWhGN3ltSWRWeGlVcllKazNHaWxOSGh6bi8xM0ViV3IvK2JCSFJHbVNHdDRVc3p6NkRMOEYzY0tUTHhFS2pCMUFEMzYwTDkvZFVUN3JHb1REK0JnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzgvZWJsVXYrYXBzYU1YcFZuYzQ5QTNxeTJnamFhODZCTjAzbnkyQmdTNUFFRmo2ckZLd3loV2IrS1NZcnZmMzRmOUNtenpqcHJka2IwcWttQVRNWnc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIxODQ1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xNF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE0CjJvZU9aS1JNZGdCbVJyL2xOK3JSdUFRczNWVG5zRjMweGdIczM2Y0c3b1lKLzRNUkxOSTFPZnU2R1VSMzliK0czSy96dStyZmp5dGhXOVA4em5XVkJRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.14_x64-setup.exe"
     }
   }
 }

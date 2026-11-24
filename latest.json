@@ -1,11 +1,11 @@
 {
-  "version": "0.4.89",
-  "notes": "Role hierarchy: owner > admin > moderator > supporter > player; admins can no longer change other admins or give admin. Role codes for supporter, moderator and publisher; publisher toggle in Players. Upgrade code removed (old ones work as mods codes).",
-  "pub_date": "2026-11-24T07:37:28.578Z",
+  "version": "0.4.90",
+  "notes": "Owner can give itself publisher and other roles on its own row in Players.",
+  "pub_date": "2026-11-24T07:51:09.080Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lZRTh6dDIyVTYvdjBDTTJwaDRSbFRkNGsxaDlpUDR5dEpjZktqd3lYQVpKUnNjWm1Bb0FSTDhVQ3FPNlU4VEFQd29yNXp3TjRSZzZFZUdGcmF4U1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA1ODQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg5Cm1kMy9XWnk3KzJVMk9lOTBudlVPV2VWSWV3cFByV0g4Y2JNRjlHd0ZoYjdDZ1VrNEJxUyttRzUyTVVvMFo3K01HU3M2TS9HVWNOWnNrWVFxYm1KbUFnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.89_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVkSzdBeFhlU2Z6dXBhdC8wQmZsUEJJUkxXZDRmbEZ1WjZmTWs3clZiTEhtYTZra0g1MUlXdGZ4d2IxaHdyUUIrL0w5Z3hSdkRWUHM1ZE1CaHQ3amdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA2NjY4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45MF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjkwCmJsdlRGdG01SU1TKzdwalFxczBaQjlsMnc1b1JVRVdFcFp6Wm5taVlGMUdxcjZwOVoza21DcVV3ajkvZlYwNDZ3NnFlU0NYTy8xeGFwZ2F6bkkxbkRRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.90_x64-setup.exe"
     }
   }
 }

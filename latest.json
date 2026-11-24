@@ -1,11 +1,11 @@
 {
-  "version": "0.5.18",
-  "notes": "Graphics: textures levels no longer cap the texture pool (it made texture streaming thrash and cost FPS)",
-  "pub_date": "2026-11-24T13:59:08.286Z",
+  "version": "0.5.19",
+  "notes": "Graphics 'All' tab: Min/Max presets no longer switch off engine optimizations (culling, batching, threads, light binning, particle fast paths)",
+  "pub_date": "2026-11-24T14:19:56.638Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lNYm1sNHNzVHkrUXJVNmZkL1hCK0s2cFdTZHQzRzJkMWJXbWZLSktLWm1ESkt4djM4cVVDdE5Cd0w1eGQycWc0eWhwbU8zeXpNR3ZJRTRKTUZTZmcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI4NzQ3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xOF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE4CnNRRXo0OUR1RUp4dXBaMVpZNGcxc1lESG9JbmNYNXo3TUE2YmFQV1drWDNPOVBIOXpENENqV2krWjZZWmYrVS9pTXd0b1RWRkFSK2s5WVBUV0JlV0R3PT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.18_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlMNmhXVy9ESDZyQzJMcFZqeGxYdUhSZUh4dEJtRmhWT3d6Y3Z3THZMMlE3YWR2VWdEUCtjVmNZaGVtMXJoSHBxTmlQQ2hVS1F3eWhQVklEdTgyL0F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTI5OTk2CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xOV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjE5ClBwN29vR3RFazhGM2hBS2FPaFRHQ3FUc2tlQThxbmR2dHE2WU0vRE9MYlhSaEgrVUR3NFFKVmYxUkxvYU9JbjlYeE53a0ZBQU9wclhOc0RLdjkyZEJBPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.19_x64-setup.exe"
     }
   }
 }

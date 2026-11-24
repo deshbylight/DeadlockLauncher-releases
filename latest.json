@@ -1,11 +1,11 @@
 {
-  "version": "0.5.20",
-  "notes": "Graphics: Detail Minimum no longer stops hero cloth physics; All tab presets keep engine optimizations (culling, binning, shadow caching) and cloth at defaults",
-  "pub_date": "2026-11-24T14:44:10.461Z",
+  "version": "0.5.21",
+  "notes": "Benchmark button on the Servers tab: solo camera flight over dl_midtown with FPS and hardware load; results screen has an Exit button",
+  "pub_date": "2026-11-24T15:46:25.308Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hBOXc2QzIvTkVLcVNid3NUQjB6YjZCN2pWVjhsNll4R3VrNVovN0twMnlJSDRXdjRGcjlsZUtQSjhiRzlMczVLOC95eTBBbisrOWtEaGE3T25hMVFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTMxNDQ5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjIwCjFHaWIyRDJ4dEdVRFVYZCtGSEtrelVvUHJ5dTIvUENpZE1Qdi9tb0J2R1RnT2Jhc2hBdTdFY1doWUdaQTZzMVFLbVNrNmdPMmxGSkhEY1ArYWRtRUJRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.20_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzM2NFBlMXRwRGJUTVpMdmp2ajYzWEp2MldwS1E0R1NIKzB1eTdxTXMvQzFXbWNQSkxjK01KSnVXdjdJeC91YWV6ZERWeWF3N1FnYlhiMldacEpNQ2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTM1MTg0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjIxCjd4T3p6cXh3RjdVNmJ5L0pVR0RVMG52UmVDM21walREeW04aWpnZVF4V3Z0eFl2Y1ZYWFQ5eU9ocUdFcnRjbUJmWi9VVFBMRTBnd3hPY1dxc3JQVUJnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.21_x64-setup.exe"
     }
   }
 }

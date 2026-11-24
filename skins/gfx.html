@@ -5,7 +5,8 @@
        page -> renderer: document.title = "dlgfx:<id>:<part>:<parts>:<chunk>" (one JSON message, acked)
        renderer -> page: URL fragment "#<request>~<ack>~<party>~<command>~<arg>..." (no reload)
      Commands: state | set~<group>~<level> | preset~<id> | copy | paste (share code via the clipboard) | restart (launcher
-     restarts the game once it closes; the state's relaunch tells the renderer to quit it).
+     restarts the game once it closes; the state's relaunch tells the renderer to quit it) | lab~<cvar>~<value> ("Все"
+     tab, value "" = the game's own).
      Messages: state {state} (the launcher's /gfx/state as is), status {text}, offline {text} (panorama/src/gfx.ts). -->
 <html>
 <head>
@@ -22,6 +23,9 @@ const CHUNK = 900
 const ACK_TIMEOUT = 2000
 const OFFLINE = 'Лаунчер не запущен / The launcher is not running'
 const ID = /^[a-z0-9_]{1,32}$/
+const CVAR = /^[a-z0-9_]{1,64}$/
+// A "Все" tab value; "" = the game's own (graphics_lab.rs).
+const LAB_VALUE = /^(-?\d{1,10}(\.\d{1,6})?)?$/
 
 // ---- channel to the renderer (as feed2.html) ----
 const queue = []
@@ -101,6 +105,9 @@ async function run(cmd, args) {
   if (cmd === 'copy') return send('/gfx/copy')
   if (cmd === 'paste') return send('/gfx/paste')
   if (cmd === 'restart') return send('/gfx/restart')
+  if (cmd === 'lab' && CVAR.test(args[0] || '') && LAB_VALUE.test(args[1] || '')) {
+    return send('/gfx/lab?cvar=' + args[0] + '&value=' + args[1])
+  }
 }
 
 // The state at game start (the renderer applies the modded lines), then again whenever the launcher comes up later.

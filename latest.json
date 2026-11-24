@@ -1,11 +1,11 @@
 {
-  "version": "0.5.10",
-  "notes": "Graphics All tab: crash guard (a value that crashed the game is taken back and marked), presets light at one press, readback check of pressed values; sc_layer_batch_threshold_fullsort 0 and r_dx11_software_cmd_lists removed; Modlock CLI fork-0.1.108-dl39",
-  "pub_date": "2026-11-24T11:37:53.021Z",
+  "version": "0.5.11",
+  "notes": "3D preview and install of .7z skins now work on Windows 10 and older Windows 11 (system tar.exe had no LZMA).",
+  "pub_date": "2026-11-24T11:52:45.283Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzByS1dDK1pTVC8xRWVKYWZOMEhXd2lCaE1lYXg0eUw0UXpLY3JuNVVTZWVKY1g3V3hmbzFyV2tUakNHaGliWEVHWE5YVkV0ZnhkQWdUUytHV0NpTGdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIwMjcyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xMF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjEwClUxNmxCcW5WT0NpWUtlblYyM010Ymg3TkN1KyszREJtU3RBcTE1K2ptcFZ3WkltMCtsb0RRZkNKSWxFbXRBRFpMMUNkR2ZZcVdQcVhCUXdZNSs4Q0RBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.10_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pCbkFFcVlTQzdOQy92bGgvdmpqTTFBNXh4OUNNRkpMT2lBc3pWbEx5NUtCNjhSUkRKSmY4MzMwditjdWl5U1dPNFUvc3M0NmRPckJzOXVnUXJablFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTIxMTYzCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4xMV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjExCmRQUUZLMSsxczVZWkI4S1RSY2JIV1dKa0hjQ2hnRlpESmI1cmtYTmwvYktaK3FrUHdoNStubWFzNE9GMlhEQitpN2laUkVuS2IrbkVtU0N2Y0xDQkRRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.11_x64-setup.exe"
     }
   }
 }

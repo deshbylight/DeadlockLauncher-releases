@@ -1,11 +1,11 @@
 {
-  "version": "0.4.82",
-  "notes": "In-game windows reach launcher parity: one section strip for Skins / Servers / Graphics, a Mods tab with categories, GameBanana search, Updated sort, launcher groups with apply, installed mods on/off, update button on mods with a newer file, likes and tag chips. CLI fork-0.1.108-dl28.",
-  "pub_date": "2026-11-24T05:38:08.277Z",
+  "version": "0.4.83",
+  "notes": "Disabled buttons explain why; plain download error messages; mods table fits narrow windows; connection-lost bar above the status bar; brighter captions; in-game windows CLI fork-0.1.108-dl28",
+  "pub_date": "2026-11-24T05:41:33.207Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3g3THhxcEVpSE9oMEpCR0tWOGR1SjIxclRrOUwxNVFGcHdObm5QODhyQS9tWHJCZjNlUEtnK3V0Mm82eGtRcGFJWit2aWV1dWwwU3JubVpXME9JSFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk4NjgxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44Ml94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjgyCnRKdnZzOG5wZTlkMzEwVVVxYVFxd2FJL3ZYODdtOERaNEdQRWNEdnVtNXRsQzA1M0ZOS0J2Sk5pQ1c4bXRGSnI4ZkVJa1dXS01GZ094TEl1b00xd0NnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.82_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzdRNng5VzFhYW45dE1aemxjVis4MlJqYXZiTjlqM2hkR1hrWDhRTExzNU5lSUNld2syK3hUS2pDYjFmemJFclp4bFE3MklzdzRUREFFVHJoVEJ5RHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk4ODg5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44M194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40LjgzCllVaEJyN1ptNFNWeUZja29yYWJPdzJ6UW1VWnZSMG45K3NFV3h3bGZQS1E0OW0vWnpVWW1sTm0yM1NldlRFWUVqdXFITUNpaXcyNDFwSjJmeFEwVUFRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.83_x64-setup.exe"
     }
   }
 }

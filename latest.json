@@ -1,11 +1,11 @@
 {
-  "version": "0.5.7",
-  "notes": "HUD preview no longer fails when a few mod images cannot be decoded: they are marked unreadable and counted.",
-  "pub_date": "2026-11-24T11:10:35.906Z",
+  "version": "0.5.8",
+  "notes": "Graphics All tab: presets Min / Max / Default / Reset for the open category; Modlock CLI fork dl37",
+  "pub_date": "2026-11-24T11:13:25.976Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytMVGFNMGxZcXYxQVZpSG9aVWhmQk1DdExzZ05oSlA5bjBmZzZ2eEczdXVyelg1bGpxaVUzcTNDN3NBWGs1aVRTZCswMXFGZy8zNy8weXRqcjh3bmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE4NjM1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS43X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNwpMVDg4T08wQTdxaUlOWFJJNkFUbEJXTUtwWDd5YTFJMUhQeWNJU0JQcnJ3S1VjQWlFc09XQ0NnSWNhdEhRVmlTT3laUTdQL0lRWGNnUnExOHpMNldDdz09Cg==",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFDOEpMNDU2VE9pQmVBQmE3ek5mcGpMVC9zR0pvdXFIMUhuWWJ4SmdXeFVORmRLNVhOU2s2Qjg0NjkzRWZ1bnFPOE93cUw2YUtSQ05WeHVsSnI1aXdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTE4ODA1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS44X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOApWaUpUcVdlK2RrYUVRYW05d3BCMG5KcVRkWVBiaHJtY2VQbE5WMDg2T0Q3MjdRbWd6dEhCV0pxc0k1L1FRaTIxbDRpYlk2ZnVxODVTUHZSSk42TDBEQT09Cg==",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.8_x64-setup.exe"
     }
   }
 }

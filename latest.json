@@ -1,11 +1,11 @@
 {
-  "version": "0.4.94",
-  "notes": "Skins 3D preview: textures and colors render correctly (sRGB tints, tint mask strength, self-illumination keeps texture colors, vertex-colored parts, texture files with spaces in their names)",
-  "pub_date": "2026-11-24T08:36:51.367Z",
+  "version": "0.4.95",
+  "notes": "3D preview: recolor mods are shown on the model of the mod they recolor (base found from the GameBanana description links)",
+  "pub_date": "2026-11-24T08:55:58.060Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlTVWc3dGMrS00rKzJJNkQzYlo0Ykd1em1CYXE2RW8vY3dwaXQyZjVESHI0RlZ1NDhzdDRzTGtjYVZBdUpGeFJEc0k4S2J3ckQ0ZjJiQ1JDUXJ2L0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA5NDExCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk0Ckt3M2dJbndWZE04R0VDTk5HVkxnYkJoaXBHdHRLOU1yTVA3czhFRkVhTldwQlh3dDZMcUpJNng3MGwxc083OGtNY3I2VS9ZVXJ2Rm80M2xVSk84R0JRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.94_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzYxeEtBekhnckhJUFJjblpIcWtKMWRiNzFXdzJOMlg5M0NOQ3pRRTJtZU9DWW9hQWZKKzlxeWpFWDJ2ZlBTT05yaWNoWG9ZbllVVms0VjR3SXBWTUE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEwNTU3CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC45NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljk1CjR5aEdPcGIyNkJFdjA3eWplRG04RU9aWGZLMUV3c1pSbWUxcy8yTHhCZFBiTk1zcVk1aWdFbWNreTFMZHhsMmlmenNiWW1PcjRlcXl1NjErZlN2bkNRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.95_x64-setup.exe"
     }
   }
 }

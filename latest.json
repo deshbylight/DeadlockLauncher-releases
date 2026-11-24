@@ -1,11 +1,11 @@
 {
-  "version": "0.4.77",
-  "notes": "In-game servers: while a join connects, its row shows the stage instead of Disconnect (a second press no longer cancels the join). Same in the Servers tab. Modlock fork dl24.",
-  "pub_date": "2026-11-23T18:11:28.511Z",
+  "version": "0.4.78",
+  "notes": "Every button now reacts to a press; slow actions show a spinner and a check mark when done; Play shows 'Launching…' until the game starts (error after 2 min); queue, cancel, decline, leave and start wait for the server with a 15 s limit; copy and open-link confirm. Skins: in-app GameBanana mod page with 3D preview and per-file download.",
+  "pub_date": "2026-11-24T04:32:38.109Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzh5OWVnaThOUkNib2FMZ3BuZjNzRGV5WDVpcmFRRzFSUVp1Nmp1NXN6M3B3aEVDMWhVSlUwdEEvdk45bytNbko4TG5WRVN6VGhMQkNiUGhTSzB4dmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3NDgxCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43N194NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc3CnVpaEZkMlZSWlFOazhoS2tmVS9YNTcvZEo0QUJER1VrVVhQTWlNZDI1bTFFOTYrMFMxUVFYZHNWWWNERURUcU9iczhHemRVVEFvZVRyU29Yd3hBMUF3PT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZlUHJpaStOZDlZc0Npcit4SlBwOWkrNWFyWGNqYWpuRG1lSXMzWnFlMjRXUTMzdzRlUHBKTThtaWduZzNjaUd5UnIzU1o3ZzM5aisraVlMaWFSbFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk0NzQ5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc4ClZhOUFqYzhzbTlnNTRYeTRGN2V1eEtLYmxjL1ZSRFhMaStEMEo0eElUS1RvR0RRakpHYWxlK01hUzNrRUtsSDFlY2lqTzBBV2tJek12azVOWDlQWkR3PT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.78_x64-setup.exe"
     }
   }
 }

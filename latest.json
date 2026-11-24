@@ -1,11 +1,11 @@
 {
-  "version": "0.4.88",
-  "notes": "Patches tab for publisher accounts: the patch kit page (patch list, models, sounds) inside the launcher. Fixed: the admin tab was labelled Patches in 0.4.87.",
-  "pub_date": "2026-11-24T07:20:52.769Z",
+  "version": "0.4.89",
+  "notes": "Role hierarchy: owner > admin > moderator > supporter > player; admins can no longer change other admins or give admin. Role codes for supporter, moderator and publisher; publisher toggle in Players. Upgrade code removed (old ones work as mods codes).",
+  "pub_date": "2026-11-24T07:37:28.578Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRMQU5xRjFZQjBhRWFBSEl2SmF1STAzQWJidnZCcnF3TmJkVmV2cFdsQ3dJWFlad1h6eUNocFdpQzhmR2xmYUhhYTZCaEVLUFlpMUhiTjV4dEhYVWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA0ODUyCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg4CmpRWS9pdzhKR0l4eHBueThSQXZYaEdlUVlNZER6UmI3VjlqdEZNTlRTTVlHN2xETU5rQ1VVY3FXUGNrL0U5WnhhN0ppblp6c1RuaE9HMkJQNVNLdUNRPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.88_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lZRTh6dDIyVTYvdjBDTTJwaDRSbFRkNGsxaDlpUDR5dEpjZktqd3lYQVpKUnNjWm1Bb0FSTDhVQ3FPNlU4VEFQd29yNXp3TjRSZzZFZUdGcmF4U1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA1ODQ4CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg5Cm1kMy9XWnk3KzJVMk9lOTBudlVPV2VWSWV3cFByV0g4Y2JNRjlHd0ZoYjdDZ1VrNEJxUyttRzUyTVVvMFo3K01HU3M2TS9HVWNOWnNrWVFxYm1KbUFnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.89_x64-setup.exe"
     }
   }
 }

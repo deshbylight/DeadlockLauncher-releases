@@ -120,9 +120,15 @@ async function run(cmd, args) {
 }
 
 // The state at game start (the renderer applies the modded lines), then again whenever the launcher comes up later.
+// The first state that reaches the launcher carries boot=1: its "Все" crash guard takes back values that crashed the
+// last game (graphics_lab_guard.rs; older launchers ignore the argument).
 async function start() {
+  let boot = true
   for (;;) {
-    if (!online) await send('/gfx/state').catch((e) => post({ kind: 'status', text: String(e.message || e) }))
+    if (!online) {
+      await send(boot ? '/gfx/state?boot=1' : '/gfx/state').catch((e) => post({ kind: 'status', text: String(e.message || e) }))
+      if (online) boot = false
+    }
     await new Promise((done) => setTimeout(done, 5000))
   }
 }

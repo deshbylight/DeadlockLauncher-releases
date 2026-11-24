@@ -26,6 +26,8 @@ const ID = /^[a-z0-9_]{1,32}$/
 const CVAR = /^[a-z0-9_]{1,64}$/
 // A "Все" tab value; "" = the game's own (graphics_lab.rs).
 const LAB_VALUE = /^(-?\d{1,10}(\.\d{1,6})?)?$/
+const LAB_PAIR = '[a-z0-9_]{1,64}:(-?\\d{1,10}(\\.\\d{1,6})?)?'
+const LAB_LIST = new RegExp('^' + LAB_PAIR + '(,' + LAB_PAIR + ')*$')
 
 // ---- channel to the renderer (as feed2.html) ----
 const queue = []
@@ -107,6 +109,10 @@ async function run(cmd, args) {
   if (cmd === 'restart') return send('/gfx/restart')
   if (cmd === 'lab' && CVAR.test(args[0] || '') && LAB_VALUE.test(args[1] || '')) {
     return send('/gfx/lab?cvar=' + args[0] + '&value=' + args[1])
+  }
+  // A "Все" preset: "cvar:value,..." in one request (graphics_lab.rs set_many, ≤ 200 pairs).
+  if (cmd === 'labmany' && LAB_LIST.test(args[0] || '') && args[0].split(',').length <= 200) {
+    return send('/gfx/labmany?list=' + args[0])
   }
 }
 

@@ -1,11 +1,11 @@
 {
-  "version": "0.4.78",
-  "notes": "Every button now reacts to a press; slow actions show a spinner and a check mark when done; Play shows 'Launching…' until the game starts (error after 2 min); queue, cancel, decline, leave and start wait for the server with a 15 s limit; copy and open-link confirm. Skins: in-app GameBanana mod page with 3D preview and per-file download.",
-  "pub_date": "2026-11-24T04:32:38.109Z",
+  "version": "0.4.79",
+  "notes": "Skins: 3D preview is lit and shows the hero menu pose; files without a model (voice lines) are marked before download; in-game 3D button on skin cards (fork dl25)",
+  "pub_date": "2026-11-24T04:49:28.673Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZlUHJpaStOZDlZc0Npcit4SlBwOWkrNWFyWGNqYWpuRG1lSXMzWnFlMjRXUTMzdzRlUHBKTThtaWduZzNjaUd5UnIzU1o3ZzM5aisraVlMaWFSbFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk0NzQ5CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43OF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc4ClZhOUFqYzhzbTlnNTRYeTRGN2V1eEtLYmxjL1ZSRFhMaStEMEo0eElUS1RvR0RRakpHYWxlK01hUzNrRUtsSDFlY2lqTzBBV2tJek12azVOWDlQWkR3PT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.78_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFqUU91TmVRRUxuNXQzdWFEb2JVZW5ZbFhYT0Jiamt6YnEzR25HU3ZKRFZ0Vlpmck85YW5WUUhQamVJWnFMUHVkNGJtSk9rSnZWTC83d2NJTTRxeXdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk1NzY0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC43OV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljc5CmtjNlNaWWxpUXkzUWcvd05TWnZpbklNb2xMOEpFcVE4SForUHhCZHhISjBQRDl5d1FDL0VhUHJuZXpCMHdEVXVVM1NsSkRFUXhvR3FCMzhGeis1aEF3PT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.79_x64-setup.exe"
     }
   }
 }

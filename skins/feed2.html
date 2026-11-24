@@ -9,13 +9,15 @@
                remove~<mod> | stock~<cat> | answer~<value>.
      Messages: ready, heroes, count, skins, card, ask, status, offline, apply, reset (panorama/src/skins_feed.ts).
      ?have=<mounted addon>: polls /current and reports a choice that differs from it.
-     feed.html stays for renderer dl7, picker.html for dl4..dl6. -->
+     feed.html stays for renderer dl7, picker.html for dl4..dl6.
+     Fork dl27 (mods, search, groups, updates, mod switch): feed2_more.js, loaded first. -->
 <html>
 <head>
 <meta charset="utf-8">
 <title>feed</title>
 </head>
 <body>
+<script src="feed2_more.js"></script>
 <script>
 'use strict'
 const q = new URLSearchParams(location.search)
@@ -54,6 +56,9 @@ const T = {
     party: 'You are in a party: choice saved. It goes on when you are alone in the hideout; in matches after a game restart.',
   },
 }
+// dl27 keys (feed2_more.js); a page without it still serves older renderers.
+const HAS_MORE = typeof MORE !== 'undefined'
+if (HAS_MORE) for (const k of ['ru', 'en']) Object.assign(T[k].window, MORE_TEXT[k].window)
 let L = T.ru
 
 // ---- channel to the renderer ----
@@ -174,7 +179,7 @@ async function loadHeroes() {
 function sendHeroes() {
   post({ kind: 'heroes', heroes: heroes.map((h) => ({ cat: h.cat, name: h.name, chosen: !!(h.code && state.selected[h.code]) })) })
 }
-const installedMods = () => [...new Set(state.installed.map((s) => s.gbMod).filter((m) => m))]
+const installedMods = () => [...new Set(state.installed.map((s) => s.gbMod).concat(HAS_MORE ? modsMine() : []).filter((m) => m))]
 const sendCount = () => post({ kind: 'count', count: installedMods().length })
 
 function ask(title, options) {
@@ -213,9 +218,12 @@ function cardOf(mod) {
   const i = info[mod] || {}
   const code = mine[0] && mine[0].hero
   const hero = code ? (state.names[code] || code) : ((heroes || []).find((h) => h.cat === i.cat) || {}).name || ''
-  const name = i.name || (mine[0] && mine[0].name) || String(mod)
-  return { mod, cat: 0, name, image: i.image || '', hero,
-    worn, mine: mine.length > 0, busy: busy[mod] || '' }
+  // dl27: installed non-hero mods are "mine" too, with their kind, switch, update, likes and tag.
+  const more = HAS_MORE ? cardMore(mod) : {}
+  const rows = HAS_MORE ? modRows(mod) : []
+  const name = i.name || (mine[0] && mine[0].name) || (rows[0] && rows[0].name) || String(mod)
+  return { mod, cat: 0, name, image: i.image || '', hero: more.kind === 'mod' ? '' : hero,
+    worn, mine: mine.length > 0 || rows.length > 0, busy: busy[mod] || '', ...more }
 }
 function stockOf(hero) {
   return { mod: 0, cat: hero.cat, name: L.stock, image: '', hero: hero.name, worn: !state.selected[hero.code],
@@ -245,14 +253,21 @@ function sendChoice(before) {
 
 async function library() {
   const mods = installedMods()
-  await Promise.all(mods.filter((m) => !info[m] || !info[m].image).map(async (m) => {
+  // dl27: each open reads every ProfilePage fresh, for the update mark (the app's skins_update.ts).
+  await Promise.all(mods.filter((m) => HAS_MORE || !info[m] || !info[m].image).map(async (m) => {
     try {
       const p = await gb('/Mod/' + m + '/ProfilePage')
-      info[m] = { name: p._sName, image: thumb(p), cat: p._aCategory && p._aCategory._idRow }
+      const skin = state.installed.some((s) => s.gbMod === m)
+      info[m] = HAS_MORE ? recInfo(p, skin ? (p._aCategory && p._aCategory._idRow) : 0, skin ? 'skin' : 'mod')
+        : { name: p._sName, image: thumb(p), cat: p._aCategory && p._aCategory._idRow }
+      if (HAS_MORE) noteUpdate(m, p)
     } catch (e) { /* the card keeps the stored name, no preview */ }
   }))
-  const skins = mods.map(cardOf).sort((a, b) => a.hero.localeCompare(b.hero) || (b.worn - a.worn) || a.name.localeCompare(b.name))
+  // Skins by hero first, then mods by name.
+  const rank = (c) => (c.kind === 'mod' ? 1 : 0)
+  const skins = mods.map(cardOf).sort((a, b) => rank(a) - rank(b) || a.hero.localeCompare(b.hero) || (b.worn - a.worn) || a.name.localeCompare(b.name))
   post({ kind: 'skins', view: 'library', cat: 0, sort: '', page: 1, complete: true, skins })
+  if (HAS_MORE) sendGroups()
 }
 
 async function run(cmd, args) {
@@ -269,7 +284,9 @@ async function run(cmd, args) {
     await loadHeroes()
     sendCount()
     post({ kind: 'nsfw', on: guarded() })
-    return sendHeroes()
+    sendHeroes()
+    if (HAS_MORE) sendGroups()
+    return
   }
   if (cmd === 'nsfw') {
     // The window's 18+ toggle; it asks for its list again on the answer.
@@ -306,12 +323,15 @@ async function run(cmd, args) {
     await loadState()
     return library()
   }
+  if (HAS_MORE && MORE[cmd]) return MORE[cmd](args)
   if (cmd === 'shop') {
     view = 'shop'
     const cat = Number(args[0])
     const page = Math.max(1, Number(args[1]) || 1)
     const sort = SORTS[args[2]] ? args[2] : 'downloads'
     const hero = heroes.find((h) => h.cat === cat)
+    // dl27: a query searches every hero; the "updated" order; likes on the cards.
+    if (HAS_MORE && (hero || args[3])) return catalog('shop', cat, page, args[2] || 'downloads', args[3] || '')
     if (!hero) return
     const res = await gb('/Mod/Index?_nPerpage=24&_nPage=' + page + '&_aFilters%5BGeneric_Category%5D=' + cat + '&_sSort=' + SORTS[sort])
     const skins = []

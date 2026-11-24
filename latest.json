@@ -1,11 +1,11 @@
 {
-  "version": "0.4.84",
-  "notes": "Mod page: support the author on GameBanana (like, comments, author profile); opening a mod page no longer adds to its download count",
-  "pub_date": "2026-11-24T05:56:45.414Z",
+  "version": "0.4.85",
+  "notes": "3D preview: models with glowing materials no longer render white, color tints applied; the camera point moves (right drag pans, wheel zooms to the cursor, double-click focuses a point); texture-only mods show the stock hero model with the mod's textures",
+  "pub_date": "2026-11-24T06:48:05.141Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzY2b29HNzNLY1o5VFBGTGJtcTlJYzhQeEhnbkZLbEoxZ0dtL1ZpM1ZyVUtBaWlIeC9OSTVDd2U1Q3dQc0QzMzNNcExHZkhtUFRrbUxoVkxobUNKUlFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDk5ODA1CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44NF94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg0CnZjS2J2ZmJCRFMzQWp0UTlBQ2tnVlliY2drbGdyMm1YTWI2QmpHVFFxeE5XSk5QbTErSDdOYnd5SElzQlIvS1preHJsK3JGSjdQcit6YytuWE1GWUJBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.84_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9HQUtBUW03SlJxREVQQS9EMWc2L3hDSEh6Mjd2VVE3SEFBN1BUcWdQa0JEdFE5azk5RE9BYUhXL0VCK0JsOHA0WnkyeGszNmh1bmljTSs2REZlZHdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTAyODgwCWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNC44NV94NjQtc2V0dXAuZXhlCXZlcnNpb246MC40Ljg1CmE1TVBQUDRCR0pZM0F1UzRPbnVBZEJWZU8xUkdOcFBLV3BuRzVwdVdCc1VZaGFtc1NvS1lJWEpvaEh4QXdyS2ZLSVROT0JCSzdmZisxV2oxZWJEZUJRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.4.85_x64-setup.exe"
     }
   }
 }

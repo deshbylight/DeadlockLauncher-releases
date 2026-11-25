@@ -1,11 +1,11 @@
 {
-  "version": "0.5.47",
-  "notes": "In-game Skins entry shows only in the hideout; the Servers entry stays on every server",
-  "pub_date": "2026-11-25T14:06:15.052Z",
+  "version": "0.5.48",
+  "notes": "In-game Servers window: presses (Has slots, visibility, dropdowns) answer at once; cancel a server start during the mod update; copy the join code; reconnect to your own server; one Stop button in the Your server block.",
+  "pub_date": "2026-11-25T14:12:06.503Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lNa3Z1YzZDZVZ2Y2FXUzdIdDYrNkpqaFVBUWJMd1R2akVwREVSQytmV2Q3eTF2eWtrRFBsamJyVWxUUFVPSmliSGpaTjZWbktsWVA2VE9YejhQaGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE1NTc0CWZpbGU6TG9ja1N0ZXBfMC41LjQ3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDcKZXN3dW5uVk5zaGNsKzZEamZBZ2V3OVRyazBmdTUwcEtmek1tS2VlSEc2ZXpsUW1rMDQwZ29UWVJHSnNVNnJhazRmcldES2RsUzk4R2lTcnBIcitaQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.47_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzF5OXNIdXVqQ3hRdEMwTGw2dnFMQ1FhRk52dzNrMXFwOVkzZ2cyR21CMzJiVGFJc21HWWYwQy84Y3BSa2hXM0pVT2ZTcXNZTE1NZ3UrNEdaL1RzMWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE1OTI1CWZpbGU6TG9ja1N0ZXBfMC41LjQ4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDgKdHdLZ3RtQlExbzhLZjMxUWhON1Y0VlQraklXZjk0ZGV3SW1IVDhjYm95QVVvWUxPNlNFZUthMkI5Zi9xT09WalBERXA3RUhpYjIzbHdETWw5TnZpQnc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.48_x64-setup.exe"
     }
   }
 }

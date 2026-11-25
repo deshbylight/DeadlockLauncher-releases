@@ -3,18 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Deadlock Group Finder — установка</title>
+<title>LockStep — установка</title>
 <style>
   body { font: 16px/1.5 system-ui, sans-serif; background: #15120e; color: #e8dcc4; max-width: 640px; margin: 48px auto; padding: 0 20px; }
   a.btn { display: inline-block; padding: 12px 22px; background: #c9a24a; color: #15120e; font-weight: 700; text-decoration: none; border-radius: 6px; }
   a.btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
   .muted { color: #a8987a; font-size: 14px; }
-  input { font: inherit; margin-top: 4px; padding: 8px 10px; width: 260px; background: #231d16; color: #e8dcc4; border: 1px solid #5a4a30; border-radius: 6px; letter-spacing: 1px; }
 </style>
 </head>
 <body>
-<h1>Deadlock Group Finder</h1>
-<p><label>Код приглашения<br><input id="code" autocomplete="off" spellcheck="false" placeholder="XXXX-XXXX-XXXX-XXXX"></label></p>
+<h1>LockStep</h1>
 <p><a id="dl" class="btn" aria-disabled="true" href="#">Скачать установщик</a></p>
 <p id="state" class="muted">Получаю адрес сервера…</p>
 <h2>«Windows защитил ваш компьютер»</h2>
@@ -24,26 +22,16 @@
 <code>!ml</code>: «Безопасность Windows» → «Журнал защиты» → запись → «Восстановить». Не отключайте Защитник целиком.</p>
 <p class="muted">Лаунчер — фанатский инструмент с открытой лицензией MIT, не связан с Valve. Deadlock — игра Valve.</p>
 <script>
-// The installer lives on the launcher server (/dl/), whose address changes with the tunnel: read server.json.
-// The server hands it out only with an invite code (?code=, server dl.ts D-237); a ?code= in this page's
-// address fills the field.
-const code = document.getElementById('code');
+// The bootstrapper lives on the launcher server (/dl/, public, D-316), whose address changes with the tunnel:
+// read server.json. LockStep-Setup.exe never changes (SmartScreen reputation is per hash); it fetches the newest
+// installer itself.
 const a = document.getElementById('dl');
-let base = '';
-code.value = new URLSearchParams(location.search).get('code') || '';
-function link() {
-  if (!base) return;
-  const c = code.value.trim();
-  a.href = base + '/dl/DeadlockGroupFinder-Setup.exe' + (c ? '?code=' + encodeURIComponent(c) : '');
-}
-code.addEventListener('input', link);
 fetch('server.json?t=' + Date.now(), { cache: 'no-store' })
   .then((r) => r.json())
   .then((s) => {
-    base = String(s.url).replace(/\/+$/, '');
-    link();
+    a.href = String(s.url).replace(/\/+$/, '') + '/dl/LockStep-Setup.exe';
     a.removeAttribute('aria-disabled');
-    document.getElementById('state').textContent = 'Введите код приглашения от друга и нажмите «Скачать». После установки лаунчер сам обновится до последней версии.';
+    document.getElementById('state').textContent = 'Установщик скачает и поставит последнюю версию LockStep.';
   })
   .catch(() => { document.getElementById('state').textContent = 'Сервер сейчас недоступен, попробуйте позже.'; });
 </script>

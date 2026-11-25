@@ -1,11 +1,11 @@
 {
-  "version": "0.5.40",
-  "notes": "Party: a group stays together through the whole match; a dropped launcher keeps its seat for 5 minutes; new 'Back to party' button in the Party tab rejoins or regathers the last group; the leader can make a new in-game party after a match",
-  "pub_date": "2026-11-25T11:58:08.878Z",
+  "version": "0.5.41",
+  "notes": "Mod servers work again after the Deadlock 6868 update: the ball in Football and Spark Hunt, Wave Survival interface (Modlock host fork-0.1.108-2)",
+  "pub_date": "2026-11-25T12:11:30.948Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzgyM3prWXY1aFcxcnR3NjZjbVlQT05wMXJvWW1BRU5lVmF3WUFTMHNoSS9jVGl1QXhpVjdZMkh1ajFUdGkxMkZRbVVrbnlIdVR1RTYzKyttRVlXdUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjA3ODg4CWZpbGU6TG9ja1N0ZXBfMC41LjQwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDAKU3IwMGZiaUUvT3FkVVhJUmhCejIvTUpaUDlPbWlmd3ZHRzZOQlNaY1FCNkJ1VkFCZEFPZXdIeGJ6UzdLUjZSWWErOEJjRi9qL1UyV3ZLay9uL1MyQ1E9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.40_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzdvVTgvc2p1VW9VcGE5VEZsWklsYWtkaHdGdnFUcSsrMVd4a3YwYm1RVXhXVHkva29GMXNrOUpoeUNENTBtQXVCb0U2VnQ2SXp3SWZ1WnZjN21VN1E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjA4NjkwCWZpbGU6TG9ja1N0ZXBfMC41LjQxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDEKOWEvOVhMWTdhNENkM3o4SmxsZy9XWUcvdXVtc21kVVE2R1FRZXFabzdPeVU0eFN2Kzl5bUl1UjBQbVpLaURUeENUTzFoWFppbm9kVm5rblRCTXREQUE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.41_x64-setup.exe"
     }
   }
 }

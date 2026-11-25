@@ -10,8 +10,8 @@
 const LIB = Number(new URLSearchParams(location.search).get('v')) >= 2
 
 const LIB_TEXT = {
-  ru: { window: { onPc: 'На этом ПК (addons)', importFile: 'В библиотеку' }, mods: 'Моды', importing: 'Копирую…' },
-  en: { window: { onPc: 'On this PC (addons)', importFile: 'To library' }, mods: 'Mods', importing: 'Copying…' },
+  ru: { window: { onPc: 'На этом ПК (addons)', importFile: 'В библиотеку', allHeroes: 'Все герои' }, mods: 'Моды', importing: 'Копирую…' },
+  en: { window: { onPc: 'On this PC (addons)', importFile: 'To library', allHeroes: 'All heroes' }, mods: 'Mods', importing: 'Copying…' },
 }
 const B = () => (L === T.en ? LIB_TEXT.en : LIB_TEXT.ru)
 

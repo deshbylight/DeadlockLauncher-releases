@@ -1,11 +1,11 @@
 {
-  "version": "0.5.33",
-  "notes": "Progress bars update in place: downloads no longer rebuild the window, so buttons, hover and scrolling keep working and the update popup no longer blinks.",
-  "pub_date": "2026-11-25T07:46:43.402Z",
+  "version": "0.5.34",
+  "notes": "Skins tab: catalog opens first, hero voice/particle mods grouped under their hero, addons folder files shown as cards with DMM origin, Doorman portrait, new look; 3D preview: pose and animation list for every hero, hero-select pose by default, hidden mesh groups (Rem), correct model for Gojo Doorman",
+  "pub_date": "2026-11-25T08:26:39.021Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzl5NXFFdzRDaGpJbHAvTDFhdWJLSUc2V1F0R1RoQ2x1bFBVWi9RNzJDVmpqYUxGUDJqOHRqQ3JjU3JPODRQZ1pUVDIyeUFQSVVoYkV1cjh6SGNpNkFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkyODAzCWZpbGU6TG9ja1N0ZXBfMC41LjMzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzMKRFhMc0thWS9Mc3FOZXlEWGdRamtOcFEveW5VUXR6bEFIZTIrWVh6bXkxOGNGbTVOWllERFBwOTJBdHBSRWs4VU1LYkR4UXVoWG9kMVVqQmNuekwvQWc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.33_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytXTE50cW1CZGQ2K3hFTThIcERzZjZpZHVaczRWRm96MklRS1RtNURvZkxtNGZkb0JWTi9VV1JmY0w5VDZ0c3ZtQnZoVTljbXBsVzl5NDVXd0tCeGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTk1MTk4CWZpbGU6TG9ja1N0ZXBfMC41LjM0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzQKYkMyQTJDbytmcVpTYWR2cllXN2tYU2hjcDQvTDBZcDVwRFhUUDR6aE9jZ0JMbVkwWTJhTHpjRHN3NDMzSldJbDN0a3RMSGJTQTk3T2lQSXV6bzRTQWc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.34_x64-setup.exe"
     }
   }
 }

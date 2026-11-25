@@ -1,11 +1,11 @@
 {
-  "version": "0.5.31",
-  "notes": "In-game HUD editor follows the launcher language (English/Russian); owner switches client side (D-325)",
-  "pub_date": "2026-11-25T07:03:29.809Z",
+  "version": "0.5.32",
+  "notes": "Faster 3D skin preview: the mod file downloads while the page is open, several models convert in parallel, the viewer warms up during the build.",
+  "pub_date": "2026-11-25T07:26:24.570Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJOSzZhbS9yaXY5djFrTXc5UkhHU2NHMUQ5WW91SnVpaUVQUHYwT3hVbVRXWnFLd3BtZklLZUtxUHFoWTg1V3EyeGZydW1nT1BMR1Z4azlPMmpiRWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkwMjA5CWZpbGU6TG9ja1N0ZXBfMC41LjMxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzEKN2VCYitBU3NPSm9RbjNZaFRjZVdERFgvN20wWDFRMzB1TmxiVUwyQ2lPcUJrWXdFZkdlQ2JkMjBVaHUyUHpLenJrZE5INkdrZDc1TUVVNlUrc0N0QlE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.31_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhOS2EzTXZad3RRamI1TElyWDFKbkV0VjlRRk83SjVYeVd2Z09CN0pCdVIxc1ptdWprck1TTWxlcVEvWnMyUGVIYmdGNEZhUWtHWm1UM093MzNkbXdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkxNTg0CWZpbGU6TG9ja1N0ZXBfMC41LjMyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzIKUHBjSFAzbTRGR1NpMU1WRVBGRTJNT3Z3Z0NQTlY5NVdTU2c3Z3ZBc0RLSWNDeFVISWZJczNPVVluc0RjQnhSL2FrOG9BQ3p2a3NjSjlwVGJUMUZsQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.32_x64-setup.exe"
     }
   }
 }

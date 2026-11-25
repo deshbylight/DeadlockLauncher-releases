@@ -1,11 +1,11 @@
 {
-  "version": "0.5.23",
-  "notes": "Renamed to LockStep: install folder, shortcuts and taskbar pin move to the new name on update. New stable LockStep-Setup.exe for first installs.",
-  "pub_date": "2026-11-25T04:50:34.167Z",
+  "version": "0.5.24",
+  "notes": "In-game windows (Esc menu): buttons and tabs now match the Deadlock and launcher style; the section strip that repeated the Esc entries inside every window is gone, the windows sit right of the Esc menu.",
+  "pub_date": "2026-11-25T05:02:23.516Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lWT1hhSXYwV2NBYTcrS3cyU2J3SVFSNVBqUzRzZjlHYXQ1UU5lYXZtd0Q2WUlzanZvMFdjdG1Edm1BTitJZVRzQzRzZU1pMkZKcUxPZHl1VG9HaVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgyMjMzCWZpbGU6TG9ja1N0ZXBfMC41LjIzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjMKditKVGZKem43UWF5UmtidHpxN0JVdGE1ZURUQ0s4SStxWmxGTUVBRWR1bHViQjJlN2c2TkZaa3pkZ3NmeXQvM3BwbUtkSDU2Yko3dFgxOTVPSXAyQlE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.23_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzdWY3k5TzhFZlh6eThMMkIwZ3ZlUVh2MjdVODdqV1RzeEJ2RWI2NjBwdVdVdEhLaHlheDhzbTJyRk1aSUNPTW5GRkUyeHN6MWlCeklDaUxMYnkwd0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgyOTQzCWZpbGU6TG9ja1N0ZXBfMC41LjI0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjQKV045blQzWXJkYnE4YXMzRU5pU3o1eGRDeEZsL0tEVWdmMCtLU1h0N2Nadm12VnBRR3dYdzJTWmhnMEJSVGNRSEpmeE05MW5wejhkekdIMS9wSGdJRFE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.24_x64-setup.exe"
     }
   }
 }

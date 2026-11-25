@@ -1,11 +1,11 @@
 {
-  "version": "0.5.51",
-  "notes": "Modlock host fork-0.1.112-2: a player who quits a mode server frees their slot and hero at once (no 5-minute hold); themes and corner style from 0.5.50",
-  "pub_date": "2026-11-25T14:34:45.350Z",
+  "version": "0.5.52",
+  "notes": "Automatic error reports are sent only with your consent: asked once in Settings, switch in Settings > Network; Settings > Skins switches look like the Skins tab ones",
+  "pub_date": "2026-11-25T14:49:03.412Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFaTjZGU2pCK05LTEY4L1diWUEvY1R6NXQ1TU4vVkg5T1lGYUtNVnA0NlRtMnoxekk4NllYeUsxSmxlMURvT294czRhOENQWC9kWEVBeEs3VCs0WFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE3Mjg0CWZpbGU6TG9ja1N0ZXBfMC41LjUxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTEKYlc0OVYvNVRPNmhaTUZZT0RqYjdRSlV1VWd5T2ZUTnZJQmRQdENlQXNmS2ljMlhFcnZaUTJMTWFNTHd0ajBjQWs2NFlLbGRWNU5hMGR5RkZJZXUyQUE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.51_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlGYnQ3TllyNzNjTDN5MlUxaDlLVDhTcVVzRjRxT0w4Mm84VktoRkRmN3hFdFp6Wnlxb0w3R05YWDYrbitxRWJYaUt0U2xDU1YvUTdrd3prNEYxbGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE4MTQzCWZpbGU6TG9ja1N0ZXBfMC41LjUyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTIKRzZHS3ZKcHhuNXJ5cDFVbTZEM3hpQUU0WXdTNVZjbmhhNGZLYzl3Snh6aENTSkNxQUNoSmJtWHZnVng4TjdwQ2tPQzhFS2JUanJCUUxOR2llUCs3RHc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.52_x64-setup.exe"
     }
   }
 }

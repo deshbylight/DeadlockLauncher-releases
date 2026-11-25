@@ -45,14 +45,46 @@ const modRows = (mod) => ((state && state.mods) || []).filter((m) => m.gbMod ===
 const modsMine = () => ((state && state.mods) || []).map((m) => m.gbMod).filter((m) => m)
 const fileOfId = (id) => { const m = /^gb\d+_(\d+)_\d+$/.exec(id); return m ? Number(m[1]) : 0 }
 const usable = (files) => (files || []).filter((f) => /\.(zip|rar|7z|vpk)$/i.test(f._sFile) && f._sAvResult === 'clean' && f._sAnalysisResult === 'ok')
-/** gbMod -> the newest usable file uploaded after every installed one (the app's skins_update.ts newFiles). */
+/** gbMod -> [{file, old}]: each installed variant file and its newer file (the app's skins_update.ts `plans`; a variant
+ *  uploaded with the installed one is no update, 2026-11-25). A variant whose successor is unclear is left to the app. */
 const updates = {}
+
+const verParts = (v) => { const p = (v || '').match(/\d+/g); return p ? p.map(Number) : null }
+function isNewer(f, old, rec) {
+  if (!rec) return f._idRow > old
+  const x = verParts(f._sVersion), y = verParts(rec._sVersion)
+  if (x && y) {
+    for (let i = 0; i < Math.max(x.length, y.length); i++) if ((x[i] || 0) !== (y[i] || 0)) return (x[i] || 0) > (y[i] || 0)
+    return false
+  }
+  if (f._tsDateAdded && rec._tsDateAdded) return f._tsDateAdded > rec._tsDateAdded + 3600
+  return f._idRow > old
+}
+const variantKey = (f) => {
+  const norm = (s) => s.toLowerCase().replace(/v?\d+([._]\d+)+|v\d+/g, '').replace(/[^\p{L}\p{N}]+/gu, '')
+  return norm(f._sDescription || '') || norm(f._sFile.replace(/\.[^.]+$/, ''))
+}
 
 function noteUpdate(mod, prof) {
   const ids = state.installed.filter((s) => s.gbMod === mod).map((s) => s.id).concat(modRows(mod).map((m) => m.id))
-  const top = Math.max(0, ...ids.map(fileOfId))
-  const fresh = top ? usable(prof._aFiles).filter((f) => f._idRow > top).sort((a, b) => b._idRow - a._idRow) : []
-  if (fresh.length) updates[mod] = fresh[0]._idRow
+  const mine = [...new Set(ids.map(fileOfId))].filter((f) => f)
+  const all = prof._aFiles || []
+  const fresh = usable(all).filter((f) => !f._bIsArchived && !mine.includes(f._idRow))
+  const due = []
+  for (const old of mine) {
+    const rec = all.find((f) => f._idRow === old)
+    const newer = fresh.filter((f) => isNewer(f, old, rec)).sort((a, b) => b._idRow - a._idRow)
+    if (!newer.length) continue
+    const key = rec ? variantKey(rec) : ''
+    const top = newer[0]
+    const batch = newer.filter((f) => !f._tsDateAdded || !top._tsDateAdded || top._tsDateAdded - f._tsDateAdded <= 3600)
+    const file = (key && newer.find((f) => variantKey(f) === key)) || (batch.length === 1 ? top : null)
+    if (!file) continue
+    const same = due.find((u) => u.file === file._idRow)
+    if (same) same.old.push(old)
+    else due.push({ file: file._idRow, old: [old] })
+  }
+  if (due.length) updates[mod] = due
   else delete updates[mod]
 }
 
@@ -202,12 +234,14 @@ const MORE = {
   },
   async update(args) {
     const mod = Number(args[0])
-    const file = updates[mod]
-    if (!file) return sendCard(mod)
+    const due = updates[mod]
+    if (!due) return sendCard(mod)
     setBusy(mod, M().updating)
     try {
-      await withProgress(mod, () => local('/install?mod=' + mod + '&file=' + file))
-      await local('/replace?mod=' + mod + '&keep=' + file)
+      for (const u of due) {
+        await withProgress(mod, () => local('/install?mod=' + mod + '&file=' + u.file))
+        await local('/replace?mod=' + mod + '&keep=' + u.file + '&old=' + u.old.join(','))
+      }
       delete updates[mod]
     } finally {
       delete busy[mod]

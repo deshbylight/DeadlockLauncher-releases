@@ -1,7 +1,7 @@
 'use strict'
-// Fork dl52 mod page of the in-game picker (feed2.html; panorama/src/skins_page.ts). Owner 2026-11-25: "сделать также
-// переход как в приложении на страницу мода внутри игры, плюс сейчас скачать можно только одну версию мода внутри
-// игры, остальные теряются". A card's preview opens the page: facts, description and every file of the mod, each
+// Fork dl52 mod page of the in-game picker (feed2.html; panorama/src/skins_page.ts). Owner 2026-11-25: do the same
+// in-game mod page navigation as in the app; only one mod version downloads in game now
+// . A card's preview opens the page: facts, description and every file of the mod, each
 // with its own get / delete and a row per installed variant (wear / take off a skin, on / off a mod).
 // Loaded after feed2_more.js and before feed2.html's own script: it only defines; the page calls it.
 //   Commands: page~<mod> (0 = closed) | fget~<mod>~<file> | fwear~<id> | foff~<id> | fmod~<id>~<0|1> |

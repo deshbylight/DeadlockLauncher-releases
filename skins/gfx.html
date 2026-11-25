@@ -24,7 +24,7 @@ const ACK_TIMEOUT = 2000
 const OFFLINE = 'Лаунчер не запущен / The launcher is not running'
 const ID = /^[a-z0-9_]{1,32}$/
 const CVAR = /^[a-z0-9_]{1,64}$/
-// A "Все" tab value; "" = the game's own (graphics_lab.rs).
+// A "All" tab value; "" = the game's own (graphics_lab.rs).
 const LAB_VALUE = /^(-?\d{1,10}(\.\d{1,6})?)?$/
 const LAB_PAIR = '[a-z0-9_]{1,64}:(-?\\d{1,10}(\\.\\d{1,6})?)?'
 const LAB_LIST = new RegExp('^' + LAB_PAIR + '(,' + LAB_PAIR + ')*$')
@@ -111,7 +111,7 @@ async function run(cmd, args) {
   if (cmd === 'lab' && CVAR.test(args[0] || '') && LAB_VALUE.test(args[1] || '')) {
     return send('/gfx/lab?cvar=' + args[0] + '&value=' + args[1])
   }
-  // A "Все" preset: "cvar:value,..." in one request (graphics_lab.rs set_many, ≤ 200 pairs).
+  // A "All" preset: "cvar:value,..." in one request (graphics_lab.rs set_many, ≤ 200 pairs).
   if (cmd === 'labmany' && LAB_LIST.test(args[0] || '') && args[0].split(',').length <= 200) {
     return send('/gfx/labmany?list=' + args[0])
   }
@@ -120,7 +120,7 @@ async function run(cmd, args) {
 }
 
 // The state at game start (the renderer applies the modded lines), then again whenever the launcher comes up later.
-// The first state that reaches the launcher carries boot=1: its "Все" crash guard takes back values that crashed the
+// The first state that reaches the launcher carries boot=1: its "All" crash guard takes back values that crashed the
 // last game (graphics_lab_guard.rs; older launchers ignore the argument).
 async function start() {
   let boot = true

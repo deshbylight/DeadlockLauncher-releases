@@ -1,6 +1,6 @@
 'use strict'
-// Fork dl27 additions of the in-game picker page (feed2.html; owner 2026-11-24: "там нет того же функционала что и в
-// приложении"): the app's mods catalog (HUD / Models / Animations and their subcategories), GameBanana search, mods
+// Fork dl27 additions of the in-game picker page (feed2.html; owner 2026-11-24: lacks the app's features
+// ): the app's mods catalog (HUD / Models / Animations and their subcategories), GameBanana search, mods
 // in the library with an on/off switch, groups, update of an installed mod, likes and subcategory tags on cards.
 // Loaded before feed2.html's own script: it only defines; the page calls it. Older renderers ignore the new message
 // kinds and card fields (skins_feed.ts drops unknown kinds, reads known fields only).

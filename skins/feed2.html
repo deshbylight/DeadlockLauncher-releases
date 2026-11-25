@@ -31,7 +31,7 @@ const GB = 'https://gamebanana.com/apiv11'
 const SKINS_CATEGORY = 33295
 const CHUNK = 900
 const ACK_TIMEOUT = 2000
-// The Серверы window: the list last posted (a poll skips it unchanged) and how long a command waits for a new one.
+// The Servers window: the list last posted (a poll skips it unchanged) and how long a command waits for a new one.
 let srvSent = ''
 const SRV_WAIT = 1500
 const SORTS = { downloads: 'Generic_MostDownloaded', new: 'Generic_Newest', liked: 'Generic_MostLiked', views: 'Generic_MostViewed' }
@@ -410,14 +410,14 @@ async function run(cmd, args) {
     return check()
   }
   if (cmd === 'servers') {
-    // In-game Серверы view (owner 2026-11-23): the launcher's Серверы rows (servers_ingame.rs).
+    // In-game Servers view (owner 2026-11-23): the launcher's Servers rows (servers_ingame.rs).
     const l = await local('/servers')
     return post({ kind: 'servers', servers: l.servers || [], blocked: l.blocked || '' })
   }
   if (cmd === 'srvlist') {
-    // Fork dl19+ Серверы window: the whole window the launcher built (ingame_servers.ts: rows, filters, own run, texts).
+    // Fork dl19+ Servers window: the whole window the launcher built (ingame_servers.ts: rows, filters, own run, texts).
     // dl56+ polls as "srvlist poll": an unchanged list is not sent again (each one is several title parts, each
-    // waiting for its ack, and a click's answer queued behind them; owner 2026-11-25 "сильная задержка").
+    // waiting for its ack, and a click's answer queued behind them; owner 2026-11-25: heavy lag).
     const list = await local('/servers')
     const text = JSON.stringify(list)
     if (args[0] === 'poll' && text === srvSent) return

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.54",
-  "notes": "The error-report question is now a small popup next to the update popup instead of a block on every Settings page, with buttons in the interface palette.",
-  "pub_date": "2026-11-25T15:06:43.681Z",
+  "version": "0.5.56",
+  "notes": "Settings > Appearance: new 'Main buttons' colour row for Play, Find party and other main buttons (presets or any colour; the label stays readable). Update popup: small matching Update / Later buttons.",
+  "pub_date": "2026-11-25T15:11:27.742Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBTREJXSWM0ckpzb2lEZ1VKdWhIbHJjR3pjYXBjWE5oOUJyUVhseXVZK0RRRzd4N3cyTXB2RVlOaS9VQzdBdnNVZWc0enJuSHU4Q3V1cHl4QzlHeGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE5MjAzCWZpbGU6TG9ja1N0ZXBfMC41LjU0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTQKbndkZ3R4VEFMaVNkS1FYTUNBN2JFU2FkQ3FheFFsbGdSbjdaM3I5SUY5QXkzQ0tyMjJsaVprZEJ1cHVFMW82MVpSZ2tzVjBpZ1g0enErL0JJc2x1Qmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.54_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lpU050Q3Z1NG5xUlRFc2ExS2VLcXZjZk9QaUVVRlVrTkZwZ2c0VkZUd0Q5MXI1M3ZQVGdET0JkTXlXNzdJQW5kZmJ6a2pXNGtNWmNFYmF1b3ZLbGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE5NDg3CWZpbGU6TG9ja1N0ZXBfMC41LjU2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTYKNTBSelZOMjcvMlV0UjV6TjdKNno2YjdzUXNhcUt6aVRyMFdsRWU5bXFZRWVKQitZOW1YNVpDTlpxOS85amYxM3BsaCtHdnJCU2JMOCtxNVp0QU5WRGc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.56_x64-setup.exe"
     }
   }
 }

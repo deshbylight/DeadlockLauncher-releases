@@ -1,11 +1,11 @@
 {
-  "version": "0.5.45",
-  "notes": "In-game Servers window: filter, sort, free-slots and host mode buttons work again (launcher now decodes encoded request values).",
-  "pub_date": "2026-11-25T13:10:08.877Z",
+  "version": "0.5.46",
+  "notes": "In-game Servers window: separate Search / Create / By code tabs, dropdowns for mode, region, sort and host mode, server visibility (code / public / local), stop another local server, join by code, own server status; accounts without mods see why no servers are listed. Modlock CLI dl55.",
+  "pub_date": "2026-11-25T13:38:10.831Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZSVTFPck5yT1BTZ1Yyb2k1QVpvczJ3ZDNIRjN5NWVWbVMva1ExQ2Z1UmU2M2xWZit4KzJpWnAxZVlaeUJQcDJlNzZxYzZVdXRwZ2xiaytFc3RlU2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEyMjA4CWZpbGU6TG9ja1N0ZXBfMC41LjQ1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDUKOVF1Y3hCVzdLOTZLMUt5Y3FTNm1VcGNkMW4zUmVPN3RnVXlzczQxSDh0NzVRU0U1ZjlHQkE0ZVg4OHkvZEtZcjN5Y2tDUzRJMlVydWVKVVh2cEFXQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.45_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3ptL0lqZ0RBNXRKQVJMc3VvYnlLaWhsdWsrR3R3NjZpVTNTS25hbTRNQ1VuUTk2S0J1Slh1K1pJcGVZcGI2am03aUhrQzNFYkJ3ckNtdUc3NWFtbndNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEzODkwCWZpbGU6TG9ja1N0ZXBfMC41LjQ2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDYKZFQwREhGdDdhaG04aUhZazlDT2l4VnNYZlRoQW5ScjlrQnhFTlhJYitwa0xTTzNLMUU1cWtqb3I2eDJ4UWJLVURFOGgrUFp6VFZMRVdpT004ZFFTQmc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.46_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.66",
-  "notes": "In-game Skins window now runs on the same logic as the app's Skins tab.",
-  "pub_date": "2026-11-25T16:57:13.438Z",
+  "version": "0.5.67",
+  "notes": "Skins: pick several skins in the game window and wear or remove them at once; save, apply and delete skin groups in the game and the app; Remove picked in the app; in-game filter box no longer shrinks. Servers: benchmark start in the in-game Create tab. Modlock CLI dl59.",
+  "pub_date": "2026-11-25T17:00:09.161Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lHZ0pIM1pXM1BsQTdFNGM3OStkNENjdStyUlRtUUM4Mnd5UTRIcEpDelh5aVI2cGtSU2VJOWlBN0toSzV5U0oxOVJRRVY0YWxPV1o5elREeUNmZ1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1ODMzCWZpbGU6TG9ja1N0ZXBfMC41LjY2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjYKRnh1UDg5TVZqSnlISUhpM0NyWjlpcFNrUEhpYi9rYzA1ejM0bHNNSFk1b0l6c1o0RXV5T2xXMTd3YU1HUW0wblBVVXNDQUlsaXlCRVN6TkhNSThBQVE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.66_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lPc2d5bVFxb2NNUmE4aE1Vc2dMQkNobW1YaDlEc2srK0M1U0p6UnU3TTRvdXhSSVFXVGx1cHQ4OGVNZDJwekdUdUZXS0JNNk9MODA0SmhjdUNLa1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI2MDA4CWZpbGU6TG9ja1N0ZXBfMC41LjY3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjcKY3lUWmZHOEFYcTFQa3lrYTZvUnY3MHhObzU2YTJtRllvNHJjbEx2WFUxeWxyMWYwZGNlQXBZZUZHdERTaXE3Z3FXbStUc0VlK1QxeVV0MCsrY25ERFE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.67_x64-setup.exe"
     }
   }
 }

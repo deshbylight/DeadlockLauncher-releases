@@ -30,6 +30,9 @@ const GB = 'https://gamebanana.com/apiv11'
 const SKINS_CATEGORY = 33295
 const CHUNK = 900
 const ACK_TIMEOUT = 2000
+// The Серверы window: the list last posted (a poll skips it unchanged) and how long a command waits for a new one.
+let srvSent = ''
+const SRV_WAIT = 1500
 const SORTS = { downloads: 'Generic_MostDownloaded', new: 'Generic_Newest', liked: 'Generic_MostLiked', views: 'Generic_MostViewed' }
 const T = {
   ru: {
@@ -407,14 +410,27 @@ async function run(cmd, args) {
   }
   if (cmd === 'srvlist') {
     // Fork dl19+ Серверы window: the whole window the launcher built (ingame_servers.ts: rows, filters, own run, texts).
-    return post({ kind: 'srvlist', list: await local('/servers') })
+    // dl56+ polls as "srvlist poll": an unchanged list is not sent again (each one is several title parts, each
+    // waiting for its ack, and a click's answer queued behind them; owner 2026-11-25 "сильная задержка").
+    const list = await local('/servers')
+    const text = JSON.stringify(list)
+    if (args[0] === 'poll' && text === srvSent) return
+    srvSent = text
+    return post({ kind: 'srvlist', list })
   }
   if (cmd === 'srvdo') {
     // Fork dl19+: a window command (join / leave / host / pref) for the launcher UI (servers_ingame.rs command).
+    const before = JSON.stringify(await local('/servers'))
     await local('/servers/do?cmd=' + encodeURIComponent(args[0] || '') + '&arg=' + encodeURIComponent(args.slice(1).join(' ')))
-    // The launcher UI runs the command and pushes its new list after the call returns.
-    await new Promise((r) => setTimeout(r, 400))
-    return post({ kind: 'srvlist', list: await local('/servers') })
+    // The launcher UI runs the command and pushes its new list after the call returns: sent as soon as it changed
+    // (was a fixed 400 ms), at most SRV_WAIT for a command that changes nothing now (join, copy).
+    let list = await local('/servers')
+    for (let waited = 0; JSON.stringify(list) === before && waited < SRV_WAIT; waited += 50) {
+      await new Promise((r) => setTimeout(r, 50))
+      list = await local('/servers')
+    }
+    srvSent = JSON.stringify(list)
+    return post({ kind: 'srvlist', list })
   }
   if (cmd === 'srvjoin') {
     await local('/servers/join?code=' + encodeURIComponent(args[0] || ''))

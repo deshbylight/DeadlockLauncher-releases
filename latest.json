@@ -1,11 +1,11 @@
 {
-  "version": "0.5.65",
-  "notes": "Graphics window: the game's own saved settings come back when you return to Standard. Play waits for a Steam game update before starting.",
-  "pub_date": "2026-11-25T16:53:53.429Z",
+  "version": "0.5.66",
+  "notes": "In-game Skins window now runs on the same logic as the app's Skins tab.",
+  "pub_date": "2026-11-25T16:57:13.438Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFVbUJlV1dyNXorNDBGRzYwTzBpejVndks4MHpDQWNlRm9MMC9GUStMTzRuU1dHdEllcHBHb21saWRLb2hnYmRGWmJ5Q0UwQ3RmNkl5QzJwMW9CK0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1NjMzCWZpbGU6TG9ja1N0ZXBfMC41LjY1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjUKdjF5S2h0SWNDOGtkbnhXY1E1aE5VdXIvSHdUaWZ6SVhYOVNUN1AvSDJMMy9QaDJqZEY3cWZhNDF6bWRxMjFPTWY0QWRUdC84RURoQjFBQndKZDA5RHc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.65_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lHZ0pIM1pXM1BsQTdFNGM3OStkNENjdStyUlRtUUM4Mnd5UTRIcEpDelh5aVI2cGtSU2VJOWlBN0toSzV5U0oxOVJRRVY0YWxPV1o5elREeUNmZ1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1ODMzCWZpbGU6TG9ja1N0ZXBfMC41LjY2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjYKRnh1UDg5TVZqSnlISUhpM0NyWjlpcFNrUEhpYi9rYzA1ejM0bHNNSFk1b0l6c1o0RXV5T2xXMTd3YU1HUW0wblBVVXNDQUlsaXlCRVN6TkhNSThBQVE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.66_x64-setup.exe"
     }
   }
 }

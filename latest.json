@@ -1,11 +1,11 @@
 {
-  "version": "0.5.53",
-  "notes": "Main buttons (Play, Find party and others) now follow the chosen theme, accent and colour-blind palette; Party 'To search' is a main button; colour-blind mode offers protanopia, deuteranopia, tritanopia and monochromacy; turning low vision mode off returns the interface size.",
-  "pub_date": "2026-11-25T15:02:11.345Z",
+  "version": "0.5.54",
+  "notes": "The error-report question is now a small popup next to the update popup instead of a block on every Settings page, with buttons in the interface palette.",
+  "pub_date": "2026-11-25T15:06:43.681Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytuWHoyQWU4WGdEdnpaY2tReGl1b1I5UFducHN0RlBtNjBBY3Y1WDZDU3RjVUpqc0VnUjZwZi94cmFtcGp5UmtFdS84YzRMQ000ZFBCb0s3S1VRNmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE4OTMwCWZpbGU6TG9ja1N0ZXBfMC41LjUzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTMKWnR5OXlVcmduTW8xMHp3b0hNVmVhVDRVZElOOHpsN3pqbzVhb2xLQWVENHpqMGo3UHladjJMU21tODUvQjkxbERGWmtLckhmdkRPak1UT0Jyb2NuQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.53_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBTREJXSWM0ckpzb2lEZ1VKdWhIbHJjR3pjYXBjWE5oOUJyUVhseXVZK0RRRzd4N3cyTXB2RVlOaS9VQzdBdnNVZWc0enJuSHU4Q3V1cHl4QzlHeGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE5MjAzCWZpbGU6TG9ja1N0ZXBfMC41LjU0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTQKbndkZ3R4VEFMaVNkS1FYTUNBN2JFU2FkQ3FheFFsbGdSbjdaM3I5SUY5QXkzQ0tyMjJsaVprZEJ1cHVFMW82MVpSZ2tzVjBpZ1g0enErL0JJc2x1Qmc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.54_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.30",
-  "notes": "Graphics: Minimum and Low profiles write the community config's 13 SceneSystem keys (fog, shadow map sizes, engine buffers) into gameinfo.gi again, Medium its 3 fog keys; they apply at the next game start. Minimum also sets the live CSM cascade and dynamic shadow resolution overrides to 0.",
-  "pub_date": "2026-11-25T06:50:17.360Z",
+  "version": "0.5.31",
+  "notes": "In-game HUD editor follows the launcher language (English/Russian); owner switches client side (D-325)",
+  "pub_date": "2026-11-25T07:03:29.809Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lHOWZ0SXpGcjNhUEpLVFBGR3MrWXBrQnVsVkRaQnVKMjZteXVJV3pVc3F4ZGdObXhYbGpUM1JLYURLK0J4d1ZzVjd6UFc1NTV4bC9iSkRjQWxNV0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg5NDE2CWZpbGU6TG9ja1N0ZXBfMC41LjMwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzAKNXIremRmTHM2UExVaGs3aWkrdnNEdUU2d3g0ejV0aFA5eElNQ3dZZUEzWjhxLytCREd4dlRnQXVBL3RyNFNRL1gydW91UXBNdXBEN3ZLL0dSL0V4QXc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.30_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJOSzZhbS9yaXY5djFrTXc5UkhHU2NHMUQ5WW91SnVpaUVQUHYwT3hVbVRXWnFLd3BtZklLZUtxUHFoWTg1V3EyeGZydW1nT1BMR1Z4azlPMmpiRWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkwMjA5CWZpbGU6TG9ja1N0ZXBfMC41LjMxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzEKN2VCYitBU3NPSm9RbjNZaFRjZVdERFgvN20wWDFRMzB1TmxiVUwyQ2lPcUJrWXdFZkdlQ2JkMjBVaHUyUHpLenJrZE5INkdrZDc1TUVVNlUrc0N0QlE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.31_x64-setup.exe"
     }
   }
 }

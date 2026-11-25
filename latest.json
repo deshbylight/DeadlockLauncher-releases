@@ -1,11 +1,11 @@
 {
-  "version": "0.5.67",
-  "notes": "Skins: pick several skins in the game window and wear or remove them at once; save, apply and delete skin groups in the game and the app; Remove picked in the app; in-game filter box no longer shrinks. Servers: benchmark start in the in-game Create tab. Modlock CLI dl59.",
-  "pub_date": "2026-11-25T17:00:09.161Z",
+  "version": "0.5.68",
+  "notes": "Sound previews play from catalog cards without opening the mod. Preview volume is normalized by default (Settings > Audio, can be turned off). The party-found sound moved to Settings > Audio.",
+  "pub_date": "2026-11-25T17:29:43.533Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lPc2d5bVFxb2NNUmE4aE1Vc2dMQkNobW1YaDlEc2srK0M1U0p6UnU3TTRvdXhSSVFXVGx1cHQ4OGVNZDJwekdUdUZXS0JNNk9MODA0SmhjdUNLa1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI2MDA4CWZpbGU6TG9ja1N0ZXBfMC41LjY3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjcKY3lUWmZHOEFYcTFQa3lrYTZvUnY3MHhObzU2YTJtRllvNHJjbEx2WFUxeWxyMWYwZGNlQXBZZUZHdERTaXE3Z3FXbStUc0VlK1QxeVV0MCsrY25ERFE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.67_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJrbjJBazRXZDRoV0ptYmJaMmJRMVZud2ZHc21ub1UyamxQRSt1bG00QVFRV2dSRTV1RTZtK3g5d1kzOWUxYmFITXVrcGpQdTVkTk9zdGVRUHZ2SGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI3NzgzCWZpbGU6TG9ja1N0ZXBfMC41LjY4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjgKMWZNamt5Q1kvanpDc3JJM1JwMWVSUDlLV1J2bHZ1bFp6UTlENVd0aXlvZ24zZE5NZFkyWHJidmVNVEhDUUVXZFgzcVdDM1ZCNDYvbHpTV01uK2NLQVE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.68_x64-setup.exe"
     }
   }
 }

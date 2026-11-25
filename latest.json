@@ -1,11 +1,11 @@
 {
-  "version": "0.5.60",
-  "notes": "Skins: a skin that ships an old copy of the hero's animation skeleton (Toon Bebop, Toon Paige, Toon Paradox) now uses the game's skeleton, so the hero is no longer torn in game.",
-  "pub_date": "2026-11-25T15:33:42.943Z",
+  "version": "0.5.61",
+  "notes": "Skins: simpler hint for mods already in the game's addons folder.",
+  "pub_date": "2026-11-25T15:39:03.083Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZQa1hDdEVIMko0ZUJFQXc3bUxPbm5MMEYyU2NDYkcxVlNaSmUyRDNOT3ZlSW82Y0V3MUZsbDFrQmxpamh0NmFCZmtRSTdGSUt5RUZvVWsvS1hZRWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIwODIyCWZpbGU6TG9ja1N0ZXBfMC41LjYwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjAKNHVPN3ZvTzZOMFlkRG1qNkVhVjBiWjNHTDlueFZQeTdpV2huUHFGOGRWVjhJZDUwbHF1M2pMazRlT2hvUXdaTlg5ckN0NEhYanpZOE96TjFsbnBWQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.60_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhHaWk2aUZ4TUIxVGcwZXZ6SUp0clpwMitHcmY5cDlRQkZaVnFQaXJSWndFZkZSTERnajc2cjJ0RDhHeDBTME5uTGgvbGFHM3RnU3pvaWJnNWZsOVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIxMTQyCWZpbGU6TG9ja1N0ZXBfMC41LjYxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjEKZHNLMkZuWHhqa0p0ZndmanVJaFM4dlMyaVUyT3AxcE9yTnAzSnBpK0FUSHBBakFwZWtRL2R6T3dnZk9KWXVpNGs3b2VsRHpDVlhKWWgzNjRqYkRBQXc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.61_x64-setup.exe"
     }
   }
 }

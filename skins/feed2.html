@@ -22,6 +22,7 @@
 <script src="feed2_more.js"></script>
 <script src="feed2_page.js"></script>
 <script src="feed2_lib.js"></script>
+<script src="feed2_pick.js"></script>
 <script>
 'use strict'
 const q = new URLSearchParams(location.search)
@@ -70,6 +71,9 @@ if (HAS_MORE) for (const k of ['ru', 'en']) Object.assign(T[k].window, MORE_TEXT
 // dl58 library (feed2_lib.js): only for a renderer that asked with v=2.
 const HAS_LIB = typeof LIB !== 'undefined' && LIB
 if (HAS_LIB) for (const k of ['ru', 'en']) Object.assign(T[k].window, LIB_TEXT[k].window)
+// dl59 picks and groups in game (feed2_pick.js): only for a renderer that asked with v=3.
+const HAS_PICK = typeof PICK !== 'undefined' && PICK
+if (HAS_PICK) for (const k of ['ru', 'en']) Object.assign(T[k].window, PICK_TEXT[k].window)
 let L = T.ru
 
 // ---- channel to the renderer ----
@@ -448,6 +452,7 @@ async function run(cmd, args) {
     await loadState()
     return library()
   }
+  if (HAS_PICK && PICK_CMDS[cmd]) return PICK_CMDS[cmd](args)
   if (HAS_LIB && LIB_CMDS[cmd]) return LIB_CMDS[cmd](args)
   if (HAS_MORE && MORE[cmd]) return MORE[cmd](args)
   if (cmd === 'shop') {

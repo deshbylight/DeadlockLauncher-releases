@@ -1,11 +1,11 @@
 {
-  "version": "0.5.28",
-  "notes": "Graphics Advanced tab: categories moved to the left column under the tab (no overlapping row). CLI dl49.",
-  "pub_date": "2026-11-25T06:06:48.317Z",
+  "version": "0.5.29",
+  "notes": "Graphics: Minimum profile turns off more (volumetric fog grid at minimum, 3D sky monitors, cable shadows, SSAO blur, rope translucency).",
+  "pub_date": "2026-11-25T06:35:01.801Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzczTWtIYmpYOGtYc056NmZMQnBPTVc3M1d6SXV6VnVqUDZKUjkvL1JQbTZiTlo2VHBHbEVmRWZKT1Q1WFNmQ2Zjb09pN01HUWFKVmdwMEdNZzNaUHdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg2ODA3CWZpbGU6TG9ja1N0ZXBfMC41LjI4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjgKbVh1NTB4R0tSTkJGenV3SWNJSmZlL2xCRDNKZHNsTm5UWGZIcEpKV1VLNFRTUHRzZEZITlU3ZDIvQmREQ1lnZWYyK3ArdDF4a2VJajlDdko1QjhFQmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.28_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9JaTJhekJHaHdhNW5LQjFtajRBSytwYWRnMzJpc3l3WmVXQlVqSGN4L1kxV2FuZHdxWkEzUDJpVUlSV2FrNTAwd0VFZ1lzYzMrY1VCbXRZT1FIMXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg4NTAxCWZpbGU6TG9ja1N0ZXBfMC41LjI5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjkKZGhWRUdtQnlKcWpmejhiNzI5bzBocVZtajdjS2tDM29hQStIVzU4TUs2eHVFQmRZa0RRYWFVdlc1UmMwSTRGeG81NkZKZVNwUlN0ck13dE9ZSm9TRGc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.29_x64-setup.exe"
     }
   }
 }

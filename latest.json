@@ -1,11 +1,11 @@
 {
-  "version": "0.5.63",
-  "notes": "Skins: the addons block lists only files not already in the library (a skin showed twice); in-game skins window: no duplicate title, hero thumbnails in the hero filter, installed items grouped by hero, addons files with import (CLI dl58)",
-  "pub_date": "2026-11-25T16:11:50.561Z",
+  "version": "0.5.64",
+  "notes": "Every scrolled list and panel keeps its position: closing a mod page, switching tabs or heroes no longer jumps to the top; a round 'to top' button appears on panels scrolled far down.",
+  "pub_date": "2026-11-25T16:44:48.738Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzc3VWxEeXNSd0pVNjRoN1NxdFIvbXNSVit6clRGK0liY0dOTlk1cm90cnUrU1BoU21VMTZUQ2tZSVpFV05zWnZYbUZvejNNZWtoZ1RLVUZpSjMwb3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIzMTEwCWZpbGU6TG9ja1N0ZXBfMC41LjYzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjMKYjgyajZqbU5ES3duM0lUVXNPSjJ4c1FKZWFWMmQ3S2VFbktTYUFJb3VqTTNDUk1TZDR0Z05oa1hMTW1walAxeFlWOUlhVENDVE5EZkc2WE9PanhOQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.63_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3o4WGRmYkF5eW92c21PWVVpalY2MTQrL3J1UTM2RS80eUlwU0orb1RJZklRbm5mamFQWmNsMkJ0UGdMZ0lQUUZLZmZRTWZ0dEE3cXR0QS9DUlhTNmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1MDg4CWZpbGU6TG9ja1N0ZXBfMC41LjY0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjQKdzhRdXhsVXNZQ2lZUy9jeGh2RTFwM3BTK2hsTWhhK0JJbml0QTN5RzZpbGh1WFVhcmx2VEJCUGtJV05MQmdENThHRU5MZWViR1dwcWh5RTNPWGJCQmc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.64_x64-setup.exe"
     }
   }
 }

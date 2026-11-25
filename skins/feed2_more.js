@@ -23,6 +23,7 @@ const MORE_TEXT = {
       groupInfo: 'скинов %s · модов %m' },
     switching: 'Переключаю…', updating: 'Обновляю…', groupApplying: 'Применяю группу…',
     groupApplied: 'Группа «%s» применена', groupMissing: ': %n нет на диске', conflicts: 'Конфликт файлов с: ',
+    turnedOff: 'Выключено (тот же герой): ',
     hud: 'HUD', models: 'Модели', anims: 'Анимации',
   },
   en: {
@@ -33,6 +34,7 @@ const MORE_TEXT = {
       groupInfo: 'skins %s · mods %m' },
     switching: 'Switching…', updating: 'Updating…', groupApplying: 'Applying the group…',
     groupApplied: 'Group "%s" applied', groupMissing: ': %n missing on disk', conflicts: 'File conflict with: ',
+    turnedOff: 'Turned off (same hero): ',
     hud: 'HUD', models: 'Models', anims: 'Animations',
   },
 }
@@ -92,7 +94,27 @@ function noteUpdate(mod, prof) {
 function recInfo(rec, cat, kind) {
   const sub = rec._aSubCategory || rec._aCategory || {}
   return { name: rec._sName, image: thumb(rec), cat: cat || sub._idRow || 0, kind, likes: rec._nLikeCount || 0,
-    tag: kind === 'mod' ? (sub._sName || '') : '' }
+    tag: kind === 'mod' ? (sub._sName || '') : '', author: (rec._aSubmitter && rec._aSubmitter._sName) || '',
+    views: rec._nViewCount || 0 }
+}
+
+/** After a reload of /state: the cards of mods switched on or off by it (the launcher keeps one mod or skin per
+ *  hero, skins_slot.rs: a wear or a switch can turn another off). */
+function modsFlipped(prev) {
+  const now = state.modsOn || []
+  const ids = prev.filter((x) => !now.includes(x)).concat(now.filter((x) => !prev.includes(x)))
+  const mods = new Set(ids.map((id) => ((state.mods || []).find((m) => m.id === id) || {}).gbMod).filter((m) => m))
+  for (const m of mods) sendCard(m)
+}
+
+/** The status after a mod switch: what the same hero lost, file conflicts. */
+function toggleNote(res) {
+  const off = (res && Array.isArray(res.off)) ? res.off : []
+  const conflicts = (res && Array.isArray(res.conflicts)) ? res.conflicts : []
+  const parts = []
+  if (off.length) parts.push(M().turnedOff + off.join(', '))
+  if (conflicts.length) parts.push(M().conflicts + conflicts.join(', '))
+  if (parts.length) status(parts.join(' · '))
 }
 
 /** The dl27 card fields of mod: kind, on, update, likes, tag. */
@@ -102,7 +124,7 @@ function cardMore(mod) {
   const skin = state.installed.some((s) => s.gbMod === mod)
   const kind = (rows.length && !skin) || (!skin && i.kind === 'mod') ? 'mod' : 'skin'
   return { kind, on: rows.some((r) => (state.modsOn || []).includes(r.id)), update: !!updates[mod],
-    likes: i.likes || 0, tag: i.tag || '' }
+    likes: i.likes || 0, tag: i.tag || '', author: i.author || '', views: i.views || 0 }
 }
 
 function sendGroups() {
@@ -208,18 +230,21 @@ const MORE = {
     const rows = modRows(mod)
     if (!rows.length) return sendCard(mod)
     setBusy(mod, M().switching)
-    const conflicts = []
+    const all = { off: [], conflicts: [] }
+    const before = { ...state.selected }
     try {
       for (const r of rows) {
         const res = await local('/mod/toggle?id=' + encodeURIComponent(r.id) + '&on=' + (args[1] === '1' ? '1' : '0'))
-        if (res && Array.isArray(res.conflicts)) conflicts.push(...res.conflicts)
+        for (const k of ['off', 'conflicts']) if (res && Array.isArray(res[k])) all[k].push(...res[k])
       }
     } finally {
       delete busy[mod]
       await loadState()
       sendCard(mod)
+      // A hero mod switched on takes the hero's worn skin off (skins_slot.rs): its card and the hero's mark.
+      sendChoice(before)
     }
-    if (conflicts.length) status(M().conflicts + conflicts.join(', '))
+    toggleNote(all)
     await check()
   },
   async group(args) {

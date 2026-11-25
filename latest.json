@@ -1,11 +1,11 @@
 {
-  "version": "0.5.26",
-  "notes": "Updates no longer install on launch. When a new version is published, the launcher shows an in-app popup with Update / Later.",
-  "pub_date": "2026-11-25T05:36:17.452Z",
+  "version": "0.5.27",
+  "notes": "In-game windows look like the game's settings screen (full screen, left nav, no click-through). Graphics: two tabs (Profile applied live, Advanced), no Apply, no restart, no cheat settings. CLI dl48.",
+  "pub_date": "2026-11-25T05:54:12.184Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVqTEFYMXlNVDJrRXk3UDRBczhDS1YwTTZYV3pkQThsYytJdWRqUDdXTXRKN05hNnBDYWIrQ2hFUjdKUjRFV1c2TFdYMEc0ZFVtSmJTYjJUQ3dOSndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg0OTc3CWZpbGU6TG9ja1N0ZXBfMC41LjI2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjYKT3AraFVoY2NacVRYeSt0QmV1TjJNZXdlSWtYR2VDSUtkZjBubVpVTklNak9yNUM1U3lndjJNUnliT0FsaDVoQjFoWmd0cFB1MEtQZThKeGQ5bUpMQUE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.26_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVTTjFSVjA0Mkd5Yk1mdDV4ZnB6VEtHK1hpcnlTRU1DTHBjOEJkeFM3UmY5elkxNExOVGpOMG1Sdmd6cHpYTnYrREw5ejNwUEhTcHN0MjMyME9QWlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg2MDUxCWZpbGU6TG9ja1N0ZXBfMC41LjI3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjcKZFdnS2ZjbUFaRGdjcitFVHh0WDJXb2VDcUNNT0lxY2hNSzJGNzdadlJJUzJhemdDWEcxVU1IWHJPUFZYYU9WM0hKZWdQNWQ5YlBNTVdEaHRvWnhiQ0E9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.27_x64-setup.exe"
     }
   }
 }

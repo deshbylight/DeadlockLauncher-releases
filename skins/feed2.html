@@ -12,7 +12,9 @@
      feed.html stays for renderer dl7, picker.html for dl4..dl6.
      Fork dl27 (mods, search, groups, updates, mod switch): feed2_more.js, loaded first.
      Fork dl52 (mod page, a get / delete per file): feed2_page.js, loaded second; get~<mod>~1 of a mod with several
-     files opens its page. -->
+     files opens its page.
+     Launcher with the skins relay (D-352): the commands it lists on /ingame/skins/hello run in the launcher
+     (ui/src/ingame_skins.ts, the Skins tab's modules); this page only forwards them and their messages. -->
 <html>
 <head>
 <meta charset="utf-8">
@@ -387,6 +389,12 @@ async function library() {
 }
 
 async function run(cmd, args) {
+  // Launcher 0.5.x+ (D-352): the commands it registered run on the launcher's Skins tab modules (ingame_skins.ts).
+  if (relay.cmds && relay.cmds.has(cmd)) {
+    await local('/ingame/skins/do?cmd=' + encodeURIComponent(cmd) + '&args=' + encodeURIComponent(JSON.stringify(args)) +
+      '&party=' + (party ? 1 : 0) + '&v=' + V)
+    return
+  }
   if (cmd === 'answer') {
     if (asking) asking(args[0] === '' ? null : Number(args[0]))
     return
@@ -571,6 +579,49 @@ async function choose(list) {
   await check()
 }
 
+// ---- launcher relay (D-352, ingame_skins.rs) ----
+// /ingame/skins/hello names the commands the launcher UI runs and its window text; their messages come back on a
+// long poll of /ingame/skins/out and go to the renderer through post() unchanged. Kind `check` is this page's:
+// re-read /current now. No relay (older launcher, UI not loaded yet, launcher closed): the page's own code runs every
+// command and hello is asked again every 3 s. Commands the launcher does not list (servers, picks) always stay here.
+const V = Number(q.get('v')) || 1
+const relay = { cmds: null, boot: '', after: 0, text: {} }
+async function hello() {
+  try {
+    const h = await local('/ingame/skins/hello')
+    relay.boot = h.boot
+    relay.after = h.last || 0
+    relay.text = h.text || {}
+    relay.cmds = (h.cmds || []).length ? new Set(h.cmds) : null
+  } catch (e) {
+    relay.cmds = null
+  }
+  if (relay.cmds) post({ kind: 'ready', text: Object.assign({}, L.window, relay.text) })
+}
+async function relayLoop() {
+  for (;;) {
+    if (!relay.cmds) {
+      await new Promise((done) => setTimeout(done, 3000))
+      await hello()
+      continue
+    }
+    let r
+    try {
+      r = await local('/ingame/skins/out?after=' + relay.after)
+    } catch (e) {
+      relay.cmds = null
+      continue
+    }
+    // Another launcher run: its queue and UI state are new.
+    if (r.boot !== relay.boot) { await hello(); continue }
+    for (const x of r.msgs || []) {
+      relay.after = x.id
+      if (x.m.kind === 'check') check()
+      else post(x.m)
+    }
+  }
+}
+
 // ---- the choice the launcher holds versus the mounted addon ----
 let have = q.get('have') || ''
 let offline = false
@@ -584,7 +635,9 @@ async function check() {
     if (typeof cur.en === 'boolean' && (cur.en ? T.en : T.ru) !== L) {
       L = cur.en ? T.en : T.ru
       if (state) state.en = cur.en
-      post({ kind: 'ready', text: L.window })
+      // Relay: the launcher UI reloaded in the new language and registered its new text.
+      if (relay.cmds) await hello()
+      else post({ kind: 'ready', text: L.window })
     }
     if (now !== have) {
       post(now ? { kind: 'apply', addon: now } : { kind: 'reset' })
@@ -598,10 +651,13 @@ async function check() {
 
 async function start() {
   try { await loadState() } catch (e) { /* offline: Russian text, check() reports it */ }
-  post({ kind: 'ready', text: L.window })
+  await hello()
+  if (!relay.cmds) post({ kind: 'ready', text: L.window })
   if (state) sendCount()
-  // A failed warm-up is not reported: each list reads (and reports) itself when the window asks for it.
-  if (state) warm().catch(() => {})
+  // A failed warm-up is not reported: each list reads (and reports) itself when the window asks for it. Under the
+  // relay the launcher's own cache serves the lists.
+  if (state && !relay.cmds) warm().catch(() => {})
+  relayLoop()
   for (;;) {
     await check()
     await new Promise((done) => setTimeout(done, 3000))

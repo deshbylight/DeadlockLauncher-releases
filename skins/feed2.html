@@ -21,6 +21,7 @@
 <body>
 <script src="feed2_more.js"></script>
 <script src="feed2_page.js"></script>
+<script src="feed2_lib.js"></script>
 <script>
 'use strict'
 const q = new URLSearchParams(location.search)
@@ -66,6 +67,9 @@ const T = {
 const HAS_MORE = typeof MORE !== 'undefined'
 const HAS_PAGE = typeof sendPage === 'function'
 if (HAS_MORE) for (const k of ['ru', 'en']) Object.assign(T[k].window, MORE_TEXT[k].window)
+// dl58 library (feed2_lib.js): only for a renderer that asked with v=2.
+const HAS_LIB = typeof LIB !== 'undefined' && LIB
+if (HAS_LIB) for (const k of ['ru', 'en']) Object.assign(T[k].window, LIB_TEXT[k].window)
 let L = T.ru
 
 // ---- channel to the renderer ----
@@ -86,7 +90,7 @@ let seq = 0
 // progress bar ran (owner 2026-11-23). A card still waiting is replaced by the newer one of the same skin; it keeps
 // its seq, so the order the renderer checks stays.
 function post(message) {
-  const key = message.kind === 'card' ? message.skin.mod + ':' + message.skin.cat
+  const key = message.kind === 'card' ? message.skin.mod + ':' + message.skin.cat + ':' + (message.skin.file || '')
     : message.kind === 'page' ? 'page:' + message.page.mod : ''
   const waiting = key ? queue.findIndex((q, i) => q.key === key && !(i === 0 && current)) : -1
   if (waiting >= 0) {
@@ -279,7 +283,8 @@ async function loadHeroes() {
   }).sort((a, b) => a.name.localeCompare(b.name))
 }
 function sendHeroes() {
-  post({ kind: 'heroes', heroes: heroes.map((h) => ({ cat: h.cat, name: h.name, chosen: !!(h.code && state.selected[h.code]) })) })
+  post({ kind: 'heroes', heroes: heroes.map((h) => ({ cat: h.cat, name: h.name, chosen: !!(h.code && state.selected[h.code]),
+    ...(HAS_LIB && h.code ? { icon: heroIcon(h.code) } : {}) })) })
 }
 const installedMods = () => [...new Set(state.installed.map((s) => s.gbMod).concat(HAS_MORE ? modsMine() : []).filter((m) => m))]
 const sendCount = () => post({ kind: 'count', count: installedMods().length })
@@ -371,7 +376,8 @@ async function library() {
   }))
   // Skins and hero mods by hero first, then mods of no hero by name.
   const rank = (c) => (c.kind === 'mod' && !c.hero ? 1 : 0)
-  const skins = mods.map(cardOf).sort((a, b) => rank(a) - rank(b) || a.hero.localeCompare(b.hero) || (b.worn - a.worn) || a.name.localeCompare(b.name))
+  let skins = mods.map(cardOf).sort((a, b) => rank(a) - rank(b) || a.hero.localeCompare(b.hero) || (b.worn - a.worn) || a.name.localeCompare(b.name))
+  if (HAS_LIB) skins = await libraryFound(skins)
   post({ kind: 'skins', view: 'library', cat: 0, sort: '', page: 1, complete: true, skins })
   if (HAS_MORE) sendGroups()
 }
@@ -442,6 +448,7 @@ async function run(cmd, args) {
     await loadState()
     return library()
   }
+  if (HAS_LIB && LIB_CMDS[cmd]) return LIB_CMDS[cmd](args)
   if (HAS_MORE && MORE[cmd]) return MORE[cmd](args)
   if (cmd === 'shop') {
     view = 'shop'

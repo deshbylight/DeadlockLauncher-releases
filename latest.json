@@ -1,11 +1,11 @@
 {
-  "version": "0.5.32",
-  "notes": "Faster 3D skin preview: the mod file downloads while the page is open, several models convert in parallel, the viewer warms up during the build.",
-  "pub_date": "2026-11-25T07:26:24.570Z",
+  "version": "0.5.33",
+  "notes": "Progress bars update in place: downloads no longer rebuild the window, so buttons, hover and scrolling keep working and the update popup no longer blinks.",
+  "pub_date": "2026-11-25T07:46:43.402Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhOS2EzTXZad3RRamI1TElyWDFKbkV0VjlRRk83SjVYeVd2Z09CN0pCdVIxc1ptdWprck1TTWxlcVEvWnMyUGVIYmdGNEZhUWtHWm1UM093MzNkbXdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkxNTg0CWZpbGU6TG9ja1N0ZXBfMC41LjMyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzIKUHBjSFAzbTRGR1NpMU1WRVBGRTJNT3Z3Z0NQTlY5NVdTU2c3Z3ZBc0RLSWNDeFVISWZJczNPVVluc0RjQnhSL2FrOG9BQ3p2a3NjSjlwVGJUMUZsQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.32_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzl5NXFFdzRDaGpJbHAvTDFhdWJLSUc2V1F0R1RoQ2x1bFBVWi9RNzJDVmpqYUxGUDJqOHRqQ3JjU3JPODRQZ1pUVDIyeUFQSVVoYkV1cjh6SGNpNkFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTkyODAzCWZpbGU6TG9ja1N0ZXBfMC41LjMzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzMKRFhMc0thWS9Mc3FOZXlEWGdRamtOcFEveW5VUXR6bEFIZTIrWVh6bXkxOGNGbTVOWllERFBwOTJBdHBSRWs4VU1LYkR4UXVoWG9kMVVqQmNuekwvQWc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.33_x64-setup.exe"
     }
   }
 }

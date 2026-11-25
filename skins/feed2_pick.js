@@ -55,7 +55,7 @@ function wearIds(mods) {
 const allIds = (mods) => mods.flatMap((mod) =>
   state.installed.filter((s) => s.gbMod === mod).map((s) => s.id).concat(HAS_MORE ? modRows(mod).map((m) => m.id) : []))
 
-const ids = (list) => encodeURIComponent(list.join(','))
+const idArg = (list) => encodeURIComponent(list.join(','))
 
 const PICK_CMDS = {
   async pickwear(args) {
@@ -63,7 +63,7 @@ const PICK_CMDS = {
     const list = wearIds(pickMods(args[0]))
     if (!list.length) return
     status(L.applying)
-    await local('/pick/apply?ids=' + ids(list))
+    await local('/pick/apply?ids=' + idArg(list))
     await afterChange()
     status(PK().worn.replace('%s', list.length))
   },
@@ -72,7 +72,7 @@ const PICK_CMDS = {
     const list = allIds(pickMods(args[0]))
     if (!list.length) return
     status(L.removing)
-    await local('/pick/remove?ids=' + ids(list))
+    await local('/pick/remove?ids=' + idArg(list))
     await afterChange()
     status(PK().removed.replace('%s', list.length))
   },
@@ -83,7 +83,7 @@ const PICK_CMDS = {
     const mods = pickMods(args[1])
     const list = mods.length ? wearIds(mods) : []
     if (mods.length && !list.length) return
-    await local('/group/save?name=' + encodeURIComponent(name) + (list.length ? '&ids=' + ids(list) : ''))
+    await local('/group/save?name=' + encodeURIComponent(name) + (list.length ? '&ids=' + idArg(list) : ''))
     await afterChange()
     status(PK().saved.replace('%s', name))
   },

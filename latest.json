@@ -1,11 +1,11 @@
 {
-  "version": "0.5.34",
-  "notes": "Skins tab: catalog opens first, hero voice/particle mods grouped under their hero, addons folder files shown as cards with DMM origin, Doorman portrait, new look; 3D preview: pose and animation list for every hero, hero-select pose by default, hidden mesh groups (Rem), correct model for Gojo Doorman",
-  "pub_date": "2026-11-25T08:26:39.021Z",
+  "version": "0.5.35",
+  "notes": "3D skin preview shows the hero's own model, not a prop: Gojo particles file showed the door, Gojo (The Strongest) with cart showed only the trolley.",
+  "pub_date": "2026-11-25T08:40:33.227Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytXTE50cW1CZGQ2K3hFTThIcERzZjZpZHVaczRWRm96MklRS1RtNURvZkxtNGZkb0JWTi9VV1JmY0w5VDZ0c3ZtQnZoVTljbXBsVzl5NDVXd0tCeGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTk1MTk4CWZpbGU6TG9ja1N0ZXBfMC41LjM0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzQKYkMyQTJDbytmcVpTYWR2cllXN2tYU2hjcDQvTDBZcDVwRFhUUDR6aE9jZ0JMbVkwWTJhTHpjRHN3NDMzSldJbDN0a3RMSGJTQTk3T2lQSXV6bzRTQWc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.34_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzh0NGJ1enU3c2JFZW90VHR4dGNNd1B4b1dLRzNUM05USWFBc3VzaUE3aStCV2h6cktQMVBDcWczMFVpWDVCRnI1MjJQUkk4YlcvY0piMGZROWMxWlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTk2MDMyCWZpbGU6TG9ja1N0ZXBfMC41LjM1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzUKUWpjWHAyM3psT28yR2RiMCtZY2tyMkR1TnRWZTVjWVpkckNhYXF1ck4vNmtDd2oyU3pLWDI5eVZUYVZ3R1ZOOFdKNVhEOTB0V056dERUVE1PWWpORHc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.35_x64-setup.exe"
     }
   }
 }

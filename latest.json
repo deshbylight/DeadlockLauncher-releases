@@ -1,11 +1,11 @@
 {
-  "version": "0.5.62",
-  "notes": "Skins: game data files (scripts/*.vdata_c) from skins and mods are no longer merged; a stale heroes.vdata in one skin left players unable to move or pick a hero",
-  "pub_date": "2026-11-25T15:45:24.914Z",
+  "version": "0.5.63",
+  "notes": "Skins: the addons block lists only files not already in the library (a skin showed twice); in-game skins window: no duplicate title, hero thumbnails in the hero filter, installed items grouped by hero, addons files with import (CLI dl58)",
+  "pub_date": "2026-11-25T16:11:50.561Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3p3V1o5amVCaEl3R3FzYlRWTzgxd25MakNsMmVMOGtpejVHUU5vUG96cFI2K2JyOU1MTUJBNmhzb0VmUGp2ZVJ0dlYxVUpjMy9BdmdWenowTFNKRmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIxNTI0CWZpbGU6TG9ja1N0ZXBfMC41LjYyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjIKcVp2SHVWVTdLdlpZREdYODhmdk9WZnVYRDlnemdCSDBkUXBlU0pUR2dQQnoyNkdpTUdRMWtjSkxMc2hwUnJLcnBSQ1RsdGxrS2xCTUU3TjJQTVpiQmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.62_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzc3VWxEeXNSd0pVNjRoN1NxdFIvbXNSVit6clRGK0liY0dOTlk1cm90cnUrU1BoU21VMTZUQ2tZSVpFV05zWnZYbUZvejNNZWtoZ1RLVUZpSjMwb3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIzMTEwCWZpbGU6TG9ja1N0ZXBfMC41LjYzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjMKYjgyajZqbU5ES3duM0lUVXNPSjJ4c1FKZWFWMmQ3S2VFbktTYUFJb3VqTTNDUk1TZDR0Z05oa1hMTW1walAxeFlWOUlhVENDVE5EZkc2WE9PanhOQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.63_x64-setup.exe"
     }
   }
 }

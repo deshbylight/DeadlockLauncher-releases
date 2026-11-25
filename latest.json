@@ -1,11 +1,11 @@
 {
-  "version": "0.5.29",
-  "notes": "Graphics: Minimum profile turns off more (volumetric fog grid at minimum, 3D sky monitors, cable shadows, SSAO blur, rope translucency).",
-  "pub_date": "2026-11-25T06:35:01.801Z",
+  "version": "0.5.30",
+  "notes": "Graphics: Minimum and Low profiles write the community config's 13 SceneSystem keys (fog, shadow map sizes, engine buffers) into gameinfo.gi again, Medium its 3 fog keys; they apply at the next game start. Minimum also sets the live CSM cascade and dynamic shadow resolution overrides to 0.",
+  "pub_date": "2026-11-25T06:50:17.360Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9JaTJhekJHaHdhNW5LQjFtajRBSytwYWRnMzJpc3l3WmVXQlVqSGN4L1kxV2FuZHdxWkEzUDJpVUlSV2FrNTAwd0VFZ1lzYzMrY1VCbXRZT1FIMXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg4NTAxCWZpbGU6TG9ja1N0ZXBfMC41LjI5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjkKZGhWRUdtQnlKcWpmejhiNzI5bzBocVZtajdjS2tDM29hQStIVzU4TUs2eHVFQmRZa0RRYWFVdlc1UmMwSTRGeG81NkZKZVNwUlN0ck13dE9ZSm9TRGc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.29_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lHOWZ0SXpGcjNhUEpLVFBGR3MrWXBrQnVsVkRaQnVKMjZteXVJV3pVc3F4ZGdObXhYbGpUM1JLYURLK0J4d1ZzVjd6UFc1NTV4bC9iSkRjQWxNV0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg5NDE2CWZpbGU6TG9ja1N0ZXBfMC41LjMwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzAKNXIremRmTHM2UExVaGs3aWkrdnNEdUU2d3g0ejV0aFA5eElNQ3dZZUEzWjhxLytCREd4dlRnQXVBL3RyNFNRL1gydW91UXBNdXBEN3ZLL0dSL0V4QXc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.30_x64-setup.exe"
     }
   }
 }

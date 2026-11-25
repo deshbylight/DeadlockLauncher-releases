@@ -1,11 +1,11 @@
 {
-  "version": "0.5.68",
-  "notes": "Sound previews play from catalog cards without opening the mod. Preview volume is normalized by default (Settings > Audio, can be turned off). The party-found sound moved to Settings > Audio.",
-  "pub_date": "2026-11-25T17:29:43.533Z",
+  "version": "0.5.69",
+  "notes": "In-game skins: stock hero icons (Vindicta too), hero filter in the Installed tab",
+  "pub_date": "2026-11-25T17:34:35.066Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzJrbjJBazRXZDRoV0ptYmJaMmJRMVZud2ZHc21ub1UyamxQRSt1bG00QVFRV2dSRTV1RTZtK3g5d1kzOWUxYmFITXVrcGpQdTVkTk9zdGVRUHZ2SGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI3NzgzCWZpbGU6TG9ja1N0ZXBfMC41LjY4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjgKMWZNamt5Q1kvanpDc3JJM1JwMWVSUDlLV1J2bHZ1bFp6UTlENVd0aXlvZ24zZE5NZFkyWHJidmVNVEhDUUVXZFgzcVdDM1ZCNDYvbHpTV01uK2NLQVE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.68_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzliMGZuT3dkZlZBd21TQ0lKckVzbjlGVnUzd0RVdXNlMU5rWUp3U3dCWWtHUzdkZERIblhMb3V4bmdYSmsvaGRISHRmYldhSGNhWDN2N0dtMkd4YmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI4MDc0CWZpbGU6TG9ja1N0ZXBfMC41LjY5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjkKVS8vNXZxRWdJbStyYzlkT0Y5cDhjNXR4WVNBc0lEaVMyMzdxS3lTaFlEcXBRMERmK0g4cVIvT2h4SUF4WjJiUERkRmhPdjdzWFVuNlQ1dG1MRkI5Q3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.69_x64-setup.exe"
     }
   }
 }

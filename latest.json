@@ -1,11 +1,11 @@
 {
-  "version": "0.5.52",
-  "notes": "Automatic error reports are sent only with your consent: asked once in Settings, switch in Settings > Network; Settings > Skins switches look like the Skins tab ones",
-  "pub_date": "2026-11-25T14:49:03.412Z",
+  "version": "0.5.53",
+  "notes": "Main buttons (Play, Find party and others) now follow the chosen theme, accent and colour-blind palette; Party 'To search' is a main button; colour-blind mode offers protanopia, deuteranopia, tritanopia and monochromacy; turning low vision mode off returns the interface size.",
+  "pub_date": "2026-11-25T15:02:11.345Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzlGYnQ3TllyNzNjTDN5MlUxaDlLVDhTcVVzRjRxT0w4Mm84VktoRkRmN3hFdFp6Wnlxb0w3R05YWDYrbitxRWJYaUt0U2xDU1YvUTdrd3prNEYxbGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE4MTQzCWZpbGU6TG9ja1N0ZXBfMC41LjUyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTIKRzZHS3ZKcHhuNXJ5cDFVbTZEM3hpQUU0WXdTNVZjbmhhNGZLYzl3Snh6aENTSkNxQUNoSmJtWHZnVng4TjdwQ2tPQzhFS2JUanJCUUxOR2llUCs3RHc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.52_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytuWHoyQWU4WGdEdnpaY2tReGl1b1I5UFducHN0RlBtNjBBY3Y1WDZDU3RjVUpqc0VnUjZwZi94cmFtcGp5UmtFdS84YzRMQ000ZFBCb0s3S1VRNmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE4OTMwCWZpbGU6TG9ja1N0ZXBfMC41LjUzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTMKWnR5OXlVcmduTW8xMHp3b0hNVmVhVDRVZElOOHpsN3pqbzVhb2xLQWVENHpqMGo3UHladjJMU21tODUvQjkxbERGWmtLckhmdkRPak1UT0Jyb2NuQ2c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.53_x64-setup.exe"
     }
   }
 }

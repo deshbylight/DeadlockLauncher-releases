@@ -1,11 +1,11 @@
 {
-  "version": "0.5.42",
-  "notes": "In-game skins: mod page with every file (get, wear, remove each), redesigned cards, Esc closes skins windows first, Skins entry on custom servers; a hero mod and a worn skin no longer stack (Vivian on Mina)",
-  "pub_date": "2026-11-25T12:24:38.799Z",
+  "version": "0.5.43",
+  "notes": "Skin previews show whole on cards and mod pages (in the app and in game); Esc closes the game menu again (Modlock CLI dl53)",
+  "pub_date": "2026-11-25T12:39:21.623Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytwUFM1K0E3U0NhT2JEdUI2a0JGWTdvMnpPelNVZVVEaSswS2N4dytORGpiVEgxZEIrUW1jcHlNZVVVeGloNm0xTWhsZmVXTlhhMExkemNPTHNEdndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjA5NDc4CWZpbGU6TG9ja1N0ZXBfMC41LjQyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDIKUEYwalUrMVFybm9iZ1B6VUU0ZVZldzFyRFBMVE92RXVVZ0FUeXNVWURXTFpCWVlSVHk5em5qM2FXUmNXZTVqM3pjZXRwSURoUVExUkw4OGQvVkxEQnc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.42_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pyZ201dEZxMXVTaGRLbkpuUGI0eHkyeTBNSzhKQy9GTVpxWlNjdXlVM2ZtZ3c5dzZOMXAycW4wNUdwRU5RRHZQeVF3K09sUk9QUkxlS3N1bGNZdmc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEwMzYxCWZpbGU6TG9ja1N0ZXBfMC41LjQzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDMKYTZuNFYvanJ5YkxlWG1HVGc1djdCcmxZbG1VV0lJZmNMSERUWlpBL2VMU1YzUUh4VlBXVGlCcUFDc1ZOL2cyb3lnL1hIUFRaRVIyc2JrVFY2MkZXQVE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.43_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.64",
-  "notes": "Every scrolled list and panel keeps its position: closing a mod page, switching tabs or heroes no longer jumps to the top; a round 'to top' button appears on panels scrolled far down.",
-  "pub_date": "2026-11-25T16:44:48.738Z",
+  "version": "0.5.65",
+  "notes": "Graphics window: the game's own saved settings come back when you return to Standard. Play waits for a Steam game update before starting.",
+  "pub_date": "2026-11-25T16:53:53.429Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3o4WGRmYkF5eW92c21PWVVpalY2MTQrL3J1UTM2RS80eUlwU0orb1RJZklRbm5mamFQWmNsMkJ0UGdMZ0lQUUZLZmZRTWZ0dEE3cXR0QS9DUlhTNmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1MDg4CWZpbGU6TG9ja1N0ZXBfMC41LjY0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjQKdzhRdXhsVXNZQ2lZUy9jeGh2RTFwM3BTK2hsTWhhK0JJbml0QTN5RzZpbGh1WFVhcmx2VEJCUGtJV05MQmdENThHRU5MZWViR1dwcWh5RTNPWGJCQmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.64_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFVbUJlV1dyNXorNDBGRzYwTzBpejVndks4MHpDQWNlRm9MMC9GUStMTzRuU1dHdEllcHBHb21saWRLb2hnYmRGWmJ5Q0UwQ3RmNkl5QzJwMW9CK0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI1NjMzCWZpbGU6TG9ja1N0ZXBfMC41LjY1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjUKdjF5S2h0SWNDOGtkbnhXY1E1aE5VdXIvSHdUaWZ6SVhYOVNUN1AvSDJMMy9QaDJqZEY3cWZhNDF6bWRxMjFPTWY0QWRUdC84RURoQjFBQndKZDA5RHc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.65_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.57",
-  "notes": "Skins: removed the DMM on/off badge from addons cards.",
-  "pub_date": "2026-11-25T15:22:44.498Z",
+  "version": "0.5.58",
+  "notes": "At 130% interface size the colour-blind palette buttons wrap instead of overlapping; the status bar keeps connection and other indicators whole and shortens only long notes and the version.",
+  "pub_date": "2026-11-25T15:26:09.551Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3kvRlgxdVJpQ3lVM1pEaENvQThZR29HL3Q1V1VzRkFIRmp4VVVVQ2lmWEo1UEFsamZYSlFUT1cwMFVJTmE5VnlaaVMvM2l0TmgzQ0RZRXVYcm82QlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIwMTYzCWZpbGU6TG9ja1N0ZXBfMC41LjU3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTcKTHdSMVpGcFlaaUhSOHJsb3BOWnpuUmRlVldMRm5RazNlQk1xbVFqZ0JCNEJjRGsvVTB0RFpOcFQ3OUM2akFGckhsS2ZtanFaRU5yVjdRaVpYVmpMQUE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.57_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by83cVRMa2NXUEdxWTBNNzN3ZXVnaFdOUU1UWkpiWEZJLzg4cm5QWjBaMXpBaWYvOWZjNUNSTGV0UkZxYUluNlFkWEJsRGFaUjQ5Y2VEeEJiVG1oTEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIwMzY4CWZpbGU6TG9ja1N0ZXBfMC41LjU4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTgKakxHb3hhOVFYaXhZb3Q2WXFQNTZBL1BVNFF5dDRaT0tWOG9oNE02OERpRGlKSGJ6Wnh3SXYyWWgrVm5PMHRwWlNkWmF4Z1llaEFYWlBHMnVkSm94RFE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.58_x64-setup.exe"
     }
   }
 }

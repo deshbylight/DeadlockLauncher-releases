@@ -1,11 +1,11 @@
 {
-  "version": "0.5.39",
-  "notes": "In-game HUD editor removed; graphics profiles no longer break particle effects (square noise around heroes and in the top bar); Modlock CLI dl51",
-  "pub_date": "2026-11-25T10:02:57.210Z",
+  "version": "0.5.40",
+  "notes": "Party: a group stays together through the whole match; a dropped launcher keeps its seat for 5 minutes; new 'Back to party' button in the Party tab rejoins or regathers the last group; the leader can make a new in-game party after a match",
+  "pub_date": "2026-11-25T11:58:08.878Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzE5a1NMU1o4dmpmUklxQVlNby95QXU2UDkyc2NndW9tU295Yk5aa2xuQmJGVWxZU0FPdDdPR3dyWGE0dXcwRnh0b1pRVW1YMmNuSHRFRWV5ZmczemdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjAwOTc2CWZpbGU6TG9ja1N0ZXBfMC41LjM5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzkKZ1hiSmlCMjN1aEZoN1BzeUxqNHhTNHFGZVhxaGE5dUFLM3RmNWo1WHVQRzZXS0pWS2RZaExySzJlUkk2a1Q5YlFjdUQxdHdVMVBqcTRHR01nTWpHQ1E9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.39_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzgyM3prWXY1aFcxcnR3NjZjbVlQT05wMXJvWW1BRU5lVmF3WUFTMHNoSS9jVGl1QXhpVjdZMkh1ajFUdGkxMkZRbVVrbnlIdVR1RTYzKyttRVlXdUFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjA3ODg4CWZpbGU6TG9ja1N0ZXBfMC41LjQwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDAKU3IwMGZiaUUvT3FkVVhJUmhCejIvTUpaUDlPbWlmd3ZHRzZOQlNaY1FCNkJ1VkFCZEFPZXdIeGJ6UzdLUjZSWWErOEJjRi9qL1UyV3ZLay9uL1MyQ1E9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.40_x64-setup.exe"
     }
   }
 }

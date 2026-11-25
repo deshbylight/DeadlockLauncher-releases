@@ -1,11 +1,11 @@
 {
-  "version": "0.5.24",
-  "notes": "In-game windows (Esc menu): buttons and tabs now match the Deadlock and launcher style; the section strip that repeated the Esc entries inside every window is gone, the windows sit right of the Esc menu.",
-  "pub_date": "2026-11-25T05:02:23.516Z",
+  "version": "0.5.25",
+  "notes": "Sign-in is now kept in the Windows Credential Manager instead of a plain file; uninstalling removes the saved sign-in and app data (updates keep them).",
+  "pub_date": "2026-11-25T05:18:12.824Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzdWY3k5TzhFZlh6eThMMkIwZ3ZlUVh2MjdVODdqV1RzeEJ2RWI2NjBwdVdVdEhLaHlheDhzbTJyRk1aSUNPTW5GRkUyeHN6MWlCeklDaUxMYnkwd0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgyOTQzCWZpbGU6TG9ja1N0ZXBfMC41LjI0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjQKV045blQzWXJkYnE4YXMzRU5pU3o1eGRDeEZsL0tEVWdmMCtLU1h0N2Nadm12VnBRR3dYdzJTWmhnMEJSVGNRSEpmeE05MW5wejhkekdIMS9wSGdJRFE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.24_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pObm82aG5MamQ3M2JIUUZpL2RuRml5Sm94QXRlRVRnaTZnRUVQNmdFT0txdDZkODBTalNQdk5nRDRHZUZkWEN4ZEVZSThPTDVvMVB1RHFZT2dHQVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgzODkyCWZpbGU6TG9ja1N0ZXBfMC41LjI1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjUKMGdDZVNIbG4zV3B1bTUvbVczNjBhK04wd1R0QUVxQTRGanE2Q0pQa0UyQnhYUWwyQk04WkU3ZDVJTW5lR000dkdpZ1FTR3FGQlB1ZzNDckNTcEh4QWc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.25_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.22",
-  "notes": "In-game Graphics window: new main Profile tab (Minimum = A13 config, Low, Medium, Standard = game settings); all other settings moved under Advanced. Modlock CLI dl46.",
-  "pub_date": "2026-11-25T04:46:24.582Z",
+  "version": "0.5.23",
+  "notes": "Renamed to LockStep: install folder, shortcuts and taskbar pin move to the new name on update. New stable LockStep-Setup.exe for first installs.",
+  "pub_date": "2026-11-25T04:50:34.167Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bysyYXFYdHI5dFkrVVlVeDIzSFllazQzODhjVUFGNzJvd01lVzVIM21QaEljMDc3N1JzODhTT0E3RnBFcy9TSzk4NGRZaEZyZG1PTDJQZHhzR1hkMWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgxOTg0CWZpbGU6RGVhZGxvY2sgR3JvdXAgRmluZGVyXzAuNS4yMl94NjQtc2V0dXAuZXhlCXZlcnNpb246MC41LjIyCmF0ZDZFY0RNT3Nud2E1MVJ2UUZzMGhmU3BveGY5aEREUUEvUGo0LzNsK0tRaUNlOTBwWnp4VlZJTFFGOEZCWHpLY3VKSk5vZWdvL29hRWdwemVnRkF3PT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/Deadlock%20Group%20Finder_0.5.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lWT1hhSXYwV2NBYTcrS3cyU2J3SVFSNVBqUzRzZjlHYXQ1UU5lYXZtd0Q2WUlzanZvMFdjdG1Edm1BTitJZVRzQzRzZU1pMkZKcUxPZHl1VG9HaVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgyMjMzCWZpbGU6TG9ja1N0ZXBfMC41LjIzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjMKditKVGZKem43UWF5UmtidHpxN0JVdGE1ZURUQ0s4SStxWmxGTUVBRWR1bHViQjJlN2c2TkZaa3pkZ3NmeXQvM3BwbUtkSDU2Yko3dFgxOTVPSXAyQlE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.23_x64-setup.exe"
     }
   }
 }

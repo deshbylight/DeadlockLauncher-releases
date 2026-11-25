@@ -1,11 +1,11 @@
 {
-  "version": "0.5.48",
-  "notes": "In-game Servers window: presses (Has slots, visibility, dropdowns) answer at once; cancel a server start during the mod update; copy the join code; reconnect to your own server; one Stop button in the Your server block.",
-  "pub_date": "2026-11-25T14:12:06.503Z",
+  "version": "0.5.51",
+  "notes": "Modlock host fork-0.1.112-2: a player who quits a mode server frees their slot and hero at once (no 5-minute hold); themes and corner style from 0.5.50",
+  "pub_date": "2026-11-25T14:34:45.350Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzF5OXNIdXVqQ3hRdEMwTGw2dnFMQ1FhRk52dzNrMXFwOVkzZ2cyR21CMzJiVGFJc21HWWYwQy84Y3BSa2hXM0pVT2ZTcXNZTE1NZ3UrNEdaL1RzMWdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE1OTI1CWZpbGU6TG9ja1N0ZXBfMC41LjQ4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDgKdHdLZ3RtQlExbzhLZjMxUWhON1Y0VlQraklXZjk0ZGV3SW1IVDhjYm95QVVvWUxPNlNFZUthMkI5Zi9xT09WalBERXA3RUhpYjIzbHdETWw5TnZpQnc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.48_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzFaTjZGU2pCK05LTEY4L1diWUEvY1R6NXQ1TU4vVkg5T1lGYUtNVnA0NlRtMnoxekk4NllYeUsxSmxlMURvT294czRhOENQWC9kWEVBeEs3VCs0WFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE3Mjg0CWZpbGU6TG9ja1N0ZXBfMC41LjUxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTEKYlc0OVYvNVRPNmhaTUZZT0RqYjdRSlV1VWd5T2ZUTnZJQmRQdENlQXNmS2ljMlhFcnZaUTJMTWFNTHd0ajBjQWs2NFlLbGRWNU5hMGR5RkZJZXUyQUE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.51_x64-setup.exe"
     }
   }
 }

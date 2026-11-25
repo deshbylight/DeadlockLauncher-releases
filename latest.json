@@ -1,11 +1,11 @@
 {
-  "version": "0.5.25",
-  "notes": "Sign-in is now kept in the Windows Credential Manager instead of a plain file; uninstalling removes the saved sign-in and app data (updates keep them).",
-  "pub_date": "2026-11-25T05:18:12.824Z",
+  "version": "0.5.26",
+  "notes": "Updates no longer install on launch. When a new version is published, the launcher shows an in-app popup with Update / Later.",
+  "pub_date": "2026-11-25T05:36:17.452Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pObm82aG5MamQ3M2JIUUZpL2RuRml5Sm94QXRlRVRnaTZnRUVQNmdFT0txdDZkODBTalNQdk5nRDRHZUZkWEN4ZEVZSThPTDVvMVB1RHFZT2dHQVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTgzODkyCWZpbGU6TG9ja1N0ZXBfMC41LjI1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjUKMGdDZVNIbG4zV3B1bTUvbVczNjBhK04wd1R0QUVxQTRGanE2Q0pQa0UyQnhYUWwyQk04WkU3ZDVJTW5lR000dkdpZ1FTR3FGQlB1ZzNDckNTcEh4QWc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.25_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVqTEFYMXlNVDJrRXk3UDRBczhDS1YwTTZYV3pkQThsYytJdWRqUDdXTXRKN05hNnBDYWIrQ2hFUjdKUjRFV1c2TFdYMEc0ZFVtSmJTYjJUQ3dOSndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg0OTc3CWZpbGU6TG9ja1N0ZXBfMC41LjI2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMjYKT3AraFVoY2NacVRYeSt0QmV1TjJNZXdlSWtYR2VDSUtkZjBubVpVTklNak9yNUM1U3lndjJNUnliT0FsaDVoQjFoWmd0cFB1MEtQZThKeGQ5bUpMQUE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.26_x64-setup.exe"
     }
   }
 }

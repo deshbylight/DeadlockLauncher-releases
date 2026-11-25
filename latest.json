@@ -1,11 +1,11 @@
 {
-  "version": "0.5.44",
-  "notes": "Modlock updated to upstream 0.1.112 (host fork-0.1.112-1, CLI fork-0.1.112-dl54) for all custom modes",
-  "pub_date": "2026-11-25T12:47:29.927Z",
+  "version": "0.5.45",
+  "notes": "In-game Servers window: filter, sort, free-slots and host mode buttons work again (launcher now decodes encoded request values).",
+  "pub_date": "2026-11-25T13:10:08.877Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzQ5Uk9MWWdzekkvNHM5NHVzbTFWQjlRSFFFaVR1WXZGL051aHJIM09xT0JZdGJsYTJIWlhabkJTcDE3eE9tMVhiR214Z242WjZCQUR6NnJZMFBNdndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEwODQ5CWZpbGU6TG9ja1N0ZXBfMC41LjQ0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDQKVi96WTFYS3NCdHVSR3ZPa2hFaURsS1Y0NElpaHpWS3ZJeWU1K0UvcDRsK1M3NjA5U0xRTEhOK3lwSFMzZzlKckE1K1BzQXJtWXY4a1FwK1Q0TjhsQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.44_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZSVTFPck5yT1BTZ1Yyb2k1QVpvczJ3ZDNIRjN5NWVWbVMva1ExQ2Z1UmU2M2xWZit4KzJpWnAxZVlaeUJQcDJlNzZxYzZVdXRwZ2xiaytFc3RlU2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjEyMjA4CWZpbGU6TG9ja1N0ZXBfMC41LjQ1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNDUKOVF1Y3hCVzdLOTZLMUt5Y3FTNm1VcGNkMW4zUmVPN3RnVXlzczQxSDh0NzVRU0U1ZjlHQkE0ZVg4OHkvZEtZcjN5Y2tDUzRJMlVydWVKVVh2cEFXQ2c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.45_x64-setup.exe"
     }
   }
 }

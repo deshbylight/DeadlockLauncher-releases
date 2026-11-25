@@ -1,11 +1,11 @@
 {
-  "version": "0.5.69",
-  "notes": "In-game skins: stock hero icons (Vindicta too), hero filter in the Installed tab",
-  "pub_date": "2026-11-25T17:34:35.066Z",
+  "version": "0.5.70",
+  "notes": "Skins 3D viewer: hero ability effects play with their animations (exported on demand from your installed game); short list of moves with effects, full clip list under All animations.",
+  "pub_date": "2026-11-25T18:02:48.190Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzliMGZuT3dkZlZBd21TQ0lKckVzbjlGVnUzd0RVdXNlMU5rWUp3U3dCWWtHUzdkZERIblhMb3V4bmdYSmsvaGRISHRmYldhSGNhWDN2N0dtMkd4YmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI4MDc0CWZpbGU6TG9ja1N0ZXBfMC41LjY5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNjkKVS8vNXZxRWdJbStyYzlkT0Y5cDhjNXR4WVNBc0lEaVMyMzdxS3lTaFlEcXBRMERmK0g4cVIvT2h4SUF4WjJiUERkRmhPdjdzWFVuNlQ1dG1MRkI5Q3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.69_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzR2ZVQ5R3hkcU9QNHh1WXk5WHhXSURieStqVTY4UVdRdDRRMGJlcGdzb05YNEZZWkI1blp4MjYxRmwzUHhuNVRVZWJNQmZReGtZRTB6ZnJHWFRCbGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI5NzY3CWZpbGU6TG9ja1N0ZXBfMC41LjcwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzAKQkdOV3psc1NVTGlLZUVZNnFKTEl1a21ERm1sZWpRcUVsbFlTKzA0VTh6RWRWcThKV2trQmdDVlZDa2dZczJkZFkrVFU4anZuanp5d3F1dmJXSCtDQkE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.70_x64-setup.exe"
     }
   }
 }

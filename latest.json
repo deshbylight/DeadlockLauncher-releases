@@ -1,11 +1,11 @@
 {
-  "version": "0.5.56",
-  "notes": "Settings > Appearance: new 'Main buttons' colour row for Play, Find party and other main buttons (presets or any colour; the label stays readable). Update popup: small matching Update / Later buttons.",
-  "pub_date": "2026-11-25T15:11:27.742Z",
+  "version": "0.5.57",
+  "notes": "Skins: removed the DMM on/off badge from addons cards.",
+  "pub_date": "2026-11-25T15:22:44.498Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3lpU050Q3Z1NG5xUlRFc2ExS2VLcXZjZk9QaUVVRlVrTkZwZ2c0VkZUd0Q5MXI1M3ZQVGdET0JkTXlXNzdJQW5kZmJ6a2pXNGtNWmNFYmF1b3ZLbGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjE5NDg3CWZpbGU6TG9ja1N0ZXBfMC41LjU2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTYKNTBSelZOMjcvMlV0UjV6TjdKNno2YjdzUXNhcUt6aVRyMFdsRWU5bXFZRWVKQitZOW1YNVpDTlpxOS85amYxM3BsaCtHdnJCU2JMOCtxNVp0QU5WRGc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.56_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3kvRlgxdVJpQ3lVM1pEaENvQThZR29HL3Q1V1VzRkFIRmp4VVVVQ2lmWEo1UEFsamZYSlFUT1cwMFVJTmE5VnlaaVMvM2l0TmgzQ0RZRXVYcm82QlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjIwMTYzCWZpbGU6TG9ja1N0ZXBfMC41LjU3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNTcKTHdSMVpGcFlaaUhSOHJsb3BOWnpuUmRlVldMRm5RazNlQk1xbVFqZ0JCNEJjRGsvVTB0RFpOcFQ3OUM2akFGckhsS2ZtanFaRU5yVjdRaVpYVmpMQUE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.57_x64-setup.exe"
     }
   }
 }

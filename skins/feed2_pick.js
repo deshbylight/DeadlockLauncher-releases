@@ -30,7 +30,7 @@ const PICK_TEXT = {
     worn: 'Worn: %s', removed: 'Deleted: %s', saved: 'Group "%s" saved', deleted: 'Group "%s" deleted',
   },
 }
-const P = () => (L === T.en ? PICK_TEXT.en : PICK_TEXT.ru)
+const PK = () => (L === T.en ? PICK_TEXT.en : PICK_TEXT.ru)
 
 /** pickMods reads "101,102" into GameBanana mod numbers. */
 const pickMods = (arg) => (arg || '').split(',').map(Number).filter((m) => m > 0)
@@ -65,7 +65,7 @@ const PICK_CMDS = {
     status(L.applying)
     await local('/pick/apply?ids=' + ids(list))
     await afterChange()
-    status(P().worn.replace('%s', list.length))
+    status(PK().worn.replace('%s', list.length))
   },
   async pickremove(args) {
     await loadState()
@@ -74,7 +74,7 @@ const PICK_CMDS = {
     status(L.removing)
     await local('/pick/remove?ids=' + ids(list))
     await afterChange()
-    status(P().removed.replace('%s', list.length))
+    status(PK().removed.replace('%s', list.length))
   },
   async groupsave(args) {
     const name = (args[0] || '').trim()
@@ -85,7 +85,7 @@ const PICK_CMDS = {
     if (mods.length && !list.length) return
     await local('/group/save?name=' + encodeURIComponent(name) + (list.length ? '&ids=' + ids(list) : ''))
     await afterChange()
-    status(P().saved.replace('%s', name))
+    status(PK().saved.replace('%s', name))
   },
   async groupdel(args) {
     await loadState()
@@ -93,6 +93,6 @@ const PICK_CMDS = {
     if (!g) return sendGroups()
     await local('/group/delete?i=' + Number(args[0]))
     await afterChange()
-    status(P().deleted.replace('%s', g.name))
+    status(PK().deleted.replace('%s', g.name))
   },
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.38",
-  "notes": "Skins: one library card per mod with variant chips (wear, on/off, download other variants); an update replaces only its own variant, sibling files are no longer shown as updates; delete asks which variant; full skins with their own models are no longer flagged as made for another mod. Fixes the skin update button broken in 0.5.36.",
-  "pub_date": "2026-11-25T08:58:53.558Z",
+  "version": "0.5.39",
+  "notes": "In-game HUD editor removed; graphics profiles no longer break particle effects (square noise around heroes and in the top bar); Modlock CLI dl51",
+  "pub_date": "2026-11-25T10:02:57.210Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVSWEpLZzFpaXVrWTFVZExlOTZKbG4ydjQxbU5tSUVVQU1qZDJENnNJNGhtSkU1QUJwb1JrajBaWU5tMVZBUThOTDQ0WmwwdzEvbzMxNjAzcUpNZVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTk3MTMzCWZpbGU6TG9ja1N0ZXBfMC41LjM4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzgKM2VsYUhCTks2RkRoQ0xxV29FSThPdzlLalJjWC9OZmRwRnhhRVBFTkJXZ2Q4TWVocDFZM3lKVUlQbG5JZ2VhK1ZVK2FXdEt2UHlya1UyVEFDTmJQQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.38_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzE5a1NMU1o4dmpmUklxQVlNby95QXU2UDkyc2NndW9tU295Yk5aa2xuQmJGVWxZU0FPdDdPR3dyWGE0dXcwRnh0b1pRVW1YMmNuSHRFRWV5ZmczemdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjAwOTc2CWZpbGU6TG9ja1N0ZXBfMC41LjM5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuMzkKZ1hiSmlCMjN1aEZoN1BzeUxqNHhTNHFGZVhxaGE5dUFLM3RmNWo1WHVQRzZXS0pWS2RZaExySzJlUkk2a1Q5YlFjdUQxdHdVMVBqcTRHR01nTWpHQ1E9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.39_x64-setup.exe"
     }
   }
 }

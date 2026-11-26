@@ -1,11 +1,11 @@
 {
-  "version": "0.5.77",
-  "notes": "Skins: picked items that are already worn or on can be taken off at once (Take off picked), in the app Library and the in-game Installed tab. Modlock CLI fork dl64.",
-  "pub_date": "2026-11-26T11:50:20.365Z",
+  "version": "0.5.78",
+  "notes": "Skins: separate Maps tab in the app and in game (installed maps with Play, then the GameBanana catalog); one LockStep entry in the Esc menu for Skins, Servers and Graphics; a custom map started with Play loads a second time so the hero spawns.",
+  "pub_date": "2026-11-26T12:15:01.618Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZjZlg3RDJrNzhpb2R5aUwrYU02WHh1Mm4vYlkrbHhRUXZvUXN5YndZNWplTFdpbFU1V0xCZEUrb3I0dCtXN1B1Uk5EQlhhc1RMRlpKZVhLdGg2b1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkzODE5CWZpbGU6TG9ja1N0ZXBfMC41Ljc3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzcKclR1R2pwYmVKcUV2a0Q5MVlrLzNRVDg3UlJyRndvU3c4bGpHM05MRk5MTzRtYWx2blE5a0FoTzc2aFdRNWtsMjB0UWpqbHJIVnM0SzR0WjhYU2tOQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytDTTVIK1NvRG9GNnhhR3RjaHJBN0dKMDI1ZU9nbWNycDA0dXJDay82SVpQTlJ5T0pLTlE5RHpacjQvZG53Uy9mb3BJcXo3V216bThSaTQ0amppN1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk1MzAxCWZpbGU6TG9ja1N0ZXBfMC41Ljc4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzgKUE0xU1RGVUN6WkxZdHRwcXQxalFqZEhDTElURkI0R1FBU3V2K2p4WTlTNEpmWkpWNUZlTzRQdVJ1YWo1OE1icEY0QUZhbnVJUEFiR2R3TTVtb21YQmc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.78_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.78",
-  "notes": "Skins: separate Maps tab in the app and in game (installed maps with Play, then the GameBanana catalog); one LockStep entry in the Esc menu for Skins, Servers and Graphics; a custom map started with Play loads a second time so the hero spawns.",
-  "pub_date": "2026-11-26T12:15:01.618Z",
+  "version": "0.5.79",
+  "notes": "Skin packs (mods covering 2+ heroes, e.g. Xmas Lock) show one chip per hero on their card: switch a hero part off; a worn skin or another mod for that hero takes that hero from the pack.",
+  "pub_date": "2026-11-26T12:34:09.896Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytDTTVIK1NvRG9GNnhhR3RjaHJBN0dKMDI1ZU9nbWNycDA0dXJDay82SVpQTlJ5T0pLTlE5RHpacjQvZG53Uy9mb3BJcXo3V216bThSaTQ0amppN1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk1MzAxCWZpbGU6TG9ja1N0ZXBfMC41Ljc4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzgKUE0xU1RGVUN6WkxZdHRwcXQxalFqZEhDTElURkI0R1FBU3V2K2p4WTlTNEpmWkpWNUZlTzRQdVJ1YWo1OE1icEY0QUZhbnVJUEFiR2R3TTVtb21YQmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.78_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pWSzdZc1U3Vkdkbm1rRkJKR3ByMVJVR1A3Szk3Q0RUd1RaL1NLenFiVnE0MTJDa2YyLzZRajFlUmVpUXcwYlYzVEJPK053d0FZd0VlT1ZhT0pJV2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk2NDQ1CWZpbGU6TG9ja1N0ZXBfMC41Ljc5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzkKZm1XTGgwS2hLWWFaOWpGZmM0bXdFYU1UcXp0UGZlSmZSR1dFeGlKM3NmWkpXTVVLMUZpVXZwSzROb3BibUlxZVVFUGVjdlViNlRwNi9wQStrYnZCQmc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.79_x64-setup.exe"
     }
   }
 }

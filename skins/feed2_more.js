@@ -62,9 +62,13 @@ function isNewer(f, old, rec) {
   if (f._tsDateAdded && rec._tsDateAdded) return f._tsDateAdded > rec._tsDateAdded + 3600
   return f._idRow > old
 }
-const variantKey = (f) => {
+/** One variant across versions: same description or same file stem without version tokens and GameBanana's `_xxxxx`
+ *  suffix (skins_update.ts `sameVariant`); a newer file under another name is another variant, no update. */
+function sameVariant(a, b) {
   const norm = (s) => s.toLowerCase().replace(/v?\d+([._]\d+)+|v\d+/g, '').replace(/[^\p{L}\p{N}]+/gu, '')
-  return norm(f._sDescription || '') || norm(f._sFile.replace(/\.[^.]+$/, ''))
+  const desc = (f) => norm(f._sDescription || '')
+  const stem = (f) => norm(f._sFile.replace(/\.[^.]+$/, '').replace(/_[0-9a-f]{5}$/, ''))
+  return (!!desc(a) && desc(a) === desc(b)) || (!!stem(a) && stem(a) === stem(b))
 }
 
 function noteUpdate(mod, prof) {
@@ -75,12 +79,11 @@ function noteUpdate(mod, prof) {
   const due = []
   for (const old of mine) {
     const rec = all.find((f) => f._idRow === old)
-    const newer = fresh.filter((f) => isNewer(f, old, rec)).sort((a, b) => b._idRow - a._idRow)
+    const newer = fresh.filter((f) => isNewer(f, old, rec) && (!rec || sameVariant(f, rec))).sort((a, b) => b._idRow - a._idRow)
     if (!newer.length) continue
-    const key = rec ? variantKey(rec) : ''
     const top = newer[0]
     const batch = newer.filter((f) => !f._tsDateAdded || !top._tsDateAdded || top._tsDateAdded - f._tsDateAdded <= 3600)
-    const file = (key && newer.find((f) => variantKey(f) === key)) || (batch.length === 1 ? top : null)
+    const file = rec || batch.length === 1 ? top : null
     if (!file) continue
     const same = due.find((u) => u.file === file._idRow)
     if (same) same.old.push(old)

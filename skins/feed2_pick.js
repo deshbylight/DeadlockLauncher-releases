@@ -3,8 +3,8 @@
 // and groups as the launcher's library. Cards are picked by GameBanana mod; the page maps each to store ids:
 //   wear / group: one skin per hero of the mod (the worn one, else the first) and every mod row of it;
 //   delete: every installed skin and mod row of it.
-// Commands: pickwear~<mods>, pickremove~<mods>, groupsave~<name>~<mods> (empty = what is worn now), groupdel~<i>.
-// Launcher routes: /pick/apply, /pick/remove, /group/save, /group/delete (skins_server.rs).
+// Commands: pickwear~<mods>, picktakeoff~<mods>, pickremove~<mods>, groupsave~<name>~<mods> (empty = what is worn now), groupdel~<i>.
+// Launcher routes: /pick/apply, /pick/takeoff, /pick/remove, /group/save, /group/delete (skins_server.rs).
 
 const PICK = Number(new URLSearchParams(location.search).get('v')) >= 3
 
@@ -12,22 +12,22 @@ const PICK_TEXT = {
   ru: {
     window: {
       noGroups: 'Групп нет: отметьте или наденьте скины, введите имя и сохраните',
-      picked: 'Выбрано: %s', pickHint: 'Отметьте карточки квадратом в углу', pickWear: 'Надеть выбранные',
+      picked: 'Выбрано: %s', pickHint: 'Отметьте карточки квадратом в углу', pickWear: 'Надеть выбранные', pickTakeOff: 'Снять выбранные',
       pickRemove: 'Удалить выбранные', pickClear: 'Сбросить', pickRemoveAsk: 'Удалить с диска выбранное: %s?',
       groupName: 'Имя группы', groupPicked: 'Группа из выбранных', groupWorn: 'Группа из надетого',
       groupDeleteAsk: 'Удалить группу «%s»?',
     },
-    worn: 'Надето: %s', removed: 'Удалено: %s', saved: 'Группа «%s» сохранена', deleted: 'Группа «%s» удалена',
+    worn: 'Надето: %s', takenOff: 'Снято: %s', removed: 'Удалено: %s', saved: 'Группа «%s» сохранена', deleted: 'Группа «%s» удалена',
   },
   en: {
     window: {
       noGroups: 'No groups yet: pick or wear skins, type a name and save',
-      picked: 'Picked: %s', pickHint: 'Tick cards with the square in their corner', pickWear: 'Wear picked',
+      picked: 'Picked: %s', pickHint: 'Tick cards with the square in their corner', pickWear: 'Wear picked', pickTakeOff: 'Take off picked',
       pickRemove: 'Delete picked', pickClear: 'Clear', pickRemoveAsk: 'Delete the picked items from disk: %s?',
       groupName: 'Group name', groupPicked: 'Group from picked', groupWorn: 'Group from worn',
       groupDeleteAsk: 'Delete group "%s"?',
     },
-    worn: 'Worn: %s', removed: 'Deleted: %s', saved: 'Group "%s" saved', deleted: 'Group "%s" deleted',
+    worn: 'Worn: %s', takenOff: 'Taken off: %s', removed: 'Deleted: %s', saved: 'Group "%s" saved', deleted: 'Group "%s" deleted',
   },
 }
 const PK = () => (L === T.en ? PICK_TEXT.en : PICK_TEXT.ru)
@@ -66,6 +66,16 @@ const PICK_CMDS = {
     await local('/pick/apply?ids=' + idArg(list))
     await afterChange()
     status(PK().worn.replace('%s', list.length))
+  },
+  // Every row of the mods goes to the launcher; it takes off only those worn or on (skins_pick.rs takeoff_ids).
+  async picktakeoff(args) {
+    await loadState()
+    const list = allIds(pickMods(args[0]))
+    if (!list.length) return
+    status(L.applying)
+    const r = await local('/pick/takeoff?ids=' + idArg(list))
+    await afterChange()
+    status(PK().takenOff.replace('%s', r.off))
   },
   async pickremove(args) {
     await loadState()

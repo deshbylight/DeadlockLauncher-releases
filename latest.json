@@ -1,11 +1,11 @@
 {
-  "version": "0.5.76",
-  "notes": "Map mods start with Play in the app and in the in-game Installed tab, no console needed (from the hideout). Modlock CLI fork dl63.",
-  "pub_date": "2026-11-26T11:36:57.978Z",
+  "version": "0.5.77",
+  "notes": "Skins: picked items that are already worn or on can be taken off at once (Take off picked), in the app Library and the in-game Installed tab. Modlock CLI fork dl64.",
+  "pub_date": "2026-11-26T11:50:20.365Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hucWZqK2l2S3F1SFNNZi84THZpQlM0bjVxQXdycGkwUFg4bjJrYllRUXJKV054UFFzdys3bWdJeXRBNkJiNmg3dUFVajI0NmtKbzJZaDhRQ2prY0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkzMDE3CWZpbGU6TG9ja1N0ZXBfMC41Ljc2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzYKV2o1V1JNb09DRVhBL0kxWU5tTXI3K0tWMHF1K25WTWlyTUdnNmlyQUQ2VmtCNHNiaU45RjR0cW0yU3U5akVOalFxZVF1VXRQRnlhZjIwNDRJTmpCQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.76_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzZjZlg3RDJrNzhpb2R5aUwrYU02WHh1Mm4vYlkrbHhRUXZvUXN5YndZNWplTFdpbFU1V0xCZEUrb3I0dCtXN1B1Uk5EQlhhc1RMRlpKZVhLdGg2b1FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkzODE5CWZpbGU6TG9ja1N0ZXBfMC41Ljc3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzcKclR1R2pwYmVKcUV2a0Q5MVlrLzNRVDg3UlJyRndvU3c4bGpHM05MRk5MTzRtYWx2blE5a0FoTzc2aFdRNWtsMjB0UWpqbHJIVnM0SzR0WjhYU2tOQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.77_x64-setup.exe"
     }
   }
 }

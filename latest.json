@@ -1,11 +1,11 @@
 {
-  "version": "0.5.71",
-  "notes": "Skins: new Other tab in the mods catalog (GameBanana Other/Misc, e.g. Xmas Lock). Packs with models of many heroes now install as mods instead of one hero's skin.",
-  "pub_date": "2026-11-26T09:46:19.235Z",
+  "version": "0.5.72",
+  "notes": "Skins: world and theme packs from the Other tab (e.g. Potato Lock, Xmas Lock) install as mods instead of a random hero's skin, and no longer show a false 'made for another mod' warning.",
+  "pub_date": "2026-11-26T10:04:47.930Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhQblJHOGx2LzRianRCWnNldk5WOElhdGM4WGFXbUhHekU4VXBzZTVLajVLWDhQZlh2dVpzaGkyMzZYUFhtbEJ4dzRjdzd6WmVCT3FtU01JSmU4VndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njg2Mzc4CWZpbGU6TG9ja1N0ZXBfMC41LjcxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzEKVW1NbWVYZTRrTmtCNmQ3Nzl2TTZlay9iUUxsLzRkL0VGTFFTZ0xlOGc4MGdLeHRCUUVVKzJNbVRkZ1ZRWFdacmZRckRSOW5lZmdaNDh5ekhwUkhRQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.71_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVTMjFISnVONFJZMFdNcm1nVUVkckJmVTQ5dXVUSE5HenhSUDh6MDhiejJlS2o1MEIvbHM2NklNWlVVazh1QTJ4bFphRFA3RzdkNW1XRitLNGhVR3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njg3NDg3CWZpbGU6TG9ja1N0ZXBfMC41LjcyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzIKWVVBY0FjcDloTXJXd3dWdnBZRTQ3aWtlN21lRUF6MDBnQ3M0NkgrTGtoU05nOFNmYVhEMTFFZ294ZkdRUjRDQ1hrdG1NQm5XdVAvT3RPQUEzSXR4Q2c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.72_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.75",
-  "notes": "Mods with several files on GameBanana (sound, skin, HUD variants): installing one no longer shows another as its update; an update is only a newer file of the same variant, other files stay as + variants.",
-  "pub_date": "2026-11-26T11:34:56.680Z",
+  "version": "0.5.76",
+  "notes": "Map mods start with Play in the app and in the in-game Installed tab, no console needed (from the hideout). Modlock CLI fork dl63.",
+  "pub_date": "2026-11-26T11:36:57.978Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytIQ1FXT25URlVrakhCcFNxaHFncW54NDRsVEswSHNIMGFkVkJjZktlZ3lyQ2srNk92NlZGZ0xWREprbFB5bDRTWXBvTjlZa3FYWHpPY2pHR2QxMVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkyODk2CWZpbGU6TG9ja1N0ZXBfMC41Ljc1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzUKcnRQVXlsMENPZ2xIVFZaZEluakExQVc2WlhrUTRNVFcvQ0R6TFdmWVhWQkw5VHFBTExXMGYwQTN4b09RVU1UUnhiTVBLdEt1MUgzbGhtV242RlI3Q3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.75_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3hucWZqK2l2S3F1SFNNZi84THZpQlM0bjVxQXdycGkwUFg4bjJrYllRUXJKV054UFFzdys3bWdJeXRBNkJiNmg3dUFVajI0NmtKbzJZaDhRQ2prY0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkzMDE3CWZpbGU6TG9ja1N0ZXBfMC41Ljc2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzYKV2o1V1JNb09DRVhBL0kxWU5tTXI3K0tWMHF1K25WTWlyTUdnNmlyQUQ2VmtCNHNiaU45RjR0cW0yU3U5akVOalFxZVF1VXRQRnlhZjIwNDRJTmpCQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.76_x64-setup.exe"
     }
   }
 }

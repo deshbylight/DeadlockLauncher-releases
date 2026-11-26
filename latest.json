@@ -1,11 +1,11 @@
 {
-  "version": "0.5.79",
-  "notes": "Skin packs (mods covering 2+ heroes, e.g. Xmas Lock) show one chip per hero on their card: switch a hero part off; a worn skin or another mod for that hero takes that hero from the pack.",
-  "pub_date": "2026-11-26T12:34:09.896Z",
+  "version": "0.5.80",
+  "notes": "In-game LockStep menu fits the Esc menu: when the opened Skins/Servers/Graphics items would cover Swap hero, settings or another mod's panel, they move into the LockStep row. Modlock CLI fork dl66.",
+  "pub_date": "2026-11-26T12:36:04.472Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3pWSzdZc1U3Vkdkbm1rRkJKR3ByMVJVR1A3Szk3Q0RUd1RaL1NLenFiVnE0MTJDa2YyLzZRajFlUmVpUXcwYlYzVEJPK053d0FZd0VlT1ZhT0pJV2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk2NDQ1CWZpbGU6TG9ja1N0ZXBfMC41Ljc5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzkKZm1XTGgwS2hLWWFaOWpGZmM0bXdFYU1UcXp0UGZlSmZSR1dFeGlKM3NmWkpXTVVLMUZpVXZwSzROb3BibUlxZVVFUGVjdlViNlRwNi9wQStrYnZCQmc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.79_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9HUjFQeENvaDArSU5FTDh0WU96SFBaUzkwL1IyU05DR25zZ1VEamZvUmFCcXdLZ0JCQlNoMG9lQjl5R1BhRDMwK2hOV0lYZkJTN3J4NjFYa1hmZlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk2NTU5CWZpbGU6TG9ja1N0ZXBfMC41LjgwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODAKOFk1dWVqSzFWRzFFQlRPdUpXTkdWRDJYY1FxWHQwZWxBaTRVR01iY3VRUzdhVWRjaEZXbWVzRFhaY2lGM3dydmsvYndrQ0RzVk1McUVLTE9kSjAzQ1E9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.80_x64-setup.exe"
     }
   }
 }

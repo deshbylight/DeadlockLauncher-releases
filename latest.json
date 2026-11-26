@@ -1,11 +1,11 @@
 {
-  "version": "0.5.74",
-  "notes": "Library: sections Skins, Sounds, HUD, Maps, Other in the app and in the in-game Installed tab; the hero list shows only heroes with items. Catalog: new Maps tab.",
-  "pub_date": "2026-11-26T11:10:36.197Z",
+  "version": "0.5.75",
+  "notes": "Mods with several files on GameBanana (sound, skin, HUD variants): installing one no longer shows another as its update; an update is only a newer file of the same variant, other files stay as + variants.",
+  "pub_date": "2026-11-26T11:34:56.680Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9jeWRiRC9jUjBhdXdZOTcyZ1AweUVkQW1lZkRFRC9QZmV2VWp1NDVraGRkd3RHRUo0dlM2Yis0c08wUmJRbm5VVlBiWFZDZmZYZVU5SllRVDVXNGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkxNDM1CWZpbGU6TG9ja1N0ZXBfMC41Ljc0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzQKWHdMbG4yb2g4dHRHamlpV1R6eTMzRktLTnU2RUJKcVltWWtIT0NLU1RkTUlPS3BXbjFyYVJMUENEVUVxWXNBMzczOXlvazJoWC8zL1hHRWFKU250Qnc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.74_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytIQ1FXT25URlVrakhCcFNxaHFncW54NDRsVEswSHNIMGFkVkJjZktlZ3lyQ2srNk92NlZGZ0xWREprbFB5bDRTWXBvTjlZa3FYWHpPY2pHR2QxMVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjkyODk2CWZpbGU6TG9ja1N0ZXBfMC41Ljc1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzUKcnRQVXlsMENPZ2xIVFZaZEluakExQVc2WlhrUTRNVFcvQ0R6TFdmWVhWQkw5VHFBTExXMGYwQTN4b09RVU1UUnhiTVBLdEt1MUgzbGhtV242RlI3Q3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.75_x64-setup.exe"
     }
   }
 }

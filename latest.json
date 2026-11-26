@@ -1,11 +1,11 @@
 {
-  "version": "0.5.70",
-  "notes": "Skins 3D viewer: hero ability effects play with their animations (exported on demand from your installed game); short list of moves with effects, full clip list under All animations.",
-  "pub_date": "2026-11-25T18:02:48.190Z",
+  "version": "0.5.71",
+  "notes": "Skins: new Other tab in the mods catalog (GameBanana Other/Misc, e.g. Xmas Lock). Packs with models of many heroes now install as mods instead of one hero's skin.",
+  "pub_date": "2026-11-26T09:46:19.235Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzR2ZVQ5R3hkcU9QNHh1WXk5WHhXSURieStqVTY4UVdRdDRRMGJlcGdzb05YNEZZWkI1blp4MjYxRmwzUHhuNVRVZWJNQmZReGtZRTB6ZnJHWFRCbGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjI5NzY3CWZpbGU6TG9ja1N0ZXBfMC41LjcwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzAKQkdOV3psc1NVTGlLZUVZNnFKTEl1a21ERm1sZWpRcUVsbFlTKzA0VTh6RWRWcThKV2trQmdDVlZDa2dZczJkZFkrVFU4anZuanp5d3F1dmJXSCtDQkE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.70_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhQblJHOGx2LzRianRCWnNldk5WOElhdGM4WGFXbUhHekU4VXBzZTVLajVLWDhQZlh2dVpzaGkyMzZYUFhtbEJ4dzRjdzd6WmVCT3FtU01JSmU4VndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njg2Mzc4CWZpbGU6TG9ja1N0ZXBfMC41LjcxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzEKVW1NbWVYZTRrTmtCNmQ3Nzl2TTZlay9iUUxsLzRkL0VGTFFTZ0xlOGc4MGdLeHRCUUVVKzJNbVRkZ1ZRWFdacmZRckRSOW5lZmdaNDh5ekhwUkhRQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.71_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.72",
-  "notes": "Skins: world and theme packs from the Other tab (e.g. Potato Lock, Xmas Lock) install as mods instead of a random hero's skin, and no longer show a false 'made for another mod' warning.",
-  "pub_date": "2026-11-26T10:04:47.930Z",
+  "version": "0.5.73",
+  "notes": "Mode HUD: the ammo count comes back in the hideout after a mode that hid it (Modlock CLI dl61).",
+  "pub_date": "2026-11-26T10:29:13.478Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVTMjFISnVONFJZMFdNcm1nVUVkckJmVTQ5dXVUSE5HenhSUDh6MDhiejJlS2o1MEIvbHM2NklNWlVVazh1QTJ4bFphRFA3RzdkNW1XRitLNGhVR3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njg3NDg3CWZpbGU6TG9ja1N0ZXBfMC41LjcyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzIKWVVBY0FjcDloTXJXd3dWdnBZRTQ3aWtlN21lRUF6MDBnQ3M0NkgrTGtoU05nOFNmYVhEMTFFZ294ZkdRUjRDQ1hrdG1NQm5XdVAvT3RPQUEzSXR4Q2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.72_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytBRW4vMnhnSGZIS1U5a3JWVmllZndOZ0ttSXNucHJEVENHeWRQRXVKVXY2S2FvUUpvejZNQ1AwMGxqSXo5d3ppSTByUkYwMStqZW16VVZxaTdsZ0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njg4OTUzCWZpbGU6TG9ja1N0ZXBfMC41LjczX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuNzMKOVFQeUpRT0hieFladFdLVmNxNTdEN1dZV2ZsNll2Z3hpdFUrNkoxNTJLOGdodWVRS1loNHpwRVdwc1RDNktGNlpDZHVXYjBIbU1NNC9SUTJZdk5oQWc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.73_x64-setup.exe"
     }
   }
 }

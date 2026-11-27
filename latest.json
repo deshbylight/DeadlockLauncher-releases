@@ -1,11 +1,11 @@
 {
-  "version": "0.5.80",
-  "notes": "In-game LockStep menu fits the Esc menu: when the opened Skins/Servers/Graphics items would cover Swap hero, settings or another mod's panel, they move into the LockStep row. Modlock CLI fork dl66.",
-  "pub_date": "2026-11-26T12:36:04.472Z",
+  "version": "0.5.81",
+  "notes": "Interface: one set of design tokens and base controls; brighter input edges and readable hint text (contrast); rounded toasts follow the corner style",
+  "pub_date": "2026-11-27T13:22:55.651Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91by9HUjFQeENvaDArSU5FTDh0WU96SFBaUzkwL1IyU05DR25zZ1VEamZvUmFCcXdLZ0JCQlNoMG9lQjl5R1BhRDMwK2hOV0lYZkJTN3J4NjFYa1hmZlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njk2NTU5CWZpbGU6TG9ja1N0ZXBfMC41LjgwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODAKOFk1dWVqSzFWRzFFQlRPdUpXTkdWRDJYY1FxWHQwZWxBaTRVR01iY3VRUzdhVWRjaEZXbWVzRFhaY2lGM3dydmsvYndrQ0RzVk1McUVLTE9kSjAzQ1E9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.80_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3gzdVIxdXJwR0p5eFNoU3lnemFBL2tGYjhFY2IrOGNVMzBabDJsaTgycTdtTW8yMlRWVHJSbkxYTVRkQkZ2ZnRaaWZVcTYzUXVaVHN2TWdiMmNIR0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzg1Nzc1CWZpbGU6TG9ja1N0ZXBfMC41LjgxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODEKWWdNazBtSVBYODlPaEVCL1lia3B5c3l2SG42dE9yaVYwQzg0ajJDeDZud1dEOWJpTGdJMnliZmY2bTFKRDc3U0tPczRKa3Q2STIxV09sK004aHdLQkE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.81_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.83",
-  "notes": "Calmer look: join code hidden until Show and copied with one click; FPS test moved to Home; cleaner profile card and mods table; softer group-found sound",
-  "pub_date": "2026-11-27T17:39:56.103Z",
+  "version": "0.5.84",
+  "notes": "Benchmark moved to Settings > Performance; it is no longer on Home",
+  "pub_date": "2026-11-27T17:55:25.568Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91byszTTRIZEJNMEdTdCthMGppc2NNaEZUbXV1UDNwaytaQ0ZOQ1BFWG5HRVYxTCt4ekpTKy9MWktJaWVoN3J1dUhxRk5LQS96Z1dtNTdHTUhJclVEM1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODAxMTk1CWZpbGU6TG9ja1N0ZXBfMC41LjgzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODMKTnJRL0JYTlpzUFBGMzMrVE40Q0dEM1FMNzd1WXJYVWQ4ZDI0MzRQQzZBQ25vWlUzY01uYS9XNGF5QVprQXYzVmd2eWg1ckRwbzUxMjFpRUhaa1lYREE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.83_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhDREdtRmtnYWxvazlSTkcxWDd6YjY0ZDFKaGw5T2QxU3VHYjZGOXd6VFV3QUlvYWNmN2FCdncrak50Q2lJTEV3bTl0UFlieDBBcUZlS3A2V1VZQ1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODAyMTI1CWZpbGU6TG9ja1N0ZXBfMC41Ljg0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODQKbkNJbSthL2FrcHAzcmQwVmlwczVBeDNsVFFwWUpESllnK1RBb1F5cTlOYmcyVGhKNXNqQktnWmQ3K0pBZVBZeHpPZUdtMWZ5UEVwK3YwU0RJOEhGQWc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.84_x64-setup.exe"
     }
   }
 }

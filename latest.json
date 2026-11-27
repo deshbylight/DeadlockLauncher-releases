@@ -1,11 +1,11 @@
 {
-  "version": "0.5.81",
-  "notes": "Interface: one set of design tokens and base controls; brighter input edges and readable hint text (contrast); rounded toasts follow the corner style",
-  "pub_date": "2026-11-27T13:22:55.651Z",
+  "version": "0.5.82",
+  "notes": "Calmer interface: one accent colour, cream main buttons, flat panels, readable headings and menu, no film grain or colour stripes",
+  "pub_date": "2026-11-27T16:48:50.259Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3gzdVIxdXJwR0p5eFNoU3lnemFBL2tGYjhFY2IrOGNVMzBabDJsaTgycTdtTW8yMlRWVHJSbkxYTVRkQkZ2ZnRaaWZVcTYzUXVaVHN2TWdiMmNIR0E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzg1Nzc1CWZpbGU6TG9ja1N0ZXBfMC41LjgxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODEKWWdNazBtSVBYODlPaEVCL1lia3B5c3l2SG42dE9yaVYwQzg0ajJDeDZud1dEOWJpTGdJMnliZmY2bTFKRDc3U0tPczRKa3Q2STIxV09sK004aHdLQkE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.81_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3g3d3RCcDczamJQTVBHUzZKeUk2VVNzWXc2a3JLYndOa3IxU2VGRnBrM29Ca29FdVVUcnNzNGVjTTZ4OVd1UmQxbm9VQkF1WHgrSTAyZ2xmdkFjQndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzk4MTI5CWZpbGU6TG9ja1N0ZXBfMC41LjgyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODIKdEdTNFpIRHE3RnVhTmE2dElEd25mdlcveUVxUXJRZ3BVNSt1cVM1WGUzWCtldUhiSkY5bGs5RU5mU0crQlZjUmNlbzcvVzkvOWNleEszQWdub3VZQXc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.82_x64-setup.exe"
     }
   }
 }

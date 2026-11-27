@@ -1,11 +1,11 @@
 {
-  "version": "0.5.82",
-  "notes": "Calmer interface: one accent colour, cream main buttons, flat panels, readable headings and menu, no film grain or colour stripes",
-  "pub_date": "2026-11-27T16:48:50.259Z",
+  "version": "0.5.83",
+  "notes": "Calmer look: join code hidden until Show and copied with one click; FPS test moved to Home; cleaner profile card and mods table; softer group-found sound",
+  "pub_date": "2026-11-27T17:39:56.103Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3g3d3RCcDczamJQTVBHUzZKeUk2VVNzWXc2a3JLYndOa3IxU2VGRnBrM29Ca29FdVVUcnNzNGVjTTZ4OVd1UmQxbm9VQkF1WHgrSTAyZ2xmdkFjQndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzk4MTI5CWZpbGU6TG9ja1N0ZXBfMC41LjgyX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODIKdEdTNFpIRHE3RnVhTmE2dElEd25mdlcveUVxUXJRZ3BVNSt1cVM1WGUzWCtldUhiSkY5bGs5RU5mU0crQlZjUmNlbzcvVzkvOWNleEszQWdub3VZQXc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.82_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91byszTTRIZEJNMEdTdCthMGppc2NNaEZUbXV1UDNwaytaQ0ZOQ1BFWG5HRVYxTCt4ekpTKy9MWktJaWVoN3J1dUhxRk5LQS96Z1dtNTdHTUhJclVEM1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODAxMTk1CWZpbGU6TG9ja1N0ZXBfMC41LjgzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODMKTnJRL0JYTlpzUFBGMzMrVE40Q0dEM1FMNzd1WXJYVWQ4ZDI0MzRQQzZBQ25vWlUzY01uYS9XNGF5QVprQXYzVmd2eWg1ckRwbzUxMjFpRUhaa1lYREE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.83_x64-setup.exe"
     }
   }
 }

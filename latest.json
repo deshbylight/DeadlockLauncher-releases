@@ -1,11 +1,11 @@
 {
-  "version": "0.5.90",
-  "notes": "New look: poster style; play dock under every page with Find at the left end, the mode, settings, who searches and your party; brand at the top of the left rail, version at its foot. Also: filler hints removed, Play stays left on Home.",
-  "pub_date": "2026-11-28T08:13:21.313Z",
+  "version": "0.5.91",
+  "notes": "Mod host fork-0.1.112-3: Wave Survival bosses walk with the mode's own animation files, stock bosses stay stock after leaving the mode",
+  "pub_date": "2026-11-28T08:29:30.429Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3dDRCtWNXVnYkZTcnYxWjFwekxNU0NDTDMrdFBtSkVPQ1BXMy9URWZJS1R2eFBEOEtjTHZTVG9lZ2FBNDFNMHdKa1JoOWJubzhDQ2hKa2RvNWRHWHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODUzNjAwCWZpbGU6TG9ja1N0ZXBfMC41LjkwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTAKV3FlS0dsRTJlaFJxNUtjZG1yeHJIa0V2bmtLa2lMZUlHYTRGWWUzdEVyUjBLQXdtZmJUMDB3SGtUOUhmRFJBZ05QdTJkTmdkcDk0TlJTejRhTnlHQ3c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.90_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytwQ0owSE8zbWZLTzlaVFl4N2NJbVBtT1NwaDFvOHhLbXZYVG1pbXVCLzZqQmNOTXVLNjRxcUdTUlI2aFppaGRsSy84WnVJQjMxZkRCeEREUDdmL2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODU0NTcwCWZpbGU6TG9ja1N0ZXBfMC41LjkxX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTEKSE1TaHRNMkNyRFgxSTMxWUd4VnE3WFVYczdRNGoyQ04vZ0Y2dzN4Mi8yRGIvcXBpWlIzQ3VtaGZtdnpTWEJRdFMwUkI0V1QyMjRTNFhqb2J4NFA3Q1E9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.91_x64-setup.exe"
     }
   }
 }

@@ -1,11 +1,11 @@
 {
-  "version": "0.5.99",
-  "notes": "In-game skins: entering the sandbox reloads it with your current skins, so a mod you deleted no longer comes back there (Modlock CLI dl70).",
-  "pub_date": "2026-11-28T13:27:38.379Z",
+  "version": "0.6.0",
+  "notes": "3D preview: map mods show the map world; all models of a mod are converted once and switch instantly; ability effects in the viewer are off for now",
+  "pub_date": "2026-11-28T13:30:31.145Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3didU1yK29pRlFQTWVKTUl4YjNNODZaMzkvblpmZVJDaHQ1bUZxdGdSTWc3N3JZcEpBQnYwZlBTcytaRDJTbkJLUlM2MlRaSHBWWHRvcGJHK0FCaUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODcyNDU3CWZpbGU6TG9ja1N0ZXBfMC41Ljk5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTkKajdQVFc0OTh3ck1aRGxKTHl5ZE5OVmNaTFBEdW1JTTI2dk8xTVdMZ0wySHdqNWgzbndEVnJjclVMRmIvLys2bUNGc3BTRkRhaGcvODlVWjVjVHJnQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.99_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRUcCt0WmJ3bnFCcklWa2lkYk9Kamlrc3RrQklKRXlEZFEydTNBRWVqQ1ZnWU5aOFBDeVFwelFtbkw2N1ZFdGpIdzBEdERDZVdNeis1YTUydEwvOHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODcyNjMwCWZpbGU6TG9ja1N0ZXBfMC42LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4wCm96ei9tMzM5R1NpWFRWL2dIN3lDaUZuYlYzTnVEOEFKZEF4blBua0NPRGdySnRnQ1ZGbnhlTGRpYlhUTHlLUDBCMXYyTHlaSDZ6aDdTcUgrajEwa0JBPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.0_x64-setup.exe"
     }
   }
 }

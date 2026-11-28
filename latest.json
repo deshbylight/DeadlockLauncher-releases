@@ -1,11 +1,11 @@
 {
-  "version": "0.5.84",
-  "notes": "Benchmark moved to Settings > Performance; it is no longer on Home",
-  "pub_date": "2026-11-27T17:55:25.568Z",
+  "version": "0.5.85",
+  "notes": "Page text can be selected and copied; the browser right-click menu is gone (kept in text fields); mouse side buttons and Alt+Left/Right go back and forward between pages; Skins search text stays when you switch heroes; skin downloads no longer make hover blink",
+  "pub_date": "2026-11-28T07:10:28.357Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhDREdtRmtnYWxvazlSTkcxWDd6YjY0ZDFKaGw5T2QxU3VHYjZGOXd6VFV3QUlvYWNmN2FCdncrak50Q2lJTEV3bTl0UFlieDBBcUZlS3A2V1VZQ1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODAyMTI1CWZpbGU6TG9ja1N0ZXBfMC41Ljg0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODQKbkNJbSthL2FrcHAzcmQwVmlwczVBeDNsVFFwWUpESllnK1RBb1F5cTlOYmcyVGhKNXNqQktnWmQ3K0pBZVBZeHpPZUdtMWZ5UEVwK3YwU0RJOEhGQWc9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.84_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzkyanYvWTJibTh0c2lBeGxrdFdHWGJkQzZuMVdFcXpleGN1d3BWOCt1MldKTXh3bTN1NXpPcVZ5bzF4cU92bWlnaTkyZkdEaFNmMnZZVGxzaHFjTFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODQ5ODI4CWZpbGU6TG9ja1N0ZXBfMC41Ljg1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODUKeEM1cEt0ZEhrM0IyN1NtODlITU9JbEhRN054YnFYV1NBZVJRbExNS1Q1Ull0cTdQbWlic0l5WFF2anNPM1pDMjBiOXFicmNoWW81MUFmNDYvanRBQnc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.85_x64-setup.exe"
     }
   }
 }

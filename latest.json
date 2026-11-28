@@ -1,11 +1,11 @@
 {
-  "version": "0.6.2",
-  "notes": "Hideout skins load: HUD mod probe 2 (diagnostic, console [HudProbe] lines)",
-  "pub_date": "2026-11-28T15:04:04.126Z",
+  "version": "0.6.3",
+  "notes": "Hideout skins load: HUD mod probe 3 (diagnostic, style reload through a layout event)",
+  "pub_date": "2026-11-28T15:26:37.885Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVNdUQvUlI0NmJhdUVhYUdKVU8zT0NUbkQxRWQwVlZXRGJFSGxEbiszbllVMElZK3lxemdoL05UOXA1SCtQb2ZMbStWR2pXdGZiQVRLVS9KSU1yeGdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODc4MjQzCWZpbGU6TG9ja1N0ZXBfMC42LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4yCkNGYjJpNzA4QTdOQUtabVVJeTJMZVA3TWpXQy9lMlhGcjh0MENwcGErU09IcHI4V2Z0UmNtb1JJbTdDUUoxRVJOZy9qcHcvZmtzOENYQy9tYmp3MkRnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhiRzdzR2ZTeFBtVzFEY0VjbU9td1ppRGhWU05RL2l1Tll0aC9FQ3FDU3BXcXY3aWZvREhKQzdFeUduVldqWlhIUllZemY4VzJ0dFN2VkhMNHRzQUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODc5NTk3CWZpbGU6TG9ja1N0ZXBfMC42LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4zCktISTVFZ20xUHMyQ2pYaCtBNFJCUDdzZHI4M0x5NDJBdGlWM0Y3bS9sYWpUbWpZcERxUnFDZW5GTzFmVnpubWora1IvdmpubFhuT0RDc0IyVEYxUEJnPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.3_x64-setup.exe"
     }
   }
 }

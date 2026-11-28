@@ -1,11 +1,11 @@
 {
-  "version": "0.5.94",
-  "notes": "Play: press it again to cancel while the launcher waits for Steam (Steam start, game update)",
-  "pub_date": "2026-11-28T08:44:58.344Z",
+  "version": "0.5.95",
+  "notes": "Custom servers: the in-game mod renderer of a guest shows pictures only from game content, a host can no longer point it at outside addresses (Modlock fork dl67). Party and server join go only through the mod renderer with one Connect button. Parties of size Any form 20 s after the last join at 2+ players, with a countdown on the Group tab. Search by ping between players with a max search ping setting. Admin feedback buttons show busy and done marks. The app and tray icon are restored.",
+  "pub_date": "2026-11-28T10:27:12.296Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBXcXYvSSttVDBzdFg0K3dRVGl4aEZxaUdUTitJVmhxL2krU3BrbWxsVXRzcDVQN3BMUm9HdytGWm9oVTlZYktaVDVRbnBDWlpWZ29qaTltcmN2UFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODU1NDk3CWZpbGU6TG9ja1N0ZXBfMC41Ljk0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTQKa0djanF5NG5TZHprbzFSZW1HaXpwTlRWM2V3Tis2UWVONUEvYThRYmkwQ0tLTVZyL2hHZXlHVEhWUmpaMnQrZkdGdkFIOFFJck5ZcFVhdHphL0lMQ2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.94_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRFcEhUcXJoeHlKUHpZOWdOSDBtR01SdHpIMllMKytPL2djUVRTR3VlcFB2UHBtdzNZU0pTaUZCYUpPMDFLMHNwdjVkdlB6UWpkT25wK0JtVW9hbkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODYxNjMxCWZpbGU6TG9ja1N0ZXBfMC41Ljk1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTUKYlRDWFFrT1Rab2lEY0V1MXRCMW5kckpGNnR2L0hYUkhCbHU4MmxBanRZVFNvZzlUTDUvNW4ydjdKbTNUbkJzaW52dkRrWE5CbnBHVVk3aWtFdGRpQVE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.95_x64-setup.exe"
     }
   }
 }

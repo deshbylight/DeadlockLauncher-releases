@@ -1,11 +1,11 @@
 {
-  "version": "0.5.96",
-  "notes": "Safer Steam sign-in: a one-time code instead of a session token in the browser link. Signing out now ends the session on the server. Error reports hide your Windows account name. New Settings switch: Hide my profile.",
-  "pub_date": "2026-11-28T10:46:24.169Z",
+  "version": "0.5.97",
+  "notes": "Skins: downloads wait in a queue and can be cancelled, a skin can be worn while others download. Mode packages are signed by the developer, the launcher refuses unsigned or changed mode files. A feedback answer is final and shows who answered and when. New app icon. Interface text: hints match how the app works, About rewritten.",
+  "pub_date": "2026-11-28T11:30:04.404Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVXYjhjdEVQNDB6Um16MTRDZTAxU0lhRzlKME5zUUhlbEY0NHJQN1hDK2dqWHJ0RU5uVEI3Q0xWcWFsUjVpUTlhcDJaZ1dxY3ZNMmt0cVBrTUExeGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODYyNzgzCWZpbGU6TG9ja1N0ZXBfMC41Ljk2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTYKeDh3Q3o3VDVrQy9GTm9EcXdOQ2l1L0ZmSWFsRlJsdmc2UXB1ZU5Lbk9EZVh1MHZWNFNCZ042WUtLNkNISkl0MGxGNEpEN3F3Q05yM21IcjE3Ni9OQVE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.96_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVZTU9YK1AwOCtrZVRpc3lkNlp1SnpIdURNNENDbURkeDRWa3lGUyt4NW5BNVQ5UlJMREJadWdLQWwrelBLa2JGN1llM2NXeG0yaFh0NzlCZjVrc0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODY1NDA0CWZpbGU6TG9ja1N0ZXBfMC41Ljk3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTcKVzJMZDJQY2szKy8yb1FXN0o2QW1FeEcvZnp6OS9ocExaWWQwNTB4TmZoTVU0SUNEQ2NuSDdvNjNMU1lYV1Y5VVo1WDZCOEpTdTFXcGk5RWtEdHlCQkE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.97_x64-setup.exe"
     }
   }
 }

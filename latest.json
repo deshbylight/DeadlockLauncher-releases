@@ -1,11 +1,11 @@
 {
-  "version": "0.5.86",
-  "notes": "New look: petrol and brass. Own fonts (Oranienbaum, Jost), a hand-drawn Home poster, a new app icon, calmer pages without boxed cards, shorter hints in Play.",
-  "pub_date": "2026-11-28T07:12:17.985Z",
+  "version": "0.5.87",
+  "notes": "Clearer look: blocks stand out on calm graphite, one font, the accent colour only on Play and the current page; the Home picture is gone",
+  "pub_date": "2026-11-28T07:27:53.048Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3htTDhNWnZWOGdpUjlDcE1iU09vbW5Ma3cvOEtxRGRpL1VRWHFTL0VML0d1RjZOZDBicndnTnJYSi90UU9wQ2ZxcGhqVnhMOC9Cc3hLd0ZLRGF6Q2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODQ5OTM3CWZpbGU6TG9ja1N0ZXBfMC41Ljg2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODYKMUVKaERCUU1GdFBWdmVVZ3NBOElVcFBiOFhQbVRsd2M5dGdqT1BUTFllampZM0QyclB1SGJRQk54RnN1V1FabHE1SmhEczlaTlV1cTcycy9Qd3JBQlE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.86_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bytacUJ5ekFsaTZaY3p3WUlReDVuNzJvN0t6SW9UREtrZ0VJcXlWUXJ6TjFDNkJrdW1iSDY1MWFKZW5SanB0SWlYczZwNURHMkcwZXlCZHBBZVBsdEFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODUwODcyCWZpbGU6TG9ja1N0ZXBfMC41Ljg3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODcKWlhkaW9wYzhnK2lwTFlqMFhHTUh3djJLVGVmQVhES1ZxblUxTkZjVm9hNCs2YWQ2QnU0Y1NVUXpnMDVqMG5GZExBQmxFby9xUkJJdjcwb01ON0VGQnc9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.87_x64-setup.exe"
     }
   }
 }

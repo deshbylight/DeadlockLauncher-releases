@@ -1,11 +1,11 @@
 {
-  "version": "0.5.88",
-  "notes": "The Skins library now updates right after you add or change a skin in the in-game window, and when you return to the app; app start shows Connecting instead of briefly showing the sign-in screen",
-  "pub_date": "2026-11-28T07:29:44.460Z",
+  "version": "0.5.90",
+  "notes": "New look: poster style; play dock under every page with Find at the left end, the mode, settings, who searches and your party; brand at the top of the left rail, version at its foot. Also: filler hints removed, Play stays left on Home.",
+  "pub_date": "2026-11-28T08:13:21.313Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3c3MmxjUG1pWDM3SHJLQ0lhYVQ0YnJaWi9ienZrdVVWd0paNUNPNjhhYTFleUpFV05GNDFBc1pXQ25TRjdXQzM2Z2p2Y2Zzek91WHlBU01rY3Bzd2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODUwOTg0CWZpbGU6TG9ja1N0ZXBfMC41Ljg4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuODgKV3lmak9TSWdWb29OK1hyUm5TR2RXbXA3TWpRcytMb0xLbms4bjV4aGY2U3RESHdqK2xRZHc1SmxPQmM0RWNIUHMxUFBtWFZlb1pCaTVKN1B0aW81Q2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.88_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3dDRCtWNXVnYkZTcnYxWjFwekxNU0NDTDMrdFBtSkVPQ1BXMy9URWZJS1R2eFBEOEtjTHZTVG9lZ2FBNDFNMHdKa1JoOWJubzhDQ2hKa2RvNWRHWHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODUzNjAwCWZpbGU6TG9ja1N0ZXBfMC41LjkwX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTAKV3FlS0dsRTJlaFJxNUtjZG1yeHJIa0V2bmtLa2lMZUlHYTRGWWUzdEVyUjBLQXdtZmJUMDB3SGtUOUhmRFJBZ05QdTJkTmdkcDk0TlJTejRhTnlHQ3c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.90_x64-setup.exe"
     }
   }
 }

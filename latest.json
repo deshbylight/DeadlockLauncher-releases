@@ -1,11 +1,11 @@
 {
-  "version": "0.6.0",
-  "notes": "3D preview: map mods show the map world; all models of a mod are converted once and switch instantly; ability effects in the viewer are off for now",
-  "pub_date": "2026-11-28T13:30:31.145Z",
+  "version": "0.6.1",
+  "notes": "Hideout skins load: HUD mod probe (diagnostic, console [HudProbe] lines)",
+  "pub_date": "2026-11-28T14:05:10.231Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRUcCt0WmJ3bnFCcklWa2lkYk9Kamlrc3RrQklKRXlEZFEydTNBRWVqQ1ZnWU5aOFBDeVFwelFtbkw2N1ZFdGpIdzBEdERDZVdNeis1YTUydEwvOHc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODcyNjMwCWZpbGU6TG9ja1N0ZXBfMC42LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4wCm96ei9tMzM5R1NpWFRWL2dIN3lDaUZuYlYzTnVEOEFKZEF4blBua0NPRGdySnRnQ1ZGbnhlTGRpYlhUTHlLUDBCMXYyTHlaSDZ6aDdTcUgrajEwa0JBPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzQ3cnRwdmdlTG5JbE55c1NjSnFjc0g1TE1RalR0a0J0OUM3cU9XZnNQc08vdnkxU1k3SXcvS0NRR2NHQXF0eXdHOUJ2akhRRGRwakdhdlNwaFZnWHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODc0NzA5CWZpbGU6TG9ja1N0ZXBfMC42LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4xCmhuWmZ4eWhwbFhEdW9EVCt4ZVZHdnJKMERnMzFlamlnMHhPVWpTc1dZSk00OHpkTjcyN3lJOTJWR2lSSS85U05QTXpWL1VxQWtEUXFOTWxXdnRnY0NRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.1_x64-setup.exe"
     }
   }
 }

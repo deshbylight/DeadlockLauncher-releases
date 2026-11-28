@@ -1,11 +1,11 @@
 {
-  "version": "0.5.93",
-  "notes": "Appearance: one colour preview on top for every pick; the accent is named by what it colours; the main button colour no longer overrides colour-blind modes; Home: Play sits under the game title",
-  "pub_date": "2026-11-28T08:37:47.623Z",
+  "version": "0.5.94",
+  "notes": "Play: press it again to cancel while the launcher waits for Steam (Steam start, game update)",
+  "pub_date": "2026-11-28T08:44:58.344Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRPVlQxR3d2VlZ2eVlpdnA2TDVuNkdyamNnNExVSW5rRDE5ZzVEYlN2OHNIUExTRXhqTWRLTlNoTzRVNGovc1h3dWJYUTR5UW5wU2xMajdiRU1nR0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODU1MDY3CWZpbGU6TG9ja1N0ZXBfMC41LjkzX3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTMKQ3A1eHNOQzZxRXlKYTUzS1M1VlpheFcrUkVUUzVWaXdrME5pS3U1b3R6c0EzQXhRS0c1MnhCVHpxMW5HMGNiUzZ2WEIxaTI2RWs1TkNsVGk4dEU0Q2c9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.93_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzBXcXYvSSttVDBzdFg0K3dRVGl4aEZxaUdUTitJVmhxL2krU3BrbWxsVXRzcDVQN3BMUm9HdytGWm9oVTlZYktaVDVRbnBDWlpWZ29qaTltcmN2UFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODU1NDk3CWZpbGU6TG9ja1N0ZXBfMC41Ljk0X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTQKa0djanF5NG5TZHprbzFSZW1HaXpwTlRWM2V3Tis2UWVONUEvYThRYmkwQ0tLTVZyL2hHZXlHVEhWUmpaMnQrZkdGdkFIOFFJck5ZcFVhdHphL0lMQ2c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.94_x64-setup.exe"
     }
   }
 }

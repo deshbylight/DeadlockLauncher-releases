@@ -1,11 +1,11 @@
 {
-  "version": "0.5.98",
-  "notes": "3D preview: a mod with several game models (remodel pack, every creep) lists each model as a chip; a chip converts its model on click",
-  "pub_date": "2026-11-28T12:22:15.534Z",
+  "version": "0.5.99",
+  "notes": "In-game skins: entering the sandbox reloads it with your current skins, so a mod you deleted no longer comes back there (Modlock CLI dl70).",
+  "pub_date": "2026-11-28T13:27:38.379Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhCZHhNWHhCdVhFQy9Jdyt1Y3F5aXNQQXpadzJKSDkwdGRobDVuMTFVTTJUQ3Ezekh5VjlPTVhiZExteCtOVHJpNlVkRTdJekZEY3NxK0E2Z3VqYkFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODY4NTM0CWZpbGU6TG9ja1N0ZXBfMC41Ljk4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTgKOGdYVTk4OUluR1FNODhjZlNIbCtnQ2dEYnorejJMeUNjZWZ4K2hFV3ZPaHNMNWpHem8yNXRsSmxzRXMzdnhvWnlaK1ZCa0JkWG10djU1Z2ZiR3pxQUE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.98_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3didU1yK29pRlFQTWVKTUl4YjNNODZaMzkvblpmZVJDaHQ1bUZxdGdSTWc3N3JZcEpBQnYwZlBTcytaRDJTbkJLUlM2MlRaSHBWWHRvcGJHK0FCaUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODcyNDU3CWZpbGU6TG9ja1N0ZXBfMC41Ljk5X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTkKajdQVFc0OTh3ck1aRGxKTHl5ZE5OVmNaTFBEdW1JTTI2dk8xTVdMZ0wySHdqNWgzbndEVnJjclVMRmIvLys2bUNGc3BTRkRhaGcvODlVWjVjVHJnQ2c9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.99_x64-setup.exe"
     }
   }
 }

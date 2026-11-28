@@ -1,11 +1,11 @@
 {
-  "version": "0.5.97",
-  "notes": "Skins: downloads wait in a queue and can be cancelled, a skin can be worn while others download. Mode packages are signed by the developer, the launcher refuses unsigned or changed mode files. A feedback answer is final and shows who answered and when. New app icon. Interface text: hints match how the app works, About rewritten.",
-  "pub_date": "2026-11-28T11:30:04.404Z",
+  "version": "0.5.98",
+  "notes": "3D preview: a mod with several game models (remodel pack, every creep) lists each model as a chip; a chip converts its model on click",
+  "pub_date": "2026-11-28T12:22:15.534Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVZTU9YK1AwOCtrZVRpc3lkNlp1SnpIdURNNENDbURkeDRWa3lGUyt4NW5BNVQ5UlJMREJadWdLQWwrelBLa2JGN1llM2NXeG0yaFh0NzlCZjVrc0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODY1NDA0CWZpbGU6TG9ja1N0ZXBfMC41Ljk3X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTcKVzJMZDJQY2szKy8yb1FXN0o2QW1FeEcvZnp6OS9ocExaWWQwNTB4TmZoTVU0SUNEQ2NuSDdvNjNMU1lYV1Y5VVo1WDZCOEpTdTFXcGk5RWtEdHlCQkE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.97_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhCZHhNWHhCdVhFQy9Jdyt1Y3F5aXNQQXpadzJKSDkwdGRobDVuMTFVTTJUQ3Ezekh5VjlPTVhiZExteCtOVHJpNlVkRTdJekZEY3NxK0E2Z3VqYkFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODY4NTM0CWZpbGU6TG9ja1N0ZXBfMC41Ljk4X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTgKOGdYVTk4OUluR1FNODhjZlNIbCtnQ2dEYnorejJMeUNjZWZ4K2hFV3ZPaHNMNWpHem8yNXRsSmxzRXMzdnhvWnlaK1ZCa0JkWG10djU1Z2ZiR3pxQUE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.98_x64-setup.exe"
     }
   }
 }

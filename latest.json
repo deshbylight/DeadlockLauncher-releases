@@ -1,11 +1,11 @@
 {
-  "version": "0.5.95",
-  "notes": "Custom servers: the in-game mod renderer of a guest shows pictures only from game content, a host can no longer point it at outside addresses (Modlock fork dl67). Party and server join go only through the mod renderer with one Connect button. Parties of size Any form 20 s after the last join at 2+ players, with a countdown on the Group tab. Search by ping between players with a max search ping setting. Admin feedback buttons show busy and done marks. The app and tray icon are restored.",
-  "pub_date": "2026-11-28T10:27:12.296Z",
+  "version": "0.5.96",
+  "notes": "Safer Steam sign-in: a one-time code instead of a session token in the browser link. Signing out now ends the session on the server. Error reports hide your Windows account name. New Settings switch: Hide my profile.",
+  "pub_date": "2026-11-28T10:46:24.169Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzRFcEhUcXJoeHlKUHpZOWdOSDBtR01SdHpIMllMKytPL2djUVRTR3VlcFB2UHBtdzNZU0pTaUZCYUpPMDFLMHNwdjVkdlB6UWpkT25wK0JtVW9hbkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODYxNjMxCWZpbGU6TG9ja1N0ZXBfMC41Ljk1X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTUKYlRDWFFrT1Rab2lEY0V1MXRCMW5kckpGNnR2L0hYUkhCbHU4MmxBanRZVFNvZzlUTDUvNW4ydjdKbTNUbkJzaW52dkRrWE5CbnBHVVk3aWtFdGRpQVE9PQo=",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.95_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzVXYjhjdEVQNDB6Um16MTRDZTAxU0lhRzlKME5zUUhlbEY0NHJQN1hDK2dqWHJ0RU5uVEI3Q0xWcWFsUjVpUTlhcDJaZ1dxY3ZNMmt0cVBrTUExeGd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODYyNzgzCWZpbGU6TG9ja1N0ZXBfMC41Ljk2X3g2NC1zZXR1cC5leGUJdmVyc2lvbjowLjUuOTYKeDh3Q3o3VDVrQy9GTm9EcXdOQ2l1L0ZmSWFsRlJsdmc2UXB1ZU5Lbk9EZVh1MHZWNFNCZ042WUtLNkNISkl0MGxGNEpEN3F3Q05yM21IcjE3Ni9OQVE9PQo=",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.5.96_x64-setup.exe"
     }
   }
 }

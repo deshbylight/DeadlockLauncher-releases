@@ -1,11 +1,11 @@
 {
-  "version": "0.6.3",
-  "notes": "Hideout skins load: HUD mod probe 3 (diagnostic, style reload through a layout event)",
-  "pub_date": "2026-11-28T15:26:37.885Z",
+  "version": "0.6.4",
+  "notes": "Friends, profile cards, party privacy, streamer lobbies and party links; player numbers with founder seals; online and player counters; friend codes and a daily waitlist; WaveSurvival records with crowns, titles, trophies and mode milestones; creator contest; Settings > Credits; one LockStep in-game window with tabs and Change on a worn skin; About text; installer refreshes the Windows icon cache.",
+  "pub_date": "2026-11-28T15:28:52.484Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91bzhiRzdzR2ZTeFBtVzFEY0VjbU9td1ppRGhWU05RL2l1Tll0aC9FQ3FDU3BXcXY3aWZvREhKQzdFeUduVldqWlhIUllZemY4VzJ0dFN2VkhMNHRzQUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODc5NTk3CWZpbGU6TG9ja1N0ZXBfMC42LjNfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi4zCktISTVFZ20xUHMyQ2pYaCtBNFJCUDdzZHI4M0x5NDJBdGlWM0Y3bS9sYWpUbWpZcERxUnFDZW5GTzFmVnpubWora1IvdmpubFhuT0RDc0IyVEYxUEJnPT0K",
-      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTN3RmWVMrVU91b3daQUdTOEVhQ1AvcWhhellhSHQ2VURzVW9vMG05c3NoN1NPV29PZk1kVm1UQk40d1JSSTdwWjJRSG0wSXlYYVJSQm8wSnE2UjN6TUtwT2xQVHNiNlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1ODc5NzMyCWZpbGU6TG9ja1N0ZXBfMC42LjRfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjAuNi40CndqVDYyVnMvRytLeno0TlNJcFlpOXpiWjhZWUVYNUFRcC9XeTM0cktDdEpMSEFxeFhTTFQwYUgvcU1aUU1KTFNiWjJoNVlTWEpGMlRkQlhmOUxtK0JRPT0K",
+      "url": "https://dam-mayor-rays-donate.trycloudflare.com/dl/LockStep_0.6.4_x64-setup.exe"
     }
   }
 }
